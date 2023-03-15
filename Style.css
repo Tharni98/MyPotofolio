@@ -1,32 +1,101 @@
 
-body {background-color: powderblue;}
-h1   {color: blue;}
-p    {color: red;}
+/*body {background-color: powderblue;}*/
+/*h1   {color: blue;}*/
+/*p    {color: red;}*/
 
 
 
  h1 {
      color: blue;
-     font-family: verdana;
+     font-family: Pridi, serif;
      font-size: 300%;
  }
-
-p {
-    color: red;
-    font-family: courier;
-    font-size: 160%;
+.h5{
+    color: black;
+    font-family: Playball, serif;
+    font-size: 100%;
 }
 
-navbar {
+p {
+    color: black;
+    font-family: courier, serif;
+    font-size: 140%;
+}
+
+header {
+    /*overflow: hidden;*/
     background-color: #04AA6D;
-    color: white;
-    overflow: hidden;
-    float: left;
     color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    padding: 0px 30px;
     font-size: 17px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .port {
+    color: white;
+}
+header .lio {
+    color: navy;
+}
+
+.navbar {
+    margin-right: 30px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+
+hr {
+    margin-top: 100px;
+}
+
+.image1 {
+    display: flex;
+    justify-content: right;
+}
+
+.image1 img{
+    border-radius: 50%;
+}
+.split {
+    height: 100%;
+    width: 50%;
+    /*position: absolute;*/
+    /*z-index: 1;*/
+    /*top: 0;*/
+    /*overflow-x: hidden;*/
+    /*padding-top: 20px;*/
+}
+
+/* Control the left side */
+.left {
+    left: 0;
+    /*background-color: #111;*/
+}
+
+/* Control the right side */
+.right {
+    right: 0;
+    /*background-color: red;*/
+}
+
+.image2 {
+    display: flex;
+    justify-content: left;
+}
+
+.image2 img{
+    border-radius: 70%;
 }
 
 
