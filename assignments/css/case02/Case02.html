@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Case Two</title>
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" href="assets/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        header{
+            width: 100%;
+            height: 10%;
+            background-color: white;
+            border: solid black 1px;
+            box-shadow: 1px 2px 3px 2px;
+            position: fixed;
+            z-index: 3;
+            top: 0;
+
+            font-family: ".AppleSystemUIFont";
+        }
+
+        header>nav>ul>li{
+            display: inline;
+            margin-left: 15px;
+            color: red;
+            text-decoration: none;
+            
+
+        }
+
+        header>nav>ul>li:hover{
+            color: black;
+        }
+
+        header>nav>ul{
+            position: absolute;
+            right: 5%;
+            top: 15%;
+        }
+
+        header>nav>ul>li>a{
+            text-decoration: none;
+            color: red;
+            padding-left: 7px;
+        }
+
+        header>nav>ul>li>a:hover{
+            color: black;
+        }
+
+        footer{
+            height: 50%;
+            background-color: gray;
+            font-family: ".AppleSystemUIFont";
+        }
+
+        footer>p{
+            text-align: center;
+            color: white;
+            margin: 0;
+        }
+
+        main>nav{
+            width: 20%;
+            background-color: blueviolet;
+            color: white;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+        }
+
+        main>nav>ul>li{
+            list-style: none;
+            padding-top: 20%;
+        }
+
+        main>nav>ul>li>i{
+            padding-right: 5%;
+        }
+
+        main>nav>ul>li:hover{
+            color: black;
+        }
+
+        main>nav>ul>li>i:hover{
+            color: black;
+        }
+
+        main>section{
+            margin-left: 20%;
+        }
+
+
+        main{
+            position: relative;
+            font-family: ".AppleSystemUIFont";
+            margin-top: 7%;
+        }
+
+        header>img{
+            width: 200px;
+            margin-left: 3%;
+            margin-top: 0.5%;
+            margin-bottom: 0;
+        }
+
+        main>section>p{
+            margin-bottom: 0;
+            margin-left: 1%;
+        }
+        main>section>section{
+            border: 1px solid black;
+            height: 300px;
+            position: relative;
+        }
+        main>section>section>div{
+            height: 100%;
+            width: calc(100% / 3);
+            position: absolute;
+        }
+
+        main > section > section > div:nth-child(1) {
+            background: url("assets/img/img.png");
+            background-size: cover;
+            background-position: center;
+            left: 0;
+        }
+
+        main > section > section > div:nth-child(2) {
+            left: calc(100% / 3);
+            background: url("assets/img/img.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        main > section > section > div:nth-child(3) {
+            right: 0;
+            background: url("assets/img/img.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        #chatBox{
+            width: 10%;
+            height: 5%;
+            background-color: darkblue;
+            color: white;
+            position: fixed;
+            bottom: 1%;
+            right: 1%;
+            border-radius: 50%;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+<header>
+    <img src="assets/img/ijse.png" alt="ijse logo">
+    <nav>
+        <ul>
+            <li><i class="fa fa-fw fa-home"></i> <a href="#"> Home</a></li>
+            <li><i class="fa fa-handshake-o"></i> <a href="#">Services</a></li>
+            <li><i class="fa fa-fw fa-envelope"></i> <a href="#">Contacts</a></li>
+            <li><i class="fa fa-address-card"></i> <a href="#">About Us</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <nav>
+        <ul>
+            <li><i class="fa fa-fw fa-home"></i>  Home</li>
+            <li><i class="fa fa-handshake-o"></i>  Services</li>
+            <li><i class="fa fa-fw fa-envelope"></i>  Contacts</li>
+            <li><i class="fa fa-address-card"></i>  About Us</li>
+        </ul>
+    </nav>
+    <section>
+        <section>
+            <div>
+                <!--        <img src="images.jpeg">-->
+            </div>
+            <div>
+                <!--        <img src="images.jpeg">-->
+            </div>
+            <div>
+                <!--        <img src="images.jpeg">-->
+            </div>
+        </section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis debitis fugit quidem sapiente sunt.
+            Accusantium ad dicta, earum facilis iusto modi nam numquam odit officiis recusandae reprehenderit
+            repudiandae sunt unde!</p>
+        <p>Consectetur distinctio id iste recusandae reiciendis reprehenderit voluptate? Blanditiis cumque, doloremque
+            eaque error exercitationem fugit id ipsum rem sequi ullam. Animi doloremque earum eius eum magnam quae
+            quibusdam sequi vitae.</p>
+        <p>Architecto commodi eligendi explicabo facere in magnam modi necessitatibus omnis perferendis quod, rem sed
+            sequi velit. Ab accusamus eligendi eveniet, modi obcaecati possimus quasi quia saepe tempora ullam.
+            Necessitatibus, veritatis.</p>
+        <p>Aliquam dignissimos eveniet ex facere quasi sit sunt ut? Accusantium animi, architecto blanditiis eos et
+            expedita id in laboriosam molestiae odio quidem, recusandae saepe soluta tempora totam. Autem, ex nemo.</p>
+        <p>Aliquam atque enim, hic in minus mollitia numquam repellat unde vitae voluptates. Alias aliquid commodi
+            consequuntur cumque deleniti doloremque, earum, exercitationem itaque laboriosam maxime possimus, quaerat
+            quam recusandae sequi voluptatibus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis debitis fugit quidem sapiente sunt.
+            Accusantium ad dicta, earum facilis iusto modi nam numquam odit officiis recusandae reprehenderit
+            repudiandae sunt unde!</p>
+        <p>Consectetur distinctio id iste recusandae reiciendis reprehenderit voluptate? Blanditiis cumque, doloremque
+            eaque error exercitationem fugit id ipsum rem sequi ullam. Animi doloremque earum eius eum magnam quae
+            quibusdam sequi vitae.</p>
+        <p>Architecto commodi eligendi explicabo facere in magnam modi necessitatibus omnis perferendis quod, rem sed
+            sequi velit. Ab accusamus eligendi eveniet, modi obcaecati possimus quasi quia saepe tempora ullam.
+            Necessitatibus, veritatis.</p>
+        <p>Aliquam dignissimos eveniet ex facere quasi sit sunt ut? Accusantium animi, architecto blanditiis eos et
+            expedita id in laboriosam molestiae odio quidem, recusandae saepe soluta tempora totam. Autem, ex nemo.</p>
+        <p>Aliquam atque enim, hic in minus mollitia numquam repellat unde vitae voluptates. Alias aliquid commodi
+            consequuntur cumque deleniti doloremque, earum, exercitationem itaque laboriosam maxime possimus, quaerat
+            quam recusandae sequi voluptatibus.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis debitis fugit quidem sapiente sunt.
+            Accusantium ad dicta, earum facilis iusto modi nam numquam odit officiis recusandae reprehenderit
+            repudiandae sunt unde!</p>
+        <p>Consectetur distinctio id iste recusandae reiciendis reprehenderit voluptate? Blanditiis cumque, doloremque
+            eaque error exercitationem fugit id ipsum rem sequi ullam. Animi doloremque earum eius eum magnam quae
+            quibusdam sequi vitae.</p>
+        <p>Architecto commodi eligendi explicabo facere in magnam modi necessitatibus omnis perferendis quod, rem sed
+            sequi velit. Ab accusamus eligendi eveniet, modi obcaecati possimus quasi quia saepe tempora ullam.
+            Necessitatibus, veritatis.</p>
+        <p>Aliquam dignissimos eveniet ex facere quasi sit sunt ut? Accusantium animi, architecto blanditiis eos et
+            expedita id in laboriosam molestiae odio quidem, recusandae saepe soluta tempora totam. Autem, ex nemo.</p>
+        <p>Aliquam atque enim, hic in minus mollitia numquam repellat unde vitae voluptates. Alias aliquid commodi
+            consequuntur cumque deleniti doloremque, earum, exercitationem itaque laboriosam maxime possimus, quaerat
+            quam recusandae sequi voluptatibus.</p>
+
+
+        <div id="chatBox">Chat Box</div>
+    </section>
+</main>
+<footer>
+    <p>Developed By IJSE</p>
+</footer>
+</body>
+</html>
