@@ -109,6 +109,7 @@ nav ul li a:hover{
     width: 400px;
     height: 500px;
     border-radius: 80%;
+    border: 5px solid #ffffff;
     background-color: rgba(140, 125, 125, 0.41);
     box-shadow: 0 0 10px 5px rgba(2, 0, 0, 0.5);
     background-image: url("assets/img/profilePic.png");
@@ -152,7 +153,11 @@ section.AboutMainSec {
     justify-content: space-between;
     align-items: center;
     height: 100vh;
-    background-color: rgb(60, 132, 171);
+    /*background-color: rgb(60, 132, 171);*/
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 #aboutImg{

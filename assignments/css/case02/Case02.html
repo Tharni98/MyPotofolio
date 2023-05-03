@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="assets/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
+
+
         header{
             width: 100%;
             height: 10%;
@@ -120,26 +122,28 @@
             position: absolute;
         }
 
-        main > section > section > div:nth-child(1) {
-            background: url("assets/img/img.png");
-            background-size: cover;
-            background-position: center;
-            left: 0;
-        }
 
-        main > section > section > div:nth-child(2) {
-            left: calc(100% / 3);
-            background: url("assets/img/img.png");
-            background-size: cover;
-            background-position: center;
-        }
+            main > section > section > div:nth-child(1) {
+                background: url("assets/img/img.png");
+                background-size: cover;
+                background-position: center;
+                left: 0;
+            }
 
-        main > section > section > div:nth-child(3) {
-            right: 0;
-            background: url("assets/img/img.png");
-            background-size: cover;
-            background-position: center;
-        }
+            main > section > section > div:nth-child(2) {
+                left: calc(100% / 3);
+                background: url("assets/img/img.png");
+                background-size: cover;
+                background-position: center;
+            }
+
+            main > section > section > div:nth-child(3) {
+                right: 0;
+                background: url("assets/img/img.png");
+                background-size: cover;
+                background-position: center;
+            }
+
 
         #chatBox{
             width: 10%;
@@ -152,6 +156,54 @@
             border-radius: 50%;
             text-align: center;
         }
+        @media all and (max-width:320px) {
+            header{
+                width: 100%;
+                height: 70px;
+                background-color: white;
+                border: solid black 1px;
+                box-shadow: 1px 2px 3px 2px;
+                position: fixed;
+                z-index: 3;
+                top: 0;
+
+                font-family: ".AppleSystemUIFont";
+
+            }
+            header>img{
+                position: absolute;
+                margin: auto;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 30px;
+                width: 40%;
+                height: 60%;
+            }
+            header>nav>ul>li{
+                display: inline;
+                padding: 0 0 0 0;
+                margin-left: auto;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                color: red;
+                text-decoration: none;
+                font-size: 13px;
+
+
+            }
+            header>nav>ul {
+                position: absolute;
+                right: 20px;
+                top: 25px;
+                padding: 0;
+                margin-right: 0;
+            }
+            }
+
+
     </style>
 
 </head>
