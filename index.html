@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>My portfolio</title>
@@ -9,288 +10,529 @@
     <meta name="robots" content="index">
     <meta name="theme-color" content="Yellow">
     <meta name="viewport" content="width=device-width initial-scale=1 minimum-scale=0.5 maximum-scale=2">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="assets/styleSheet/Style.css">
+    <link href="assets/styleSheet/normalize.css" rel="stylesheet">
+
+
 </head>
+
 <body>
-<header>
-    <div class="header">
-        <nav class="headbar">
-            <div class="logo_name">
-                <h3 class="logo"><span class="port">Portfo</span><span class="lio">lio</span></h3>
-            </div>
-            <div class="navbar">
-                <ul>
-                    <li> <a href="#home">Home</a></li>
-                    <li> <a href="#about">About</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#skils">Skills</a></li>
-                    <li><a href="#project">Project</a></li>
-                    <li><a href="#assignment">Assignment</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li> <a href="#contact">Contact</a></li>
-                </ul>
-            </div>
+<header class="header">
+    <div class="main_navbar">
+        <h3><a href="#home">tharani</a></h3>
+        <nav class="navbar">
+                <span class="primary_navbar">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#EnSSection">Education</a>
+                    <a href="#skill">Skill</a>
+                    <a href="#project">Project</a>
+                    <a href="#assignment">Assignment</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#contact">Contact</a>
+                </span>
         </nav>
-        <dfn id="home"></dfn>
+    </div>
+
+</header>
+
+<section id="home">
+    <div class="welcome_profileImg">
         <div class="welcome">
-            <h6> Hi...</h6>
-            <h1><span id="span-01">I'am</span>
-                <span id="span-02">Tharani</span>
-                <span id="span-03">Harshika</span>
-            </h1>
-            <h3>Web Developer & Developer</h3>
-            <h5 class="h5"><i>Find me.....</i></h5>
+            <h1> Hi...</h1>
+            <h2>
+                I'm Tharani Harshika
+            </h2>
+            <h3>Web Designer & Developer</h3>
         </div>
         <div class="profileImg">
             <div class="myImg"></div>
-            <div class="social-icon">
-                <img src="assets/img/facebook.png" alt="" width="50" height="">
-                <img src="assets/img/instagram.png" alt="" width="50" height="">
-                <img src="assets/img/linkedin.png" alt="" width="50" height="">
-                <img src="assets/img/twitter.png" alt="" width="50" height="">
-                <img src="assets/img/25231.png" alt="" width="50" height="">
+        </div>
+    </div>
+    <div class="social_icon">
+        <div class="wrapper">
+            <div class="button">
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+                <a href="https://www.facebook.com/tharani.harshika.1" target="_blank"><span>Facebook</span></a>
+            </div>
+            <div class="button">
+                <div class="icon">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <a href="https://www.instagram.com/harshikatharani/" target="_blank"><span>Instagram</span></a>
+            </div>
+            <div class="button">
+                <div class="icon">
+                    <i class="fab fa-linkedin"></i>
+                </div>
+                <a href="https://www.linkedin.com/in/tharani-harshika-dadallage-245743264/"
+                   target="_blank"><span>LinkedIn</span></a>
+            </div>
+            <div class="button">
+                <div class="icon">
+                    <i class="fab fa-github"></i>
+                </div>
+                <a href="https://github.com/Tharni98" target="_blank"><span>GitHub</span></a>
+            </div>
+            <div class="button">
+                <div class="icon">
+                    <i class="fab fa-twitter"></i>
+                </div>
+                <a href="https://twitter.com/HarshikaTh91095" target="_blank"><span>Twitter</span></a>
+
+            </div>
+            <div class="button">
+                <div class="icon">
+                    <i class="fab fa-youtube"></i>
+                </div>
+                <a href="https://www.youtube.com/channel/UCMKUxdihfO-bunnGxEsrh6g"
+                   target="_blank"><span>YouTube</span></a>
             </div>
         </div>
     </div>
-</header>
+</section>
 
 
 <!-- About -->
-<section class="AboutMainSec" id="about">
-<!--    <dfn id="about"></dfn>-->
-    <div id="aboutImg"><img src="assets/img/AboutMePic.png" alt="" width="600" height=""></div>
+<section id="about">
+    <div class="section_name">
+        <h2>About Me</h2>
+    </div>
+    <div class="AboutMainSec">
+        <div class="aboutImg">
+            <img src="assets/img/about_me.gif" alt="">
+        </div>
 
-    <div id="aboutPara">
-        <main>
-            <article id="aboutArticle">
-                <div><h1>About me </h1></div>
+        <div class="aboutPara">
+            <div class="fileclip_img"><img src="assets/img/paper_clip.png" alt=""></div>
+            <article class="aboutArticle">
                 <br>
-                <p>I’m Dadallage Tharani Harshika. I’m Currently studying Software Engineering and Web development
-                    in <cite><a href="http://ijse.lk">IJSE</a></cite> Institute and I like to improve my skills with
-                    working on projects.
-                    Also I Have knowledge above web application design, <b>UI/UX</b> design and <strong>FX</strong>.
+                <p>I’m Dadallage Tharani Harshika. I’m currently undertaking Deploma of Software Engineering and Web
+                    Development in <strong><a href="http://ijse.lk">IJSE</a></strong> and I am improving my skills
+                    by
+                    engaging in several projects. I Have knowledge on following areas.
                 </p>
                 <br>
-                <ul>
-                    <li>Name : Dadallage Tharani Harshika</li>
-                    <li>Birth : 1998 . 06 . 04</li>
-                    <li>Address: No 4/2 , School Lane , Kahawa.</li>
-                    <li>Gmail : tharaniharshika1@gmail.com</li>
-                </ul>
+                <p class="line_discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p><br>
+                <p class="line_discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                </p><br>
+                <p class="line_discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                </p>
                 <br>
-                <p><a href="Asigment-01.pdf" download="download name">Download My CV</a></p>
+                <a href="Asigment-01.pdf" download="download name"><button>Download My CV</button></a>
             </article>
-        </main>
+        </div>
     </div>
+
 </section>
 
 
 <!-- Education -->
-<section id="education">
-<!--    <dfn id="education"></dfn>-->
-    <div><h2>Eduction</h2></div>
-    <section>
-        <div>Graduate Diploma in Software Engineering
-            Institute of Software Engineering
-            2022 - 2024
-        </div>
-        <div>G.C.E Advanced Level Examination
-            G P D S Kularathna College
-            2014 - 2017
-        </div>
-    </section>
+<section id="EnSSection">
+    <div class="section_name">
+        <h2>Education</h2>
+    </div>
+    <section class="ensSect" id="educationSection">
+        <section class="ensColumns">
+            <section class="ensContentBox">
+                <article class="endBox">
+                    <h4>2017</h4>
+                    <h3>O/L Exam</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad adipisci aut, corporis
+                        delectus eaque facere id minima, nobis nulla quasi qui reprehenderit rerum tenetur
+                        voluptates. Cupiditate laudantium modi recusandae?</p>
+                </article>
 
-    <section>
-        <div>Higher National Diploma in Accountancy
-            Advance Technological Institute
-            2018 - 2023
-        </div>
-        <div>G.C.E Ordinary Level Examination
-            G P D S Kularathna College
-            2004 - 2014
-        </div>
-    </section>
+                <article class="endBox">
+                    <h4>2020</h4>
+                    <h3>A/L Exam</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad adipisci aut, corporis
+                        delectus eaque facere id minima, nobis nulla quasi qui reprehenderit rerum tenetur
+                        voluptates. Cupiditate laudantium modi recusandae?</p>
+                </article>
 
+                <article class="endBox">
+                    <h4>2022-2024</h4>
+                    <h3>HND in Software Engineer</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad adipisci aut, corporis
+                        delectus eaque facere id minima, nobis nulla quasi qui reprehenderit rerum tenetur
+                        voluptates. Cupiditate laudantium modi recusandae?</p>
+                </article>
+                <article class="endBox">
+                    <h4>2022-2024</h4>
+                    <h3>HND in Software Engineer</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad adipisci aut, corporis
+                        delectus eaque facere id minima, nobis nulla quasi qui reprehenderit rerum tenetur
+                        voluptates. Cupiditate laudantium modi recusandae?</p>
+                </article>
+            </section>
+        </section>
+    </section>
 </section>
 
 
-
 <!-- Skills -->
+<section class="skill" id="skill">
+    <!--<dfn id="skils"></dfn>-->
+    <div class="section_name">
+        <h2>Skill</h2>
+    </div>
 
-<section id="skils">
-<!--    <dfn id="skils"></dfn>-->
-    <div><h2>Skills</h2></div>
-    <section>
-        <div class="image2"><img src="assets/img/java.gif" alt="" width="90" height=""></div>
-        <div><img src="assets/img/figma.gif" alt="" width="90" height=""></div>
-        <div><img src="assets/img/mysql.png" alt="" width="90" height=""></div>
-        <div><img src="assets/img/apache-netbeansx1024.png" alt="" width="90" height=""></div>
-        <div><img src="assets/img/git.png" alt="" width="90" height=""></div>
-        <div><img src="assets/img/html-5.png" alt="" width="90" height=""></div>
-        <div><img src="assets/img/visual-studio-code-2019.png" alt="" width="90" height=""></div>
-        <div><img src="assets/img/FX.png" alt="" width="90" height=""></div>
-        <div><img src="assets/img/logo-vector-css-3-low-260nw-1902943426.webp" alt="" width="90" height=""></div>
-        <div><img src="assets/img/intellij-idea.png" alt="" width="100" height=""></div>
-    </section>
+    <div class="main_set">
+        <div class="one_set">
+            <div><img src="assets/img/java.png" alt="" width="80"></div>
+            <div><img src="assets/img/figma.png" alt="" width="80"></div>
+            <div><img src="assets/img/mysql_logo_icon_169941.png" alt="" width="150" height="100"></div>
+            <div><img src="assets/img/apache-netbeansx1024.png" alt=""  height="90"></div>
+            <div><img src="assets/img/png-transparent-git-vector-brand-logos-icon-removebg-preview.png" alt=""
+                      width="100" height="100"></div>
+        </div>
+        <div class="second_set">
+            <div><img src="assets/img/html-5.png" alt="" width="90"></div>
+            <div><img src="assets/img/css-3.png" alt="" width="90"></div>
+            <div><img src="assets/img/Visual_Studio_Code_1.35_icon.svg-removebg-preview.png" alt="" width="90"
+            ></div>
+            <div><img src="assets/img/javafx_logo1-300x278_2x-removebg-preview.png" alt="" width="110">
+            </div>
+            <div><img src="assets/img/intellij-idea.png" alt="" width="100"></div>
+        </div>
+    </div>
 </section>
 
 
 <!-- Project -->
 
 <section id="project">
-<!--    <dfn id="project"></dfn>-->
-    <div><h2>Project</h2></div>
-    <section>
-        <div><img src="assets/img/Project01.jpg" alt="" width="200" height="">
-            <h5>Hotel Management System</h5>
-            <img src="assets/img/Rectangle%20154.jpg" alt="" width="50" height="">
-        </div>
-        <br><br>
+    <!--    <dfn id="project"></dfn>-->
+    <div class="section_name">
+        <h2>Project</h2>
+    </div>
+    <div class="project_set first_project_set">
+        <section class="block">
+            <div>
+                <img src="assets/img/project_1.jpg" alt="" width="200">
+                <h5>Hotel Management System</h5>
+                <!--<img src="assets/img/GotoLink.png" alt="" width="50" height="">-->
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.</p>
+            </div>
+            <br><br>
+        </section>
+        <section class="block">
+            <div>
+                <img src="assets/img/Project02.jpg" alt="" width="200">
+                <h5>Scale Shop Management System</h5>
+                <!--<img src="assets/img/GotoLink.png" alt="" width="50" height="">-->
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.</p>
+            </div>
+            <br><br>
+        </section>
+        <section class="block">
+            <div>
+                <img src="assets/img/Project03.jpg" alt="" width="200">
+                <h5>My Portfolio</h5>
+                <!--<img src="assets/img/GotoLink.png" alt="" width="50" height="">-->
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur. </p>
+            </div>
+            <br><br><br>
+        </section>
+    </div>
 
-    </section>
-    <section>
-        <div><img src="assets/img/Project02.jpg" alt="" width="200" height="">
-            <h5>Scale Shop Management System</h5>
-            <img src="assets/img/Rectangle%20154.jpg" alt="" width="50" height="">
-        </div>
-        <br><br>
-    </section>
-    <section>
-        <div><img src="assets/img/Project03.jpg" alt="" width="200" height="">
-            <h5>My Portfolio</h5>
-            <img src="assets/img/Rectangle%20154.jpg" alt="" width="50" height="">
-        </div>
-        <br><br><br>
+    <div class="project_set second_project_set">
+        <section class="block">
+            <div>
+                <img src="assets/img/project_1.jpg" alt="" width="200">
+                <h5>Hotel Management System</h5>
+                <!--<img src="assets/img/GotoLink.png" alt="" width="50" height="">-->
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.</p>
+            </div>
+            <br><br>
+        </section>
+        <section class="block">
+            <div>
+                <img src="assets/img/Project02.jpg" alt="" width="200">
+                <h5>Scale Shop Management System</h5>
+                <!--<img src="assets/img/GotoLink.png" alt="" width="50" height="">-->
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.</p>
+            </div>
+            <br><br>
+        </section>
+    </div>
 
-    </section>
-    <div><img src="assets/img/25231.png" alt="" width="60" height=""></div>
-    <h4>Check my GitHub Account</h4>
+    <div class="check_github">
+        <a href="https://github.com/Tharni98" target="_blank">
+            <img src="assets/img/github.png" alt="">
+        </a>
+        <a href="https://github.com/Tharni98" target="_blank">
+            <h2>Check my GitHub Account</h2>
+        </a>
+    </div>
 </section>
 
-<hr>
+
+<!-- Assignment -->
+
+<section id="assignment">
+
+    <div class="section_name">
+        <h2>Assignment</h2>
+    </div>
+
+    <h2 class="assign_subname">CSS</h2>
+
+    <div class="assign_mainblock css_assignment">
+
+        <div class="assign_block">
+            <div class="assign_image">
+                <a href="assignments/css/case01/Case01.html" target="_blank"><img src="assets/img/case_1.jpg"
+                                                                                  alt=""></a>
+                <p>CASE 1</p>
+            </div>
+        </div>
+        <div class="assign_block">
+            <div class="assign_image">
+                <a href="assignments/css/case02/Case02.html" target="_blank"><img src="assets/img/case_2.jpg"
+                                                                                  alt=""></a>
+            </div>
+            <p>CASE 2</p>
+        </div>
+        <div class="assign_block">
+            <div class="assign_image">
+                <a href="assignments/css/case03/Case03.html" target="_blank"><img src="assets/img/case_3.jpg"
+                                                                                  alt=""></a>
+            </div>
+            <p>CASE 3</p>
+        </div>
+        <div class="assign_block">
+            <div class="assign_image">
+                <a href="assignments/css/case04/Case04.html" target="_blank"><img src="assets/img/case_4.jpg"
+                                                                                  alt=""></a>
+            </div>
+            <p>CASE 4</p>
+        </div>
+        <div class="assign_block">
+            <div class="assign_image">
+                <a href="assignments/css/caseFive&Six/Case05.html" target="_blank"><img src="assets/img/case_5.jpg"
+                                                                                        alt=""></a>
+            </div>
+            <p>CASE 5</p>
+        </div>
+        <div class="assign_block">
+            <div class="assign_image">
+                <a href="assignments/css/caseFive&Six/Case06.html" target="_blank"><img src="assets/img/case_6.jpg"
+                                                                                        alt=""></a>
+            </div>
+            <p>CASE 6</p>
+        </div>
+    </div>
+
+    <h2 class="assign_subname">TRASITIONS & ANIMATION</h2>
+
+    <div class="assign_mainblock transition_assignment">
+        <div class="assign_block">
+            <div>
+                <a href="assignments/Transitions/case01/Case01.html" target="_blank"><img
+                        src="assets/img/trans_1.jpg" alt=""></a>
+            </div>
+            <p>CASE 1</p>
+        </div>
+        <div class="assign_block">
+            <div>
+                <a href="assignments/Transitions/case01/Case01.html" target="_blank"><img
+                        src="assets/img/trans_1.jpg" alt=""></a>
+            </div>
+            <p>CASE 2</p>
+        </div>
+        <div class="assign_block">
+            <div>
+                <a href="assignments/Transitions/case01/Case01.html" target="_blank"><img
+                        src="assets/img/trans_1.jpg" alt=""></a>
+            </div>
+            <p>CASE 3</p>
+        </div>
+        <div class="assign_block">
+            <div>
+                <a href="assignments/Transitions/case01/Case01.html" target="_blank"><img
+                        src="assets/img/trans_1.jpg" alt=""></a>
+            </div>
+            <p>CASE 4</p>
+        </div>
+        <div class="assign_block">
+            <div>
+                <a href="assignments/Transitions/case01/Case01.html" target="_blank"><img
+                        src="assets/img/trans_1.jpg" alt=""></a>
+            </div>
+            <p>CASE 5</p>
+        </div>
+        <div class="assign_block">
+            <div>
+                <a href="assignments/Transitions/case01/Case01.html" target="_blank"><img
+                        src="assets/img/trans_1.jpg" alt=""></a>
+            </div>
+            <p>CASE 6</p>
+        </div>
+    </div>
+    <br><br><br><br>
+</section>
+
+
 
 <!-- Gallery -->
 
-<section id="gallery">
-<!--    <dfn id="gallery"></dfn>-->
-    <!--            <iframe width="560" height="315" src="https://www.youtube.com/embed/0ANLBX2EgmM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
-    <div>
-        <img src="assets/img/Gallery01.jpg" alt="" width="300" height="">
+<div class="section_4" id="gallery">
+    <div class="section_name gallery_name">
+        <h2>Loving Memories</h2>
     </div>
-    <div>
-        <img src="assets/img/Gallery02.jpg" alt="" width="300" height="">
-    </div>
-    <div>
-        <img src="assets/img/Gallery03.jpg" alt="" width="300" height="">
-    </div>
-    <div>
-        <img src="assets/img/Gallery04.jpg" alt="" width="300" height="">
-    </div>
-    <div>
-        <img src="assets/img/Gallery05.jpg" alt="" width="300" height="">
-    </div>
-    <div>
-        <img src="assets/img/Gallery06.jpg" alt="" width="300" height="">
-    </div>
-    <div>
-        <img src="assets/img/Gallery07.jpg" alt="" width="300" height="">
-    </div>
-    <div>
-        <img src="assets/img/Gallery08.jpg" alt="" width="300" height="">
-    </div>
-    <div>
-        <img src="assets/img/Gallery09.jpg" alt="" width="300" height="">
-    </div>
-    <article>
-        <div><h2>Gallery</h2></div>
-        <div><h3>I declare this world is so beautiful that i can hardly believe it exists</h3></div>
-    </article>
 
-</section>
+    <div class="main_raw">
+        <div class="row">
+            <div class="column">
+                <img src="assets/img/neluwa_1.jpg" alt="">
+                <img src="assets/img/neluwa_mountain.jpg" alt="">
+                <img src="assets/img/beach_2.jpg" alt="">
+                <img src="assets/img/train.jpg" alt="">
+                <img src="assets/img/gallefort.jpg" alt="">
+            </div>
+            <div class="column">
+                <img src="assets/img/black&white_1.jpg" alt="">
+                <img src="assets/img/beach_3.jpg" alt="">
+                <img src="assets/img/fatna.jpg" alt="">
+                <img src="assets/img/jaffna.jpg" alt="">
+                <img src="assets/img/neluwa_2.jpg" alt="">
+            </div>
+            <div class="column">
+                <img src="assets/img/sripada_1.jpg" alt="">
+                <img src="assets/img/black&white_2.jpg" alt="">
+                <img src="assets/img/gang.jpg" alt="">
+                <img src="assets/img/sunset_1.jpg" alt="">
+            </div>
 
-<hr>
+        </div>
+    </div>
+    <br><br>
+</div>
 
 
 <!-- Contact -->
 
 <section id="contact">
-<!--    <dfn id="contact"></dfn>-->
-    <div><h2>Contact</h2></div>
-    <div><img src="assets/img/ContactPic.png" alt="" width="300" height=""></div>
+    <!--<dfn id="contact"></dfn>-->
+    <div class="section_name">
+        <h2>Let's Get To Know Each Other</h2>
+    </div>
+    <div class="contact_box">
+        <div class="contact_information">
 
-    <section>
-        <div>
-            <h5>Address</h5>
-            <ul>
-                <li>No: 4,2 School Lane Kahawa</li>
-            </ul>
+            <img src="picfolder/contact_us.jpg" alt="" width="400">
 
-        </div>
-        <div>
-            <h5>Gmail</h5>
-            <address>
-                <ul>
-                    <li><a href="mailto:tharaniharshika1@gmail">tharaniharshika1@gmail.com</a></li>
-                </ul>
-            </address>
-
+            <section class="con_details">
+                <h4>Contact Me Through Your Mobile <br> <a href="tel:+94764658101"> +94764658101 </a><br> or <br> Send an Email <br>
+                    <a href="mailto:tharaniharshika1@gmail"> tharaniharshika1@gmail.com</a>
+                </h4>
+            </section>
 
         </div>
-        <div>
-            <h5>Call me</h5>
-            <address>
-                <ul>
-                    <li>
-                        <a href="tel:0764658101">0764658101</a>
-                    </li>
-                </ul>
 
-            </address>
-        </div>
+        <section>
 
-    </section>
+            <form action="Submit" method="post">
+                <fieldset>
+                    <legend>Send Your Masseges</legend><br>
 
-    <section>
+                    <input name="fName" id="txtFName" type="text" placeholder="Enter Your First Name">
 
-        <br>
-        <form action="Submit" method="post">
-            <fieldset>
-                <!--                   <legend> Contact Me </legend><br>-->
-                <h2>Contact Me</h2>
+                    <input name="fName" id="txtLName" type="text" placeholder="Enter Your Last Name">
 
-                <br>
-                <br>
-                <label for="txtFName">Enter Your First Name</label>
-                <input name="fName" id="txtFName" type="text">
+                    <input name="fName" id="telnum" type="tel" placeholder="Enter Your Contact Number">
 
-                <br>
-                <br>
-                <label for="txtLName">Enter Your Last Name</label>
-                <input name="fName" id="txtLName" type="text">
+                    <textarea name="tp" id="txtMsg" placeholder="Enter Your Massage"></textarea>
 
-                <br>
-                <br>
-                <label for="txtMsg">Enter Your Massage</label>
-                <input name="tp" id="txtMsg" type="tel">
+                    <button class="form_submit">Send <i>to</i> Me</button>
+                </fieldset>
+            </form>
 
-                <br>
-                <br>
-                <button>Submit</button>
-            </fieldset>
+        </section>
+    </div>
 
-        </form>
-    </section>
 </section>
 
-
 <footer>
-    <h3>Thank You</h3>
+    <h1 class="thanks_msg">Thank You</h1>
+    <div class="social_icon">
+        <div class="wrapper">
+            <div class="button">
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+                <a href="https://www.facebook.com/tharani.harshika.1" target="_blank"><span>Facebook</span></a>
+            </div>
+            <div class="button">
+                <div class="icon">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <a href="https://www.instagram.com/harshikatharani/" target="_blank"><span>Instagram</span></a>
+            </div>
+            <div class="button">
+                <div class="icon">
+                    <i class="fab fa-linkedin"></i>
+                </div>
+                <a href="https://www.linkedin.com/in/tharani-harshika-dadallage-245743264/"
+                   target="_blank"><span>LinkedIn</span></a>
+            </div>
+            <div class="button">
+                <div class="icon">
+                    <i class="fab fa-github"></i>
+                </div>
+                <a href="https://github.com/Tharni98" target="_blank"><span>GitHub</span></a>
+            </div>
+            <div class="button">
+                <div class="icon">
+                    <i class="fab fa-twitter"></i>
+                </div>
+                <a href="https://twitter.com/HarshikaTh91095" target="_blank"><span>Twitter</span></a>
+
+            </div>
+            <div class="button">
+                <div class="icon">
+                    <i class="fab fa-youtube"></i>
+                </div>
+                <a href="https://www.youtube.com/channel/UCMKUxdihfO-bunnGxEsrh6g"
+                   target="_blank"><span>YouTube</span></a>
+            </div>
+        </div>
+        <h3>© 2023. All rights reserved.</h3>
+    </div>
 </footer>
 
-
-
-
+<script src="assets/javaScript/js.js"></script>
 
 </body>
 
