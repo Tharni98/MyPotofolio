@@ -6,7 +6,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: var(--scroll-padding, 54px);
+    scroll-padding-top: 54px;
 }
 
 /*Navigation Bar*/
@@ -59,13 +59,13 @@ nav.navbar a {
     height: 3px;
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
-    transform-origin: right;
+    transform-origin: center;
     transform: scaleX(0);
     transition: transform 0.5s;
 }
 
 .navbar a:hover::after {
-    transform-origin: left;
+    transform-origin: center;
     transform: scaleX(1);
 }
 
