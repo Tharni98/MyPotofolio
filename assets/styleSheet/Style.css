@@ -3,6 +3,10 @@
     padding: 0;
     font-family: sans-serif;
 }
+body{
+    overflow-x: hidden ;
+}
+
 
 html {
     scroll-behavior: smooth;
@@ -359,6 +363,7 @@ p.line_discription {
     padding: 0 20px;
     border-left: solid 2px #ffeee8;
     margin-left: 350px;
+    margin-right: 320px;
 }
 
 .ensColumns .ensContentBox .endBox {
@@ -371,7 +376,7 @@ p.line_discription {
     margin-bottom: 30px;
     cursor: pointer;
     align-self: center;
-    width: 70%;
+    width: 100%;
     background: linear-gradient(to right, #012a4a, #013a63, #01497c, #014f86, #2a6f97, #2c7da0, #468faf, #61a5c2, #75bbd7, #91cbe0);
 }
 
