@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Orders</title>
+    <title>Order</title>
     <meta name="viewport" content="width=device-width initial-scale=1 user-scalable=no">
     <link rel="stylesheet" href="assets/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,12 +12,13 @@
     <link rel="stylesheet" href="assets/style.css">
     <script src="assets/js/bootstrap.js"></script>
 </head>
+</head>
 <body class="bg-black">
 <header>
     <nav class="navbar navbar-expand-md  bg-black border-bottom border-white">
         <div class="container-fluid">
-            <a class="navbar-brand  text-warning" href="#">POS System</a>
-            <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+            <a class="navbar-brand  text-warning" href="#">Beauty Cosmetics</a>
+            <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -34,24 +35,212 @@
                         <a class="nav-link text-white" href="item.html">Items</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-warning" href="order.html">Orders</a>
+                        <a class="nav-link text-white" href="order.html">Orders</a>
                     </li>
                 </ul>
-                <!--                <form class="d-flex" role="search">-->
-                <!--                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">-->
-                <!--                    <button class="btn btn-outline-success" type="submit">Search</button>-->
-                <!--                </form>-->
-                <button type="button" class="btn btn-outline-warning">Sign Up</button>
+                <form class="d-flex me-3" role="search">
+                    <input class="form-control me-2 bg-black border border-white text-white" type="search"
+                           placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
             </div>
         </div>
     </nav>
 </header>
-</body>
-</html><head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
 
+<main class="container-fluid">
+    <section class="row p-4 m-0">
+<!--        <nav aria-label="breadcrumb" class="text-white">-->
+<!--            <ol class="breadcrumb">-->
+<!--                <li class="breadcrumb-item text-white"><a href="index.html">Home</a></li>-->
+<!--                <li class="breadcrumb-item active text-white" aria-current="page">Place Order</li>-->
+<!--            </ol>-->
+<!--        </nav>-->
+
+        <!--        <h5 class="text-warning text-lg-start" >Customer Management</h5>-->
+        <div class="col border-warning m-3 border rounded">
+            <h5 class="text-warning text-center m-lg-3 pt-2">Place A New Order</h5>
+
+            <div class="row ">
+<!--                <h6 class="text-white">Invoice Details</h6>-->
+                <form class=" me-3">
+                    <div class="row border-bottom border-white">
+                        <div class="mb-1 col">
+                            <label for="InputOID" class="form-label text-white">Order ID</label>
+                            <input type="text"
+                                   class="form-control bg-black border-white text-warning focus-ring-warning"
+                                   id="InputOID" readonly>
+                        </div>
+                        <div class="mb-1 col mb-4">
+                            <label for="InputDate" class="form-label text-white">Date</label>
+                            <input type="date"
+                                   class="form-control bg-black border-white text-warning focus-ring-warning focus-ring"
+                                   id="InputDate">
+                        </div>
+                    </div>
+
+<!--                    <h6 class="text-warning mt-4">Customer Details</h6>-->
+
+                    <div class="row border-bottom border-white">
+                        <div class="mb-1 col">
+                            <label for="selectCusId" class="form-label text-white">Cust ID</label>
+                            <select class="form-select bg-black text-warning focus-ring-warning focus-ring"
+                                    aria-label="Default select example" id="selectCusId">
+                                <option selected>Open this select menu</option>
+                                <option value="1">C-001</option>
+                                <option value="2">C-002</option>
+                                <option value="3">C-003</option>
+                            </select>
+                        </div>
+                        <div class="mb-1 col mb-4">
+                            <label for="Name" class="form-label text-white">Name</label>
+                            <input type="text"
+                                   class="form-control bg-black border-white text-warning focus-ring-warning focus-ring "
+                                   id="Name" readonly>
+                        </div>
+                    </div>
+
+<!--                    <h6 class="text-warning mt-4">Code</h6>-->
+
+                    <div class="row">
+                        <div class="mb-1 col">
+                            <label for="selectItemId" class="form-label text-white">Code</label>
+                            <select class="form-select bg-black text-warning focus-ring-warning focus-ring"
+                                    aria-label="Default select example" id="selectItemId">
+                                <option selected>Open this select menu</option>
+                                <option value="1">I-001</option>
+                                <option value="2">I-002</option>
+                                <option value="3">I-003</option>
+                            </select>
+                        </div>
+                        <div class="mb-1 col mb-4">
+                            <label for="ItemName" class="form-label text-white">Description</label>
+                            <input type="text"
+                                   class="form-control bg-black border-white text-warning focus-ring-warning focus-ring "
+                                   id="ItemName" readonly>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="mb-1 col">
+                            <label for="UnitPrice" class="form-label text-white">Unit Price</label>
+                            <select class="form-select bg-black text-warning focus-ring-warning focus-ring"
+                                    aria-label="Default select example" id="UnitPrice">
+                                <option selected>Open this select menu</option>
+                                <option value="1">I-001</option>
+                                <option value="2">I-002</option>
+                                <option value="3">I-003</option>
+                            </select>
+                        </div>
+                        <div class="mb-1 col">
+                            <label for="QtyOnHnd" class="form-label text-white">Qty On Hnd</label>
+                            <input type="number"
+                                   class="form-control bg-black border-white text-warning focus-ring-warning focus-ring "
+                                   id="QtyOnHnd" readonly>
+                        </div>
+
+                        <div class="mb-1 col">
+                            <label for="Qty" class="form-label text-white">Qty</label>
+                            <input type="number"
+                                   class="form-control bg-black border-white text-warning focus-ring-warning focus-ring "
+                                   id="Qty">
+                        </div>
+                    </div>
+
+
+                </form>
+            </div>
+
+            <button class="btn btn-outline-light container-fluid mt-5 mb-5" type="submit">Add To Cart</button>
+        </div>
+
+        <div class="col m-3 ">
+            <div class="border rounded border-warning">
+                <h5 class="text-warning mt-4 mb-3 ms-2">Cart</h5>
+                <table class="table text-white ">
+                    <thead class="text-warning">
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Unit Price</th>
+                        <th scope="col">Qty</th>
+                        <th scope="col">Total</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">I-001</th>
+                        <td></td>
+                        <td>15000</td>
+                        <td>1</td>
+                        <td>15000</td>
+                        <td>
+                            <button type="button" class="btn btn-outline-light">Edit</button>
+                            <button type="button" class="btn btn-outline-danger">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">I-002</th>
+                        <td></td>
+                        <td>18000</td>
+                        <td>02</td>
+                        <td>36000</td>
+                        <td>
+                            <button type="button" class="btn btn-outline-light">Edit</button>
+                            <button type="button" class="btn btn-outline-danger">Delete</button>
+                        </td>
+                    </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="row mt-5 border border-warning rounded">
+                <h5 class="text-warning  mt-3 mb-2">Purchase Order</h5>
+                <div class="row">
+                    <div class="mb-1 col">
+                        <button class="btn btn-outline-warning mt-5 mb-5" type="submit">Cancel</button>
+                    </div>
+
+                    <div class="mb-5 col text-warning">
+                        <label for="subTotal" class="form-label "> Total</label>
+                        <input type="number"
+                               class="form-control bg-black border-warning text-warning focus-ring-warning focus-ring mb-4 rounded"
+                               id="subTotal" readonly>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="mb-1 col">
+                        <label for="cash" class="form-label text-white">Cash</label>
+                        <input type="number"
+                               class="form-control bg-black border-white text-warning focus-ring-warning focus-ring "
+                               id="cash">
+                    </div>
+
+                    <div class="mb-1 col">
+                        <label for="discount" class="form-label text-white">Discount</label>
+                        <input type="number"
+                               class="form-control bg-black border-white text-warning focus-ring-warning focus-ring "
+                               id="discount">
+                    </div>
+
+                    <div class="mb-1 col">
+                        <label for="balance" class="form-label text-white">Balance</label>
+                        <input type="number"
+                               class="form-control bg-black border-white text-warning focus-ring-warning focus-ring "
+                               id="balance" readonly>
+                    </div>
+
+                </div>
+                <div class="row ms-1">
+                    <button class="btn btn-outline-warning mt-5 mb-5" type="submit">Purchase</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</main>
 </body>
 </html>
