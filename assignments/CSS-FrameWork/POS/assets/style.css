@@ -50,64 +50,10 @@ h5 {
 
 
 /* ==================== CUSTOMER ============================== */
-.Customer,
-.Item,
-.Order {
-    padding-top: 100px;
-    padding-left: 30px;
-}
 
-
-.Customer .card-img {
-    width: 150px;
-    height: 60px;
-}
-
-.Customer .card {
-    border-color: white;
-}
-
-.Customer .card-title {
-    padding-left: 10px;
-    color: #2f989e;
-    font-size: 25px;
-    font-weight: 500;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-section {
-    height: 100vh;
-    width: 100%;
-    overflow-x: hidden;
-}
-
-.Customer .container {
-    padding-top: 100px;
-
+.form{
 
 }
-
-.Customer .col {
-    height: 240px;
-    width: 200px;
-    background-color: whitesmoke;
-    margin: 50px;
-    border-radius: 30px;
-}
-
-.Customer .col img {
-    margin: 30px;
-    height: 100px;
-    width: 120px;
-}
-
-
-/* customer form */
-.Customer .col-10 {
-
-    margin: 5px;
-}
-
 
 /* ==================== ITEM ============================== */
 .Item .card-img {

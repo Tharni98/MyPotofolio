@@ -1,5 +1,5 @@
 
-/* ---------------- POS System -------------*/
+ POS System 
 
 /*==============   Site map and Wireframe   =============*/
 
