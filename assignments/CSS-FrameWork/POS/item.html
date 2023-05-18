@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Items</title>
+    <meta name="viewport" content="width=device-width initial-scale=1 user-scalable=no">
+    <link rel="stylesheet" href="assets/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Rubik+Iso&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <script src="assets/js/bootstrap.js"></script>
+</head>
+<body class="bg-black">
+<header>
+    <nav class="navbar navbar-expand-md  bg-black border-bottom border-white">
+        <div class="container-fluid">
+            <a class="navbar-brand  text-warning" href="#">POS System</a>
+            <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-white" href="customers.html">Customers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning" href="items.html">Items</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="orders.html">Orders</a>
+                    </li>
+                </ul>
+                <!--                                <form class="d-flex" role="search">-->
+                <!--                                    <input class="form-control me-2 border-warning bg-black text-white placeholder-glow" type="search" placeholder="Search" aria-label="Search">-->
+                <!--                                    <button class="btn btn-outline-success" type="submit">Search</button>-->
+                <!--                                </form>-->
+                <button type="button" class="btn btn-outline-warning">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+</header>
+</body>
+<main>
+    <section class="row p-4 m-0" >
+        <nav aria-label="breadcrumb" class="text-white">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item text-white"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active text-white" aria-current="page">Items</li>
+            </ol>
+        </nav>
+
+        <!--        <h5 class="text-warning text-lg-start" >Customer Management</h5>-->
+        <div class="col-4 border-warning m-3 border rounded">
+            <h5 class="text-warning text-center m-lg-3 pt-5">Add a New Item</h5>
+            <form class="m-5">
+                <div class="mb-3">
+                    <label for="InputID" class="form-label text-white">Item ID</label>
+                    <input type="text" class="form-control bg-black border-white text-warning focus-ring-warning"
+                           id="InputID" readonly>
+                </div>
+                <div class="mb-3">
+                    <label for="InputDesc" class="form-label text-white">Description</label>
+                    <input type="text"
+                           class="form-control bg-black border-white text-warning focus-ring-warning focus-ring"
+                           id="InputDesc">
+                </div>
+                <div class="mb-3">
+                    <label for="inputUnitPrice" class="form-label text-white">Unit Price</label>
+                    <input type="number"
+                           class="form-control bg-black border-white text-warning focus-ring-warning focus-ring"
+                           id="inputUnitPrice">
+                </div>
+                <div class="mb-3">
+                    <label for="inputQty" class="form-label text-white">Quantity</label>
+                    <input type="number"
+                           class="form-control bg-black border-white text-warning focus-ring-warning focus-ring "
+                           id="inputQty">
+                </div>
+                <div class="row m-0 gap-2 mt-5">
+                    <button type="submit" class="btn btn-outline-warning  col">Save</button>
+                    <button type="submit" class="btn btn-outline-light disabled col">Update</button>
+                </div>
+                <!--                <button type="submit" class="btn btn-outline-warning  container-fluid">Save</button>-->
+                <!--                <button type="submit" class="btn btn-outline-light disabled container-fluid">Update</button>-->
+            </form>
+        </div>
+        <div class="col-7 border-white m-3  border-start">
+            <table class="table text-white">
+                <thead class="text-warning">
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Unit Price</th>
+                    <th scope="col">Qty On Hnd</th>
+                    <th scope="col">Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">I-001</th>
+                    <td>Dell Monitor i12</td>
+                    <td>15000</td>
+                    <td>15</td>
+                    <td>
+                        <button type="button" class="btn btn-outline-warning">Edit</button>
+                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">I-002</th>
+                    <td>Lenovo Monitor l24</td>
+                    <td>18000</td>
+                    <td>12</td>
+                    <td>
+                        <button type="button" class="btn btn-outline-warning">Edit</button>
+                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">I-003</th>
+                    <td>CM Casing</td>
+                    <td>7000</td>
+                    <td>20</td>
+                    <td>
+                        <button type="button" class="btn btn-outline-warning">Edit</button>
+                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row">I-004</th>
+                    <td>P47 Headset</td>
+                    <td>2000</td>
+                    <td>10</td>
+                    <td>
+                        <button type="button" class="btn btn-outline-warning">Edit</button>
+                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row">I-005</th>
+                    <td>SDD 128GB</td>
+                    <td>5000</td>
+                    <td>30</td>
+                    <td>
+                        <button type="button" class="btn btn-outline-warning">Edit</button>
+                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row">I-006</th>
+                    <td>SDD 256GB</td>
+                    <td>7600</td>
+                    <td>8</td>
+                    <td>
+                        <button type="button" class="btn btn-outline-warning">Edit</button>
+                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row">I-007</th>
+                    <td>Used PC i3</td>
+                    <td>25000</td>
+                    <td>07</td>
+                    <td>
+                        <button type="button" class="btn btn-outline-warning">Edit</button>
+                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row">I-008</th>
+                    <td>Used PC i5</td>
+                    <td>32000</td>
+                    <td>15</td>
+                    <td>
+                        <button type="button" class="btn btn-outline-warning">Edit</button>
+                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row">I-009</th>
+                    <td>PL Keyboard</td>
+                    <td>1200</td>
+                    <td>20</td>
+                    <td>
+                        <button type="button" class="btn btn-outline-warning">Edit</button>
+                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row">I-010</th>
+                    <td>GL Mouse</td>
+                    <td>850</td>
+                    <td>15</td>
+                    <td>
+                        <button type="button" class="btn btn-outline-warning">Edit</button>
+                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                    </td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+</main>
+</html>

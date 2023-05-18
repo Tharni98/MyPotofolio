@@ -1,3 +1,5 @@
+
+
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +8,7 @@
 body{
     overflow-x: hidden ;
 }
+
 
 html {
     scroll-behavior: smooth;
@@ -100,6 +103,7 @@ section#home {
     font-size: 110px;
     color: #f2e9e4;
     font-family: 'Gabriola', sans-serif;
+    margin-bottom: 10px;
 }
 
 .welcome h2 {
@@ -123,6 +127,7 @@ section#home {
     color: rgb(0, 0, 0);
     font-family: 'Ubuntu', sans-serif;
 }
+
 
 .myImg {
     width: 420px;
@@ -230,7 +235,7 @@ section#home {
 /* -------- About Me --------- */
 
 .section_name {
-    font-size: 50px;
+    font-size: 40px;
     padding: 40px 0;
     text-align: center;
 
@@ -369,7 +374,7 @@ p.line_discription {
 
 .ensColumns .ensContentBox {
     padding: 0 20px;
-    border-left: solid 2px #ffeee8;
+    /*border-left: solid 2px #ffeee8;*/
     margin-left: 150px;
     margin-right: 320px;
     width: 60%;
@@ -636,7 +641,7 @@ section.skill {
     transition: all 0.3s ease-out;
 }
 .wrapperProj .button:nth-child(1):hover .icon{
-    background: #FFA500;
+    background: #a48550;
     margin-left: -29px;
 }
 
@@ -767,7 +772,7 @@ section.skill {
 /* ---------- Contact -----------*/
 
 #contact .section_name {
-    font-size: 45px;
+    font-size: 43px;
     padding: 30px 0;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -804,6 +809,7 @@ section.skill {
 fieldset {
     width: 600px;
     margin: 40px 0;
+    left: 20px;
     padding: 40px 0;
     border: none;
 }
@@ -819,8 +825,9 @@ input, #txtMsg {
     height: 40px;
     font-size: 15px;
     padding: 4px 8px;
-    border: 1px solid black;
-    border-radius: 5px;
+    box-shadow: 0 0 8px 5px rgb(94, 93, 93);
+    border-radius: 8px;
+    border: none;
 
 }
 
@@ -837,7 +844,7 @@ textarea#txtMsg {
 }
 
 .contact_box button.form_submit {
-    width: 120px;
+    width: 400px;
     height: 30px;
     border: 1px solid black;
     border-radius: 15px;
@@ -888,6 +895,186 @@ footer h3 {
     padding: 30px 0;
 }
 
+/*============= responsive ==================*/
+
+
+/*-------  Mobile size --------*/
+
+@media screen and (max-width: 480px) {
+    .main_navbar {
+        padding: 10px;
+    }
+
+    .main_navbar h3 a {
+        font-size: 20px;
+    }
+
+    nav.navbar a {
+        margin-left: 20px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .main_navbar {
+        padding: 8px;
+    }
+
+    .main_navbar h3 a {
+        font-size: 20px;
+    }
+
+    nav.navbar a {
+        margin-left: 25px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .main_navbar {
+        padding: 5px;
+    }
+
+    .main_navbar h3 a {
+        font-size: 18px;
+    }
+
+    nav.navbar a {
+        margin-left: 15px;
+        font-size: 12px;
+    }
+
+    /*---------- home ----------*/
+
+    .welcome h1 {
+        font-size: 90px;
+    }
+
+    .welcome h2 {
+        font-size: 55px;
+    }
+
+    .welcome h3 {
+        font-size: 35px;
+    }
+
+    .welcome h5 {
+        font-size: 22px;
+    }
+
+    .myImg {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    .main_navbar {
+        padding: 5px;
+    }
+
+    .main_navbar h3 a {
+        font-size: 16px;
+    }
+
+    nav.navbar a {
+        margin-left: 10px;
+        font-size: 10px;
+    }
+    /*---------- home ---------  */
+
+    section#home {
+            padding: 5% 4% 0 4%;
+
+        }
+
+    .welcome{
+        bottom: 30%;
+    }
+
+    .welcome h1 {
+        font-size: 80px;
+    }
+
+    .welcome h2 {
+        font-size: 50px;
+    }
+
+    .welcome h3 {
+        font-size: 30px;
+    }
+
+    .welcome h5 {
+        font-size: 20px;
+    }
+
+    .myImg {
+        width: 250px;
+        height: 250px;
+    }
+
+    .icon{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/*------ about -----*/
+
+
+@media screen and (min-width: 768px) {
+    .main_navbar {
+        padding: 10px 100px;
+    }
+
+    .main_navbar h3 a {
+        font-size: 30px;
+    }
+
+    nav.navbar a {
+        margin-left: 40px;
+        font-size: 20px;
+        font-weight: 520;
+    }
+}
+
+/*------------ lap size --------------*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .main_navbar {
+        padding: 10px 50px;
+    }
+
+    .main_navbar h3 a {
+        font-size: 24px;
+    }
+
+    nav.navbar a {
+        margin-left: 30px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+    .main_navbar {
+        padding: 10px 100px;
+    }
+
+    .main_navbar h3 a {
+        font-size: 28px;
+    }
+
+    nav.navbar a {
+        margin-left: 35px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1281px) {
+    .main_navbar {
+        padding: 10px 150px;
+    }
+}
 
 
 
