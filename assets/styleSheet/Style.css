@@ -147,7 +147,8 @@ section#home {
 .welcome h5 {
     font-size: 25px;
     color: rgb(0, 0, 0);
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Abril Fatface', cursive;
+    /*font-family: 'Ubuntu', sans-serif;*/
 }
 
 
@@ -536,7 +537,7 @@ section.skill {
 
 @keyframes mymove {
     0% {
-        left: 0px;
+        left: 0;
         right: 20px;
     }
     25%{
