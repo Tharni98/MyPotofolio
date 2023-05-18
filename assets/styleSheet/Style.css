@@ -315,7 +315,8 @@ article.aboutArticle p a {
 }
 
 p.line_discription {
-    font-size: 21px;
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .aboutArticle a {
