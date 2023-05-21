@@ -16,7 +16,7 @@
 <body>
 <header>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow custom-navbar bg-body-tertiary">
-        <div class="container-fluid" style="background-color: #008b6f; height: 80px;">
+        <div class="container-fluid" style="background-color: #008b6f; height: 70px;">
             <img src="assets/img/Cosmatic.jpg" alt="Flower Store" class="img-responsive custom-logo"
                  style="height: 70px; width: 70px; border: 2px solid rgb(182, 182, 182); border-radius: 50%; margin: 10px;">
             <a class="navbar-brand"
@@ -54,138 +54,159 @@
 </header>
 
 <main class="object-fit-contain">
-    <section class="row p-4 m-0">
-<!--        <nav aria-label="breadcrumb" class="text-white">-->
-<!--            <ol class="breadcrumb">-->
-<!--                <li class="breadcrumb-item text-white"><a href="index.html">Home</a></li>-->
-<!--                <li class="breadcrumb-item active text-white" aria-current="page">Customers</li>-->
-<!--            </ol>-->
-<!--        </nav>-->
+    <section class="row p-4 mt-5 bg" style="background-color:#D9D9D9" >
 
         <!--        <h5 class="text-warning text-lg-start" >Customer Management</h5>-->
-        <div class="col-4 border-warning m-3 border rounded">
-            <h5 class="text-warning text-center m-lg-3 pt-5" >Add a New Customer</h5>
+        <div class="col-4 border-black m-3 border rounded">
+            <h5 class="text-black text-center m-lg-3 pt-5">Add a New Customer</h5>
             <form class="m-5">
                 <div class="mb-3">
-                    <label for="InputID" class="form-label text-white">Customer ID</label>
-                    <input type="text" class="form-control bg-black border-white text-warning focus-ring-warning" id="InputID" readonly>
+                    <label for="InputID" class="form-label text-black">Item ID</label>
+                    <input type="text" class="form-control bg-black border-white text-warning focus-ring-warning"
+                           id="InputID" readonly>
                 </div>
                 <div class="mb-3">
-                    <label for="InputName" class="form-label text-white">Name</label>
-                    <input type="text" class="form-control bg-black border-white text-warning focus-ring-warning focus-ring" id="InputName">
+                    <label for="InputDesc" class="form-label text-black">Description</label>
+                    <input type="text"
+                           class="form-control bg-black border-white text-warning focus-ring-warning focus-ring"
+                           id="InputDesc">
                 </div>
                 <div class="mb-3">
-                    <label for="inputAddress" class="form-label text-white">Address</label>
-                    <input type="text" class="form-control bg-black border-white text-warning focus-ring-warning focus-ring" id="inputAddress">
+                    <label for="inputUnitPrice" class="form-label text-black">Unit Price</label>
+                    <input type="number"
+                           class="form-control bg-black border-white text-warning focus-ring-warning focus-ring"
+                           id="inputUnitPrice">
                 </div>
                 <div class="mb-3">
-                    <label for="inputContact" class="form-label text-white">Contact</label>
-                    <input type="tel" class="form-control bg-black border-white text-warning focus-ring-warning focus-ring " id="inputContact">
+                    <label for="inputQty" class="form-label text-black">Quantity</label>
+                    <input type="number"
+                           class="form-control bg-black border-white text-warning focus-ring-warning focus-ring "
+                           id="inputQty">
                 </div>
                 <div class="row m-0 gap-2 mt-5">
-                    <button type="submit" class="btn btn-outline-warning  col">Save</button>
-                    <button type="submit" class="btn btn-outline-light disabled col">Update</button>
+                    <button type="submit" class="btn btn-outline-dark  col">Save</button>
+                    <button type="submit" class="btn btn-outline-dark col">Update</button>
                 </div>
                 <!--                <button type="submit" class="btn btn-outline-warning  container-fluid">Save</button>-->
                 <!--                <button type="submit" class="btn btn-outline-light disabled container-fluid">Update</button>-->
             </form>
         </div>
         <div class="col-7 border-white m-3  border-start">
-            <table class="table text-white">
-                <thead class="text-warning">
+            <table class="table text-bg-secondary">
+                <thead class="text-black">
                 <tr>
                     <th scope="col">ID</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Address</th>
-                    <th scope="col">Contact</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Unit Price</th>
+                    <th scope="col">Qty On Hnd</th>
                     <th scope="col">Action</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
-                    <th scope="row">1</th>
-                    <td>Tharani</td>
-                    <td>Ambalangoda</td>
-                    <td>0764658101</td>
-                    <td><button type="button" class="btn btn-outline-warning">Edit</button>
+                    <th scope="row">I-001</th>
+                    <td></td>
+                    <td>15000</td>
+                    <td>15</td>
+                    <td>
+                        <button type="button" class="btn btn-outline-success">Edit</button>
                         <button type="button" class="btn btn-outline-danger">Delete</button>
                     </td>
                 </tr>
                 <tr>
-                    <th scope="row">2</th>
-                    <td>Nehan</td>
-                    <td>Ambalangoda</td>
-                    <td>0764658101</td>
-                    <td><button type="button" class="btn btn-outline-warning">Edit</button>
+                    <th scope="row">I-002</th>
+                    <td></td>
+                    <td>18000</td>
+                    <td>12</td>
+                    <td>
+                        <button type="button" class="btn btn-outline-success">Edit</button>
                         <button type="button" class="btn btn-outline-danger">Delete</button>
                     </td>
                 </tr>
                 <tr>
-                    <th scope="row">3</th>
-                    <td>Kavidu</td>
-                    <td>Ambalangoda</td>
-                    <td>0764658101</td>
-                    <td><button type="button" class="btn btn-outline-warning">Edit</button>
-                        <button type="button" class="btn btn-outline-danger">Delete</button>
-                    </td>
-                </tr>
-
-                <tr>
-                    <th scope="row">4</th>
-                    <td>Sachin</td>
-                    <td>Ambalangoda</td>
-                    <td>0764658101</td>
-                    <td><button type="button" class="btn btn-outline-warning">Edit</button>
+                    <th scope="row">I-003</th>
+                    <td></td>
+                    <td>7000</td>
+                    <td>20</td>
+                    <td>
+                        <button type="button" class="btn btn-outline-success">Edit</button>
                         <button type="button" class="btn btn-outline-danger">Delete</button>
                     </td>
                 </tr>
 
                 <tr>
-                    <th scope="row">5</th>
-                    <td>Ama</td>
-                    <td>Ambalangoda</td>
-                    <td>0764658101</td>
-                    <td><button type="button" class="btn btn-outline-warning">Edit</button>
+                    <th scope="row">I-004</th>
+                    <td></td>
+                    <td>2000</td>
+                    <td>10</td>
+                    <td>
+                        <button type="button" class="btn btn-outline-success">Edit</button>
                         <button type="button" class="btn btn-outline-danger">Delete</button>
                     </td>
                 </tr>
 
                 <tr>
-                    <th scope="row">6</th>
-                    <td>Onitha</td>
-                    <td>Ambalangoda</td>
-                    <td>0764658101</td>
-                    <td><button type="button" class="btn btn-outline-warning">Edit</button>
+                    <th scope="row">I-005</th>
+                    <td></td>
+                    <td>5000</td>
+                    <td>30</td>
+                    <td>
+                        <button type="button" class="btn btn-outline-success">Edit</button>
                         <button type="button" class="btn btn-outline-danger">Delete</button>
                     </td>
                 </tr>
 
                 <tr>
-                    <th scope="row">7</th>
-                    <td>Anugi</td>
-                    <td>Ambalangoda</td>
-                    <td>0764658101</td>
-                    <td><button type="button" class="btn btn-outline-warning">Edit</button>
+                    <th scope="row">I-006</th>
+                    <td></td>
+                    <td>7600</td>
+                    <td>8</td>
+                    <td>
+                        <button type="button" class="btn btn-outline-success">Edit</button>
                         <button type="button" class="btn btn-outline-danger">Delete</button>
                     </td>
                 </tr>
 
                 <tr>
-                    <th scope="row">8</th>
-                    <td>Vishmi</td>
-                    <td>Ambalangoda</td>
-                    <td>0764658101</td>
-                    <td><button type="button" class="btn btn-outline-warning">Edit</button>
+                    <th scope="row">I-007</th>
+                    <td></td>
+                    <td>25000</td>
+                    <td>07</td>
+                    <td>
+                        <button type="button" class="btn btn-outline-success">Edit</button>
                         <button type="button" class="btn btn-outline-danger">Delete</button>
                     </td>
                 </tr>
 
                 <tr>
-                    <th scope="row">9</th>
-                    <td>Chanuga</td>
-                    <td>Ambalangoda</td>
-                    <td>0764658101</td>
-                    <td><button type="button" class="btn btn-outline-warning">Edit</button>
+                    <th scope="row">I-008</th>
+                    <td></td>
+                    <td>32000</td>
+                    <td>15</td>
+                    <td>
+                        <button type="button" class="btn btn-outline-success">Edit</button>
+                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row">I-009</th>
+                    <td></td>
+                    <td>1200</td>
+                    <td>20</td>
+                    <td>
+                        <button type="button" class="btn btn-outline-success">Edit</button>
+                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row">I-010</th>
+                    <td></td>
+                    <td>850</td>
+                    <td>15</td>
+                    <td>
+                        <button type="button" class="btn btn-outline-success">Edit</button>
                         <button type="button" class="btn btn-outline-danger">Delete</button>
                     </td>
                 </tr>
