@@ -1133,7 +1133,7 @@ footer h3 {
 
 
 
-@media screen and (max-width: 320px) {
+@media All and (max-width: 320px) {
     .main_navbar {
         padding: 5px;
     }
@@ -1150,7 +1150,11 @@ footer h3 {
     /*---- */
     section#home {
         padding: 5% 4% 0 4%;
-        display: inline-flex;
+    }
+
+    .welcome{
+        padding-top: 120%;
+        text-align: center;
     }
 
     .welcome h1 {
@@ -1170,15 +1174,23 @@ footer h3 {
     }
 
     .myImg {
-        top: 8%;
+        right: 200px;
+        top: 10%;
         width: 250px;
         height: 250px;
         border-width: 3px;
         box-shadow: 0 0 5px 2px rgba(2, 0, 0, 0.5);
+        display: block;
+        /*margin-left: auto;*/
+        /*margin-right: auto;*/
+        /*width: 50%;*/
     }
 
     .social-icon {
         width: 250px;
+        position: absolute;
+        background-color: green;
+
     }
 
     .wrapper {
@@ -1212,34 +1224,21 @@ footer h3 {
         margin-left: 3px;
     }
 
-    /*----*/
-    /*.AboutMainSec {*/
-    /*    padding-bottom: 20px;*/
-    /*}*/
-    /*.aboutImg {*/
-    /*    !*width: 10%;*!*/
-    /*    !*height: 30%;*!*/
-    /*    !*height: 400px;*!*/
-    /*    !*width: 300px;*!*/
-    /*    !*height: 525px;*!*/
-    /*    !*width: 700px;*!*/
-    /*    right: 30px;*/
-    /*    width: 600px;*/
-    /*    height: 525px;*/
-    /*    margin-right: 50px;*/
-    /*}*/
-    /*}*/
-    /*div.aboutPara {*/
-    /*    padding: 0 10px;*/
-    /*}*/
-    /*article.aboutArticle{*/
-    /*    right: 250px;*/
-    /*    width: 500px;*/
-    /*    top: 500px;*/
-    /*}*/
-    /*.fileclip_img {*/
-    /*    right: 300px;*/
-    /*}*/
+    .aboutImg{
+        display: none;
+    }
+    .aboutArticle{
+        width: 100vw;
+        margin-left: 17%;
+    }
+    .aboutPara{
+        width: 100vw;
+        margin-left: 10px;
+    }
+    }
+
+
+/*============================================================*/
     @media screen and (min-width: 768px) {
         .main_navbar {
             padding: 10px 100px;
@@ -1292,7 +1291,6 @@ footer h3 {
             padding: 10px 150px;
         }
     }
-}
 
 
 
