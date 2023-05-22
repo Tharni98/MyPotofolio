@@ -924,16 +924,16 @@ textarea#txtMsg {
 }
 
 
-/* Media queries */
-@media only screen and (max-width: 768px) {
-    .contact_box {
-        padding: 50px 15%;
-    }
+/*!* Media queries *!*/
+/*@media only screen and (max-width: 768px) {*/
+/*    .contact_box {*/
+/*        padding: 50px 15%;*/
+/*    }*/
 
-    fieldset {
-        width: 100%;
-    }
-}
+/*    fieldset {*/
+/*        width: 100%;*/
+/*    }*/
+/*}*/
 
 @media only screen and (max-width: 1024px) {
     .contact_box {
@@ -969,6 +969,262 @@ footer h3 {
 
 
 /*-------  Mobile size --------*/
+
+@media All and (max-width: 320px) {
+    .main_navbar {
+        padding: 5px;
+    }
+
+    .main_navbar h3 a {
+        font-size: 16px;
+    }
+
+    nav.navbar a {
+        margin-left: 10px;
+        font-size: 10px;
+    }
+
+    /*---- */
+    section#home {
+        height: 130vh;
+        padding: 5% 4% 0 4%;
+    }
+
+    .welcome{
+        padding-left: 50px;
+        padding-top: 126%;
+        text-align: center;
+    }
+
+    .welcome h1 {
+        font-size: 65px;
+        margin-top: 60px;
+    }
+
+    .welcome h2 {
+        font-size: 20px;
+    }
+
+    .welcome h3 {
+        font-size: 15px;
+    }
+
+    .welcome h5 {
+        font-size: 13px;
+    }
+
+    .myImg {
+        right: 92%;
+        top: 10%;
+        width: 250px;
+        height: 250px;
+        border-width: 3px;
+        box-shadow: 0 0 5px 2px rgba(2, 0, 0, 0.5);
+        display: block;
+        /*margin-left: auto;*/
+        /*margin-right: auto;*/
+        /*width: 50%;*/
+    }
+
+    .social-icon {
+        height: 50vh;
+        width: 50vw;
+        position: absolute;
+        background-color: green;
+
+    }
+
+    .wrapper {
+        padding: 50px 5%;
+    }
+
+    .wrapper .button {
+        height: 40px;
+        width: 40px;
+    }
+
+    .wrapper .button:hover {
+        width: 120px;
+    }
+
+    .wrapper .button .icon {
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+    }
+
+    .wrapper .button .icon i {
+        font-size: 18px;
+        line-height: 40px;
+    }
+
+    .wrapper .button span,
+    .wrapper .button a {
+        font-size: 14px;
+        line-height: 40px;
+        margin-left: 3px;
+    }
+
+    /* ---- */
+    .aboutImg{
+        display: none;
+    }
+    .aboutArticle{
+        width: 100vw;
+        margin-left: 19%;
+    }
+    .aboutPara{
+        text-align: justify;
+        font-size: 20px;
+        width: 100vw;
+        margin-left: 10px;
+    }
+    div.fileclip_img{
+        width: 100%;
+        height: 100%;
+        margin-left: 43px;
+
+    }
+
+    /* ------- */
+
+    .ensColumns .ensContentBox .endBox {
+        width: 50%;
+        left: 50px;
+    }
+
+    /* ------- */
+
+    .main_set {
+        width: 70%;
+    }
+    .one_set, .second_set {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+
+    }
+    .box_one_set{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .box_second_set{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .one_set, .second_set {
+        /*display: flex;*/
+        /*justify-content: space-between;*/
+        padding: 0 0 0 0;
+    }
+
+
+
+    /* ---------- */
+    .project_set .block {
+        width: 150px;
+        height: 250px;
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #project .project_set {
+         display: block;
+        margin: 0 48px;
+        /*padding: 3% 10% 5% 10%;*/
+
+
+    }
+    .project_set first_p
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 375px) {
+    .main_navbar {
+        padding: 5px;
+    }
+
+    .main_navbar h3 a {
+        font-size: 18px;
+    }
+
+    nav.navbar a {
+        margin-left: 15px;
+        font-size: 12px;
+    }
+
+    /*-------*/
+
+
+    section#home {
+        padding: 5% 4% 0 4%;
+    }
+
+    .welcome h1 {
+        font-size: 80px;
+    }
+
+    .welcome h2 {
+        font-size: 50px;
+    }
+
+    .welcome h3 {
+        font-size: 35px;
+    }
+
+    .welcome h5 {
+        font-size: 20px;
+    }
+
+    .myImg {
+        width: 300px;
+        height: 300px;
+        border-width: 4px;
+        box-shadow: 0 0 8px 4px rgba(2, 0, 0, 0.5);
+    }
+
+    .social-icon {
+        width: 300px;
+    }
+
+    .wrapper {
+        padding: 60px 5%;
+    }
+
+    .wrapper .button {
+        height: 50px;
+        width: 50px;
+    }
+
+    .wrapper .button:hover {
+        width: 150px;
+    }
+
+    .wrapper .button .icon {
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+    }
+
+    .wrapper .button .icon i {
+        font-size: 20px;
+        line-height: 50px;
+    }
+
+    .wrapper .button span,
+    .wrapper .button a {
+        font-size: 16px;
+        line-height: 50px;
+        margin-left: 5px;
+    }
+}
+
 
 
 @media screen and (max-width: 425px) {
@@ -1050,197 +1306,8 @@ footer h3 {
 
 }
 
-@media screen and (max-width: 375px) {
-    .main_navbar {
-        padding: 5px;
-    }
 
-    .main_navbar h3 a {
-        font-size: 18px;
-    }
-
-    nav.navbar a {
-        margin-left: 15px;
-        font-size: 12px;
-    }
-
-    /*-------*/
-
-
-        section#home {
-            padding: 5% 4% 0 4%;
-        }
-
-        .welcome h1 {
-            font-size: 80px;
-        }
-
-        .welcome h2 {
-            font-size: 50px;
-        }
-
-        .welcome h3 {
-            font-size: 35px;
-        }
-
-        .welcome h5 {
-            font-size: 20px;
-        }
-
-        .myImg {
-            width: 300px;
-            height: 300px;
-            border-width: 4px;
-            box-shadow: 0 0 8px 4px rgba(2, 0, 0, 0.5);
-        }
-
-        .social-icon {
-            width: 300px;
-        }
-
-        .wrapper {
-            padding: 60px 5%;
-        }
-
-        .wrapper .button {
-            height: 50px;
-            width: 50px;
-        }
-
-        .wrapper .button:hover {
-            width: 150px;
-        }
-
-        .wrapper .button .icon {
-            height: 50px;
-            width: 50px;
-            line-height: 50px;
-        }
-
-        .wrapper .button .icon i {
-            font-size: 20px;
-            line-height: 50px;
-        }
-
-        .wrapper .button span,
-        .wrapper .button a {
-            font-size: 16px;
-            line-height: 50px;
-            margin-left: 5px;
-        }
-    }
-
-
-
-
-@media All and (max-width: 320px) {
-    .main_navbar {
-        padding: 5px;
-    }
-
-    .main_navbar h3 a {
-        font-size: 16px;
-    }
-
-    nav.navbar a {
-        margin-left: 10px;
-        font-size: 10px;
-    }
-
-    /*---- */
-    section#home {
-        height: 130vh;
-        padding: 5% 4% 0 4%;
-    }
-
-    .welcome{
-        padding-left: 50px;
-        padding-top: 120%;
-        text-align: center;
-    }
-
-    .welcome h1 {
-        font-size: 70px;
-    }
-
-    .welcome h2 {
-        font-size: 45px;
-    }
-
-    .welcome h3 {
-        font-size: 30px;
-    }
-
-    .welcome h5 {
-        font-size: 18px;
-    }
-
-    .myImg {
-        right: 92%;
-        top: 10%;
-        width: 250px;
-        height: 250px;
-        border-width: 3px;
-        box-shadow: 0 0 5px 2px rgba(2, 0, 0, 0.5);
-        display: block;
-        /*margin-left: auto;*/
-        /*margin-right: auto;*/
-        /*width: 50%;*/
-    }
-
-    .social-icon {
-        width: 250px;
-        position: absolute;
-        background-color: green;
-
-    }
-
-    .wrapper {
-        padding: 50px 5%;
-    }
-
-    .wrapper .button {
-        height: 40px;
-        width: 40px;
-    }
-
-    .wrapper .button:hover {
-        width: 120px;
-    }
-
-    .wrapper .button .icon {
-        height: 40px;
-        width: 40px;
-        line-height: 40px;
-    }
-
-    .wrapper .button .icon i {
-        font-size: 18px;
-        line-height: 40px;
-    }
-
-    .wrapper .button span,
-    .wrapper .button a {
-        font-size: 14px;
-        line-height: 40px;
-        margin-left: 3px;
-    }
-
-    .aboutImg{
-        display: none;
-    }
-    .aboutArticle{
-        width: 100vw;
-        margin-left: 17%;
-    }
-    .aboutPara{
-        width: 100vw;
-        margin-left: 10px;
-    }
-    }
-
-
-/*============================================================*/
+/* ------------- Tab Size ------------ */
     @media screen and (min-width: 768px) {
         .main_navbar {
             padding: 10px 100px;
@@ -1257,7 +1324,7 @@ footer h3 {
         }
     }
 
-    /*------------ lap size --------------*/
+/*------------ lap size --------------*/
     @media screen and (min-width: 768px) and (max-width: 1024px) {
         .main_navbar {
             padding: 10px 50px;
@@ -1272,6 +1339,7 @@ footer h3 {
             font-size: 18px;
         }
     }
+
 
     @media screen and (min-width: 1025px) and (max-width: 1280px) {
         .main_navbar {
