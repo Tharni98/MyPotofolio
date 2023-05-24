@@ -1006,9 +1006,10 @@ footer h3 {
 
     .main_navbar {
         /*display: none;*/
-        /*padding: 5px;*/
-        /*!*display: flex;*!*/
-        /*flex-direction: column-reverse;*/
+        padding: 5px;
+
+        /*display: flex;*/
+        flex-direction: column-reverse;
     }
 
 
@@ -1035,7 +1036,7 @@ footer h3 {
 
     .welcome{
         padding-left: 50px;
-        padding-top: 126%;
+        padding-top: 92%;
         text-align: center;
     }
 
@@ -1078,7 +1079,8 @@ footer h3 {
     }
 
     .wrapper {
-        padding: 50px 5%;
+        padding: 0px;
+        padding-top: 56px;
     }
 
     .wrapper .button {
@@ -1198,7 +1200,7 @@ footer h3 {
 
 
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 320px) and (max-width: 375px) {
     .main_navbar {
         padding: 5px;
     }
@@ -1228,7 +1230,7 @@ footer h3 {
     }
 
     .welcome h3 {
-        font-size: 35px;
+        font-size: 15px;
     }
 
     .welcome h5 {
@@ -1236,8 +1238,8 @@ footer h3 {
     }
 
     .myImg {
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
         border-width: 4px;
         box-shadow: 0 0 8px 4px rgba(2, 0, 0, 0.5);
     }
@@ -1247,7 +1249,7 @@ footer h3 {
     }
 
     .wrapper {
-        padding: 60px 5%;
+        padding: 56px 0%
     }
 
     .wrapper .button {
@@ -1280,7 +1282,7 @@ footer h3 {
 
 
 
-@media screen and (max-width: 425px) {
+@media screen and (min-width: 375px) and (max-width: 425px) {
     .main_navbar {
         padding: 10px;
     }
@@ -1361,7 +1363,7 @@ footer h3 {
 
 
 /* ------------- Tab Size ------------ */
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 425px) and (max-width:768px ) {
         .main_navbar {
             padding: 10px 100px;
         }

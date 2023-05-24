@@ -39,10 +39,10 @@
             <a class="nav-link" href="#cus-form" id="CustomerForm">Customer</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#itm-form" id="ItemForm">Customer</a>
+            <a class="nav-link" href="#itm-form" id="ItemForm">Item</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#odr-form" id="OrderForm">Customer</a>
+            <a class="nav-link" href="#odr-form" id="OrderForm">Order</a>
           </li>
         </ul>
         <form class="d-flex" role="search">
@@ -65,7 +65,7 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="10000">
-        <img src="assets/img/organic-beauty-products1.jpg" class="d-block w-100" alt="...">
+        <img src="assets/img/organic-beauty-products1.jpg" class="d-block " alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h5>First slide label</h5>
           <p>Some representative placeholder content for the first slide.</p>
@@ -95,31 +95,31 @@
   <section id="cus-form" class="row p-4  bg" style="background-color:#D9D9D9" >
 
     <!--        <h5 class="text-warning text-lg-start" >Customer Management</h5>-->
-    <div class="col-4 border-black m-3 border rounded">
+    <div class="col border-black m-3 border rounded">
       <h5 class="text-black text-center m-lg-3 pt-5">Add a New Customer</h5>
       <form class="m-5">
         <div class="mb-2">
-          <label for="InputID" class="form-label text-black">Item ID</label>
+          <label for="CustInputID" class="form-label text-black">Item ID</label>
           <input type="text" class="form-control bg-black border-white text-warning focus-ring-warning"
-                 id="InputID" readonly>
+                 id="CustInputID" readonly>
         </div>
         <div class="mb-3">
-          <label for="InputDesc" class="form-label text-black">Description</label>
+          <label for="CustInputDesc" class="form-label text-black">Description</label>
           <input type="text"
                  class="form-control bg-black border-white text-warning focus-ring-warning focus-ring"
-                 id="InputDesc">
+                 id="CustInputDesc">
         </div>
         <div class="mb-3">
-          <label for="inputUnitPrice" class="form-label text-black">Unit Price</label>
+          <label for="CustinputUnitPrice" class="form-label text-black">Unit Price</label>
           <input type="number"
                  class="form-control bg-black border-white text-warning focus-ring-warning focus-ring"
-                 id="inputUnitPrice">
+                 id="CustinputUnitPrice">
         </div>
         <div class="mb-3">
-          <label for="inputQty" class="form-label text-black">Quantity</label>
+          <label for="CustinputQty" class="form-label text-black">Quantity</label>
           <input type="number"
                  class="form-control bg-black border-white text-warning focus-ring-warning focus-ring "
-                 id="inputQty">
+                 id="CustinputQty">
         </div>
         <div class="row m-0 gap-2 mt-5">
           <button type="submit" class="btn btn-outline-dark  col">Save</button>
@@ -129,7 +129,7 @@
         <!--                <button type="submit" class="btn btn-outline-light disabled container-fluid">Update</button>-->
       </form>
     </div>
-    <div id=CustomerTbl class="col-7 border-white m-3  border-start">
+    <div id=CustomerTbl class="col border-white m-3  border-start">
       <table class="table text-bg-secondary">
         <thead class="text-black">
         <tr>
@@ -261,31 +261,31 @@
   <section id="itm-form" class="row p-4  bg" style="background-color:#D9D9D9" >
 
     <!--        <h5 class="text-warning text-lg-start" >Customer Management</h5>-->
-    <div class="col-4 border-black m-3 border rounded">
+    <div class="col border-black m-3 border rounded">
       <h5 class="text-black text-center m-lg-3 pt-5">Add a New Item</h5>
       <form class="m-5">
         <div class="mb-3">
-          <label for="InputID" class="form-label text-black">Item ID</label>
+          <label for="ItemInputID" class="form-label text-black">Item ID</label>
           <input type="text" class="form-control bg-black border-white text-warning focus-ring-warning"
-                 id="InputID" readonly>
+                 id="ItemInputID" readonly>
         </div>
         <div class="mb-3">
-          <label for="InputDesc" class="form-label text-black">Description</label>
+          <label for="ItemInputDesc" class="form-label text-black">Description</label>
           <input type="text"
                  class="form-control bg-black border-white text-warning focus-ring-warning focus-ring"
-                 id="InputDesc">
+                 id="ItemInputDesc">
         </div>
         <div class="mb-3">
-          <label for="inputUnitPrice" class="form-label text-black">Unit Price</label>
+          <label for="IteminputUnitPrice" class="form-label text-black">Unit Price</label>
           <input type="number"
                  class="form-control bg-black border-white text-warning focus-ring-warning focus-ring"
-                 id="inputUnitPrice">
+                 id="IteminputUnitPrice">
         </div>
         <div class="mb-3">
-          <label for="inputQty" class="form-label text-black">Quantity</label>
+          <label for="IteminputQty" class="form-label text-black">Quantity</label>
           <input type="number"
                  class="form-control bg-black border-white text-warning focus-ring-warning focus-ring "
-                 id="inputQty">
+                 id="IteminputQty">
         </div>
         <div class="row m-0 gap-2 mt-5">
           <button type="submit" class="btn btn-outline-dark  col">Save</button>
@@ -295,7 +295,7 @@
         <!--                <button type="submit" class="btn btn-outline-light disabled container-fluid">Update</button>-->
       </form>
     </div>
-    <div id=ItemTbl class="col-7 border-white m-3  border-start">
+    <div id=ItemTbl class="col border-white m-3  border-start">
       <table class="table text-bg-secondary">
         <thead class="text-black">
         <tr>
@@ -616,31 +616,7 @@
 <!--</main>-->
 <script src="assets/js/bootstrap.js"></script>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
-<!--<script src="spaJS.js"></script>-->
-<!--<script src="db/db.js"></script>-->
-<!--<script>-->
-<!--  console.log("sdfdsf");-->
 
-<!--  $(document).ready(function (){-->
-<!--    console.log("ok");-->
-<!--  });-->
-
-<!--  $("#isHome").click(function (){-->
-<!--    console.log("ok2");-->
-<!--  });-->
-
-<!--  $("#isCustomer").click(function (){-->
-<!--    console.log("ok3");-->
-<!--  });-->
-
-<!--  $("#np").click(function (){-->
-<!--    console.log("onp1");-->
-<!--  });-->
-
-<!--  $("#np1").click(function (){-->
-<!--    console.log("np2");-->
-<!--  });-->
-<!--</script>-->
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("hme-form").style.display = 'inline-block';
