@@ -103,6 +103,31 @@ nav.navbar a {
     margin-right: 20px;
 }
 
+/*!*---------*!*/
+/*nav span{*/
+/*    !*float: right;*!*/
+/*    !*margin-right: 20px;*!*/
+/*}*/
+/*nav a{*/
+/*    display: inline-block;*/
+/*    !*line-height: 70px;*!*/
+/*    !*margin: 0 5px;*!*/
+/*}*/
+/*nav span a{*/
+/*    text-transform: uppercase;*/
+/*}*/
+/*.checkbtn{*/
+/*    font-size: 30px;*/
+/*    color: #fcfcfd;*/
+/*    float: right;*/
+/*    line-height: 80px;*/
+/*    margin-right: 40px;*/
+/*    cursor: pointer;*/
+/*}*/
+/*#check{*/
+/*    display: none;*/
+/*}*/
+
 
 /* -------- Home -------- */
 section#home {
@@ -192,6 +217,7 @@ section#home {
     width: 200px;
 }
 .wrapper .button .icon{
+    /*margin: 0;*/
     display: inline-block;
     height: 60px;
     width: 60px;
@@ -220,6 +246,7 @@ section#home {
     background: #ff0000;
 }
 .wrapper .button .icon i{
+    margin: 0;
     font-size: 25px;
     line-height: 60px;
     transition: all 0.3s ease-out;
@@ -677,7 +704,7 @@ section.skill {
     height: 60px;
     width: 60px;
     float: none;
-    margin: 0 5px;
+    /*margin: 0 5px;*/
     overflow: hidden;
     background: rgba(236, 240, 243, 0.85);
     box-shadow: 1px -1px 5px #FFFFFF, 10px 10px 10px rgba(0,0,0,0.1);
@@ -691,7 +718,8 @@ section.skill {
     width: 200px;
 }
 .wrapperProj .button .icon{
-    display: inline-block;
+    display: block;
+    right: 50%;
     height: 60px;
     width: 60px;
     text-align: center;
@@ -971,18 +999,33 @@ footer h3 {
 /*-------  Mobile size --------*/
 
 @media All and (max-width: 320px) {
+
+    h3>span{
+        display: none;
+    }
+
     .main_navbar {
-        padding: 5px;
+        /*display: none;*/
+        /*padding: 5px;*/
+        /*!*display: flex;*!*/
+        /*flex-direction: column-reverse;*/
     }
 
-    .main_navbar h3 a {
-        font-size: 16px;
-    }
 
-    nav.navbar a {
-        margin-left: 10px;
-        font-size: 10px;
-    }
+    /*.main_navbar h3 a {*/
+    /*    font-size: 16px;*/
+    /*}*/
+
+    /*nav.navbar a {*/
+    /*    list-style-type: none;*/
+    /*    margin: 0;*/
+    /*    padding: 0;*/
+    /*    !*margin-left: 10px;*!*/
+    /*    !*font-size: 10px;*!*/
+    /*}*/
+    /*.navbar .primary_navbar {*/
+    /*    font-size: 10px;*/
+    /*}*/
 
     /*---- */
     section#home {
@@ -1136,7 +1179,17 @@ footer h3 {
 
 
     }
-    .project_set first_p
+    /* --------- */
+    .assign_block {
+        width: 250px;
+    }
+    .assign_block img {
+        width: 200px;
+    }
+    .assign_block:hover img {
+        width: 260px;
+
+    }
 }
 
 
