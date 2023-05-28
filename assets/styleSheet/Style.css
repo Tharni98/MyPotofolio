@@ -431,7 +431,6 @@ p.line_discription {
     margin-right: 320px;
     width: 60%;
     text-align: center;
-
 }
 
 .ensColumns .ensContentBox .endBox {
@@ -554,37 +553,50 @@ section.skill {
 
 .one_set, .second_set  {
     position: relative;
-    animation: mymove 2s infinite;
-
+    animation: newmove 2.5s infinite;
     left: 0;
     /*animation-duration: 2s;*/
     animation-iteration-count: infinite;
-
     animation-direction: initial;
 }
 
-@keyframes mymove {
-    0% {
-        left: 0;
-        right: 20px;
-    }
-    25%{
-        left: 20px;
-        right: 30px;
-    }
-    50%{
-        left: 30px;
-        right: 50px;
-    }
-    75%{
-        left: 50px;
-        right: 60px;
-    }
-    100%{
-        left: 60px;
-        right: 100px;
-    }
+@keyframes newmove {
+    /*0% {*/
+    /*    left: 0;*/
+    /*    right: 20px;*/
+    /*}*/
+    /*25%{*/
+    /*    left: 20px;*/
+    /*    right: 30px;*/
+    /*}*/
+    /*50%{*/
+    /*    left: 30px;*/
+    /*    right: 50px;*/
+    /*}*/
+    /*75%{*/
+    /*    left: 50px;*/
+    /*    right: 60px;*/
+    /*}*/
+    /*100%{*/
+    /*    left: 60px;*/
+    /*    right: 100px;*/
+    /*}*/
+        0%   {left: 0px;}
+        25%  {left: 400px;}
+        /*75%  {left: 50px}*/
+        /*50% {left: 100px;}*/
+        75% {left: 0px;}
+        100%{left: 1550px}
 }
+
+/*@keyframes mymove {*/
+/*    0%   {left: 0px;}*/
+/*    25%  {left: 200px;}*/
+/*    !*75%  {left: 50px}*!*/
+/*    !*50% {left: 100px;}*!*/
+/*    75% {left: 0px;}*/
+/*    100%{left: 1550px}*/
+/*}*/
 
 
 
@@ -963,11 +975,11 @@ textarea#txtMsg {
 /*    }*/
 /*}*/
 
-@media only screen and (max-width: 1024px) {
-    .contact_box {
-        padding: 50px 10%;
-    }
-}
+/*@media only screen and (max-width: 1024px) {*/
+/*    .contact_box {*/
+/*        padding: 50px 10%;*/
+/*    }*/
+/*}*/
 
 
 /*Footer*/
@@ -1396,7 +1408,7 @@ footer h3 {
     }
 
 
-    @media screen and (min-width: 1025px) and (max-width: 1280px) {
+    @media screen and (min-width: 1024px) and (max-width: 1280px) {
         .main_navbar {
             padding: 10px 100px;
         }
@@ -1408,6 +1420,57 @@ footer h3 {
         nav.navbar a {
             margin-left: 35px;
             font-size: 20px;
+        }
+        section#home {
+            width: 100vw;
+            display: table-cell;
+        }
+
+        .contact_box {
+
+            display: block;
+
+        }
+        fieldset {
+            display: contents;
+
+        }
+        legend {
+            text-align: center;
+            margin-top: 60px;
+            font-weight: bold;
+            color: darkgoldenrod;
+        }
+        #col2{
+            display: none;
+        }
+        .assign_block {
+            width: 270px;
+
+        }
+        .assign_block img {
+            width: 250px;
+        }
+        #project .project_set {
+            margin: auto;
+        }
+        .main_set {
+            width: 65%;
+        }
+        .fileclip_img {
+            top: -13px;
+            left: -23px;
+        }
+        .aboutImg {
+            width: 50px;
+            left: 279px;
+        }
+        div.aboutPara {
+            display: inline-table;
+            opacity: 91%;
+        }
+        article.aboutArticle {
+            width: 90vw;
         }
     }
 
