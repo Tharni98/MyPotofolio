@@ -1010,14 +1010,14 @@ footer h3 {
 
 /*-------  Mobile size --------*/
 
-@media All and (max-width: 320px) {
+@media All and (max-width: 520px) {
 
     h3>span{
         display: none;
     }
 
     .main_navbar {
-        /*display: none;*/
+        display: none;
         padding: 5px;
 
         /*display: flex;*/
@@ -1389,7 +1389,76 @@ footer h3 {
             font-size: 20px;
             font-weight: 520;
         }
+        section#home {
+            display: inline-block;
+            height: 100vh;
+            padding: 10% 8% 0 8%;
+            background-color: #4a4e69;
+            width: 700px;
+        }
+        section#home {
+            height: 181vh;
+            width: 700px;
+        }
+        .myImg {
+            width: 350px;
+            height: 350px;
+            top: 50px;
+            right: 341px;
+        }
+        .welcome {
+            padding: 60% 3% 0 30%;
+        }
+        .welcome h2 {
+            text-align: center;
+        }
+        .welcome h1 {
+            text-align: center;
+        }
+        .welcome h3 {
+            text-align: center;
+            font-size: 24px;
+        }
+        /**/
+
+        .fileclip_img {
+            top: -13px;
+            left: 19px;
+        }
+        .aboutImg {
+            width: 50px;
+            left: 0px;
+        }
+        div.aboutPara {
+            display: inline-table;
+            opacity: 91%;
+        }
+        article.aboutArticle {
+            width: 120vw;
+            margin-left: 59px;
+        }
+        /**/
+        .ensColumns .ensContentBox {
+            margin-left: 313px;
+        }
+        /**/
+        section.skill {
+            width: 784px;
+
+        }
+        /**/
+        #project {
+            width: 792px;
+        }
+        .project_set .block {
+            margin: auto;
+        }
+        /**/
+        #assignment {
+            width: 750px;
+        }
     }
+
 
 /*------------ lap size --------------*/
     @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -1421,6 +1490,7 @@ footer h3 {
             margin-left: 35px;
             font-size: 20px;
         }
+        /**/
         section#home {
             width: 100vw;
             display: table-cell;
@@ -1451,9 +1521,11 @@ footer h3 {
         .assign_block img {
             width: 250px;
         }
+        /**/
         #project .project_set {
             margin: auto;
         }
+        /**/
         .main_set {
             width: 65%;
         }
@@ -1463,7 +1535,7 @@ footer h3 {
         }
         .aboutImg {
             width: 50px;
-            left: 279px;
+            left: 199px;
         }
         div.aboutPara {
             display: inline-table;
