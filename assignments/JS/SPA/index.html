@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Rubik+Iso&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/Style.css">
   <link rel="stylesheet" href="assets/css/bootstrap.css">
+
 </head>
 
 <body>
@@ -116,24 +117,24 @@
       <h5 class="text-black text-center m-lg-3 pt-5">Add a New Customer</h5>
       <form class="m-5 col-5">
         <div class="mb-2">
-          <label for="CustInputID" id="txtCustomerID" class="form-label text-black">Cust ID</label>
+          <label for="CustInputID"  class="form-label text-black">Cust ID</label>
           <input type="text" class="form-control bg-black border-white text-white focus-ring-warning"
                  id="CustInputID">
         </div>
         <div class="mb-3">
-          <label for="CustName" id="txtCustomerName" class="form-label text-black">Name</label>
+          <label for="CustName"  class="form-label text-black">Name</label>
           <input type="text"
                  class="form-control bg-black border-white text-white focus-ring-warning focus-ring"
                  id="CustName">
         </div>
         <div class="mb-3">
-          <label for="CustAddress" id="txtCustomerAddress" class="form-label text-black">Address</label>
+          <label for="CustAddress"  class="form-label text-black">Address</label>
           <input type="text"
                  class="form-control bg-black border-white text-white focus-ring-warning focus-ring"
                  id="CustAddress">
         </div>
         <div class="mb-3">
-          <label for="CustNum" id="txtCustomerNumber" class="form-label text-black">Number</label>
+          <label for="CustNum"  class="form-label text-black">Number</label>
           <input type="text"
                  class="form-control bg-black border-white text-white focus-ring-warning focus-ring "
                  id="CustNum">
@@ -159,85 +160,6 @@
         </tr>
         </thead>
         <tbody>
-        <tr>
-          <th scope="row"></th>
-          <td></td>
-          <td></td>
-          <td></td>
-
-        </tr>
-        <tr>
-          <th scope="row"></th>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td>
-
-          </td>
-        </tr>
-        <tr>
-          <th scope="row"></th>
-          <td></td>
-          <td></td>
-          <td></td>
-
-        </tr>
-
-        <tr>
-          <th scope="row"></th>
-          <td></td>
-          <td></td>
-          <td></td>
-
-        </tr>
-
-        <tr>
-          <th scope="row"></th>
-          <td></td>
-          <td></td>
-          <td></td>
-
-        </tr>
-
-        <tr>
-          <th scope="row"></th>
-          <td></td>
-          <td></td>
-          <td></td>
-
-        </tr>
-
-        <tr>
-          <th scope="row"></th>
-          <td></td>
-          <td></td>
-          <td></td>
-
-        </tr>
-
-        <tr>
-          <th scope="row"></th>
-          <td></td>
-          <td></td>
-          <td></td>
-
-        </tr>
-
-        <tr>
-          <th scope="row"></th>
-          <td></td>
-          <td></td>
-          <td></td>
-
-        </tr>
-
-        <tr>
-          <th scope="row"></th>
-          <td></td>
-          <td></td>
-          <td></td>
-
-        </tr>
 
         </tbody>
       </table>
@@ -604,6 +526,7 @@
     </div>
   </section>
 <!--</main>-->
+<script src="../InMemory-POS/assets/js/jquery-3.7.0.min.js"></script>
 <script src="assets/js/bootstrap.js"></script>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 
@@ -644,11 +567,15 @@
     document.getElementById("odr-form").style.display = 'inline-block';
 
   });
-  $("#btnSaveCustomer").click()(function (){
-  let id = $("txtCustomerID").val();
-  let name = $("txtCustomerName").val();
-  let address = $("txtCustomerAddress").val();
-  let number = $("txtCustomerNumber").val();
+
+
+  $("#btnCustomerSave").click(function (){
+  let id = $("#CustInputID").val();
+  let name = $("#CustName").val();
+  let address = $("#CustAddress").val();
+  let number = $("#CustNum").val();
+
+  console.log($("CustInputID").val()+" ")
 
   let tBody=$("#tblCustomer");
 
@@ -659,6 +586,8 @@
 
 
   });
+
+
 </script>
 
 </body>
