@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Items</title>
+  <meta name="viewport" content="width=device-width initial-scale=1 user-scalable=no">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Rubik+Iso&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/Style.css">
+  <link rel="stylesheet" href="assets/JS.js">
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+</head>
+
+<body>
+<!-- ====================  header ============================== -->
+
+
+<nav class="navbar navbar-expand-lg navbar-light fixed-top shadow custom-navbar bg-body-tertiary">
+  <div class="container-fluid" style="background-color: #008b6f; height: 70px;">
+    <img src="assets/img/Cosmatic.jpg" alt="Flower Store" class="img-responsive custom-logo"
+         style="height: 70px; width: 70px; border: 2px solid rgb(182, 182, 182); border-radius: 50%; margin: 10px;">
+    <a class="navbar-brand"
+       style="color: #000000; font-weight: 800; font-size: 35px; font-family: 'Playfair Display', serif;"
+       href="#">Beauty Cosmetics</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent"
+         style="background-color: #008b6f; margin: 30px;">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin: 20px;">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#hme-form" id="HomeForm">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#cus-form" id="CustomerForm">Customer</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#itm-form" id="ItemForm">Item</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#odr-form" id="OrderForm">Order</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button type="button" class="btn btn-outline-light"
+                style="background-color: #3c84ab;">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- ====================  HOME  ============================== -->
+<section class="Home" id="hme-form">
+
+  <div id="carouselExampleDark" class="carousel carousel-dark slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="assets/img/organic-beauty-products1.jpg" class="d-block " alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="assets/img/Pos02.webp" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="assets/img/pos03.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+
+
+</section>
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+
+
+<!--/* ==================================== Customer ================================================*/-->
+
+<!--<main >-->
+<section id="cus-form" class="row p-4 w-100 bg" style="background-color:white" >
+
+  <!--        <h5 class="text-warning text-lg-start" >Customer Management</h5>-->
+  <div class="col-7  m-3 border  ">
+    <h5 class="text-black text-center m-lg-3 pt-5">Add a New Customer</h5>
+    <form class="m-5 col-5">
+      <div class="mb-2">
+        <label for="CustInputID" class="form-label text-black">Cust ID</label>
+        <input type="text" class="form-control bg-black border-white text-white focus-ring-warning"
+               id="CustInputID">
+      </div>
+      <div class="mb-3">
+        <label for="CustInputDesc" class="form-label text-black">Description</label>
+        <input type="text" class="form-control bg-black border-white text-white focus-ring-warning focus-ring"
+               id="CustInputDesc">
+      </div>
+      <div class="mb-3">
+        <label for="CustinputUnitPrice" class="form-label text-black">Unit Price</label>
+        <input type="text" class="form-control bg-black border-white text-white focus-ring-warning focus-ring"
+               id="CustinputUnitPrice">
+      </div>
+      <div class="mb-3">
+        <label for="CustinputQty" class="form-label text-black">Quantity</label>
+        <input type="text" class="form-control bg-black border-white text-white focus-ring-warning focus-ring "
+               id="CustinputQty">
+      </div>
+      <div class="row m-0 gap-2 mt-5">
+        <button id="btnCustomerSave" type="submit" class="btn btn-outline-dark  col">Save</button>
+        <button type="submit" class="btn btn-outline-dark col">Update</button>
+      </div>
+      <!--                <button type="submit" class="btn btn-outline-warning  container-fluid">Save</button>-->
+      <!--                <button type="submit" class="btn btn-outline-light disabled container-fluid">Update</button>-->
+    </form>
+  </div>
+  <div id=CustomerTbl class="col-7 border-white m-3  border-start">
+    <table class="table text-bg-secondary">
+      <thead class="text-black">
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Description</th>
+        <th scope="col">Unit Price</th>
+        <th scope="col">Qty On Hnd</th>
+        <th scope="col">Action</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <th scope="row">I-001</th>
+        <td></td>
+        <td>15000</td>
+        <td>15</td>
+        <td>
+          <button type="button" class="btn btn-outline-success">Edit</button>
+          <button type="button" class="btn btn-outline-danger">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">I-002</th>
+        <td></td>
+        <td>18000</td>
+        <td>12</td>
+        <td>
+          <button type="button" class="btn btn-outline-success">Edit</button>
+          <button type="button" class="btn btn-outline-danger">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">I-003</th>
+        <td></td>
+        <td>7000</td>
+        <td>20</td>
+        <td>
+          <button type="button" class="btn btn-outline-success">Edit</button>
+          <button type="button" class="btn btn-outline-danger">Delete</button>
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">I-004</th>
+        <td></td>
+        <td>2000</td>
+        <td>10</td>
+        <td>
+          <button type="button" class="btn btn-outline-success">Edit</button>
+          <button type="button" class="btn btn-outline-danger">Delete</button>
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">I-005</th>
+        <td></td>
+        <td>5000</td>
+        <td>30</td>
+        <td>
+          <button type="button" class="btn btn-outline-success">Edit</button>
+          <button type="button" class="btn btn-outline-danger">Delete</button>
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">I-006</th>
+        <td></td>
+        <td>7600</td>
+        <td>8</td>
+        <td>
+          <button type="button" class="btn btn-outline-success">Edit</button>
+          <button type="button" class="btn btn-outline-danger">Delete</button>
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">I-007</th>
+        <td></td>
+        <td>25000</td>
+        <td>07</td>
+        <td>
+          <button type="button" class="btn btn-outline-success">Edit</button>
+          <button type="button" class="btn btn-outline-danger">Delete</button>
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">I-008</th>
+        <td></td>
+        <td>32000</td>
+        <td>15</td>
+        <td>
+          <button type="button" class="btn btn-outline-success">Edit</button>
+          <button type="button" class="btn btn-outline-danger">Delete</button>
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">I-009</th>
+        <td></td>
+        <td>1200</td>
+        <td>20</td>
+        <td>
+          <button type="button" class="btn btn-outline-success">Edit</button>
+          <button type="button" class="btn btn-outline-danger">Delete</button>
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">I-010</th>
+        <td></td>
+        <td>850</td>
+        <td>15</td>
+        <td>
+          <button type="button" class="btn btn-outline-success">Edit</button>
+          <button type="button" class="btn btn-outline-danger">Delete</button>
+        </td>
+      </tr>
+
+      </tbody>
+    </table>
+  </div>
+</section>
+<!--</main>-->
+
+
+<!--/* ====================================== item ========================================*/-->
+<!--<main>-->
+<section id="itm-form" class="row p-4  bg w-100" style="background-color:#D9D9D9" >
+
+  <!--        <h5 class="text-warning text-lg-start" >Customer Management</h5>-->
+  <div class="col-7  m-3 border rounded">
+    <h5 class="text-black text-center m-lg-3 pt-5">Add a New Item</h5>
+    <form class="m-5 col-5">
+      <div class="mb-3">
+        <label for="ItemInputID" class="form-label text-black">Item ID</label>
+        <input type="text" class="form-control bg-black border-white text-warning focus-ring-warning"
+               id="ItemInputID" readonly>
+      </div>
+      <div class="mb-3">
+        <label for="ItemInputDesc" class="form-label text-black">Description</label>
+        <input type="text"
+               class="form-control bg-black border-white text-warning focus-ring-warning focus-ring"
+               id="ItemInputDesc">
+      </div>
+      <div class="mb-3">
+        <label for="IteminputUnitPrice" class="form-label text-black">Unit Price</label>
+        <input type="number"
+               class="form-control bg-black border-white text-warning focus-ring-warning focus-ring"
+               id="IteminputUnitPrice">
+      </div>
+      <div class="mb-3">
+        <label for="IteminputQty" class="form-label text-black">Quantity</label>
+        <input type="number"
+               class="form-control bg-black border-white text-warning focus-ring-warning focus-ring "
+               id="IteminputQty">
+      </div>
+      <div class="row m-0 gap-2 mt-5">
+        <button type="submit" class="btn btn-outline-dark  col">Save</button>
+        <button type="submit" class="btn btn-outline-dark col">Update</button>
+      </div>
+      <!--                <button type="submit" class="btn btn-outline-warning  container-fluid">Save</button>-->
+      <!--                <button type="submit" class="btn btn-outline-light disabled container-fluid">Update</button>-->
+    </form>
+  </div>
+  <div id=ItemTbl class="col border-white m-3  border-start">
+    <table class="table text-bg-secondary">
+      <thead class="text-black">
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Description</th>
+        <th scope="col">Unit Price</th>
+        <th scope="col">Qty On Hnd</th>
+        <th scope="col">Action</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <th scope="row">I-001</th>
+        <td></td>
+        <td>15000</td>
+        <td>15</td>
+        <td>
+          <button type="button" class="btn btn-outline-success">Edit</button>
+          <button type="button" class="btn btn-outline-danger">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">I-002</th>
+        <td></td>
+        <td>18000</td>
+        <td>12</td>
+        <td>
+          <button type="button" class="btn btn-outline-success">Edit</button>
+          <button type="button" class="btn btn-outline-danger">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">I-003</th>
+        <td></td>
+        <td>7000</td>
+        <td>20</td>
+        <td>
+          <button type="button" class="btn btn-outline-success">Edit</button>
+          <button type="button" class="btn btn-outline-danger">Delete</button>
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">I-004</th>
+        <td></td>
+        <td>2000</td>
+        <td>10</td>
+        <td>
+          <button type="button" class="btn btn-outline-success">Edit</button>
+          <button type="button" class="btn btn-outline-danger">Delete</button>
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">I-005</th>
+        <td></td>
+        <td>5000</td>
+        <td>30</td>
+        <td>
+          <button type="button" class="btn btn-outline-success">Edit</button>
+          <button type="button" class="btn btn-outline-danger">Delete</button>
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">I-006</th>
+        <td></td>
+        <td>7600</td>
+        <td>8</td>
+        <td>
+          <button type="button" class="btn btn-outline-success">Edit</button>
+          <button type="button" class="btn btn-outline-danger">Delete</button>
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">I-007</th>
+        <td></td>
+        <td>25000</td>
+        <td>07</td>
+        <td>
+          <button type="button" class="btn btn-outline-success">Edit</button>
+          <button type="button" class="btn btn-outline-danger">Delete</button>
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">I-008</th>
+        <td></td>
+        <td>32000</td>
+        <td>15</td>
+        <td>
+          <button type="button" class="btn btn-outline-success">Edit</button>
+          <button type="button" class="btn btn-outline-danger">Delete</button>
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">I-009</th>
+        <td></td>
+        <td>1200</td>
+        <td>20</td>
+        <td>
+          <button type="button" class="btn btn-outline-success">Edit</button>
+          <button type="button" class="btn btn-outline-danger">Delete</button>
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">I-010</th>
+        <td></td>
+        <td>850</td>
+        <td>15</td>
+        <td>
+          <button type="button" class="btn btn-outline-success">Edit</button>
+          <button type="button" class="btn btn-outline-danger">Delete</button>
+        </td>
+      </tr>
+
+      </tbody>
+    </table>
+  </div>
+</section>
+<!--</main>-->
+
+<!--/**================================================= Order ==================================================*/-->
+
+<!--<main class="container-fluid" >-->
+<section id="odr-form" class="row p-4 w-100" style="background-color:#D9D9D9">
+
+  <!--        <h5 class="text-warning text-lg-start" >Customer Management</h5>-->
+  <div class="col-7  m-3 border rounded">
+    <h5 class="text-black text-center m-lg-3 pt-2">Place A New Order</h5>
+
+    <div class="row ">
+      <!--                <h6 class="text-white">Invoice Details</h6>-->
+      <form class=" me-3 col-5">
+        <div class="row border-bottom border-black">
+          <div class="mb-1 col">
+            <label for="InputOID" class="form-label text-black">Order ID</label>
+            <input type="text"
+                   class="form-control bg-black border-white text-white focus-ring-warning"
+                   id="InputOID" readonly>
+          </div>
+          <div class="mb-1 col mb-4">
+            <label for="InputDate" class="form-label text-black">Date</label>
+            <input type="date"
+                   class="form-control bg-black border-white text-white focus-ring-warning focus-ring"
+                   id="InputDate">
+          </div>
+        </div>
+
+        <!--                    <h6 class="text-warning mt-4">Customer Details</h6>-->
+
+        <div class="row border-bottom ">
+          <div class="mb-1 col">
+            <label for="selectCusId" class="form-label text-black">Cust ID</label>
+            <select class="form-select bg-black text-white focus-ring-warning focus-ring"
+                    aria-label="Default select example" id="selectCusId">
+              <option selected>Open this select menu</option>
+              <option value="1">C-001</option>
+              <option value="2">C-002</option>
+              <option value="3">C-003</option>
+            </select>
+          </div>
+          <div class="mb-1 col mb-4">
+            <label for="Name" class="form-label text-black">Name</label>
+            <input type="text"
+                   class="form-control bg-black border-white text-white focus-ring-warning focus-ring "
+                   id="Name" readonly>
+          </div>
+        </div>
+
+        <!--                    <h6 class="text-warning mt-4">Code</h6>-->
+
+        <div class="row">
+          <div class="mb-1 col">
+            <label for="selectItemId" class="form-label text-black">Code</label>
+            <select class="form-select bg-black text-white focus-ring-warning focus-ring"
+                    aria-label="Default select example" id="selectItemId">
+              <option selected>Open this select menu</option>
+              <option value="1">I-001</option>
+              <option value="2">I-002</option>
+              <option value="3">I-003</option>
+            </select>
+          </div>
+          <div class="mb-1 col mb-4">
+            <label for="ItemName" class="form-label text-black">Description</label>
+            <input type="text"
+                   class="form-control bg-black border-white text-white focus-ring-warning focus-ring "
+                   id="ItemName" readonly>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="mb-1 ">
+            <label for="UnitPrice" class="form-label text-black">Unit Price</label>
+            <select class="form-select bg-black text-white focus-ring-warning focus-ring"
+                    aria-label="Default select example" id="UnitPrice">
+              <option selected>Open this select menu</option>
+              <option value="1">I-001</option>
+              <option value="2">I-002</option>
+              <option value="3">I-003</option>
+            </select>
+          </div>
+          <div class="mb-1 col">
+            <label for="QtyOnHnd" class="form-label text-black">Qty On Hnd</label>
+            <input type="number"
+                   class="form-control bg-black border-white text-white focus-ring-warning focus-ring "
+                   id="QtyOnHnd" readonly>
+          </div>
+
+          <div class="mb-1 col">
+            <label for="Qty" class="form-label text-black">Qty</label>
+            <input type="number"
+                   class="form-control bg-black border-white text-white focus-ring-warning focus-ring "
+                   id="Qty">
+          </div>
+          <button class="bg-dark-subtle
+                         container-fluid mt-5 mb-5" type="submit">Add To Cart</button>
+        </div>
+
+
+      </form>
+    </div>
+
+
+
+  </div>
+
+  <div class="col m-3  b" style="background-color: #6c757d">
+    <div class="border rounded border-black">
+      <h5 class="text-bg-danger mt-4 mb-3 ms-2">Cart</h5>
+      <table class="table text-black ">
+        <thead class="text-white">
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Description</th>
+          <th scope="col">Unit Price</th>
+          <th scope="col">Qty</th>
+          <th scope="col">Total</th>
+          <th scope="col">Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <th scope="row">I-001</th>
+          <td></td>
+          <td>15000</td>
+          <td>1</td>
+          <td>15000</td>
+          <td>
+            <button type="button" class="btn btn-outline-success">Edit</button>
+            <button type="button" class="btn btn-outline-danger">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">I-002</th>
+          <td></td>
+          <td>18000</td>
+          <td>02</td>
+          <td>36000</td>
+          <td>
+            <button type="button" class="btn btn-outline-success">Edit</button>
+            <button type="button" class="btn btn-outline-danger">Delete</button>
+          </td>
+        </tr>
+
+
+        </tbody>
+      </table>
+    </div>
+    <div class="row mt-5 border border-warning rounded">
+      <h5 class="text-bg-danger  mt-3 mb-2">Purchase Order</h5>
+      <div class="row">
+        <!--                    <div class="mb-1 col">-->
+        <!--                        <button class="btn btn-outline-warning mt-5 mb-5" type="submit">Cancel</button>-->
+        <!--                    </div>-->
+
+        <div class="mb-5 col text-warning">
+          <label for="subTotal" class="form-label "> Total</label>
+          <input type="number"
+                 class="form-control bg-black border-warning text-warning focus-ring-warning focus-ring mb-4 rounded"
+                 id="subTotal" readonly>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="mb-1 col">
+          <label for="cash" class="form-label text-white">Cash</label>
+          <input type="number"
+                 class="form-control bg-black border-white text-warning focus-ring-warning focus-ring "
+                 id="cash">
+        </div>
+
+        <div class="mb-1 col">
+          <label for="discount" class="form-label text-white">Discount</label>
+          <input type="number"
+                 class="form-control bg-black border-white text-warning focus-ring-warning focus-ring "
+                 id="discount">
+        </div>
+
+        <div class="mb-1 col">
+          <label for="balance" class="form-label text-white">Balance</label>
+          <input type="number"
+                 class="form-control bg-black border-white text-warning focus-ring-warning focus-ring "
+                 id="balance" readonly>
+        </div>
+
+      </div>
+      <div class="row ms-1">
+        <button class="btn btn-outline-warning mt-5 mb-5" type="submit">Purchase</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!--</main>-->
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("hme-form").style.display = 'inline-block';
+    document.getElementById("cus-form").style.display = 'none';
+    document.getElementById("itm-form").style.display = 'none';
+    document.getElementById("odr-form").style.display = 'none';
+  });
+  document.getElementById("HomeForm").addEventListener("click", function () {
+    document.getElementById("hme-form").style.display = 'inline-block';
+    document.getElementById("cus-form").style.display = 'none';
+    document.getElementById("itm-form").style.display = 'none';
+    document.getElementById("odr-form").style.display = 'none';
+
+  });
+
+
+  document.getElementById("CustomerForm").addEventListener("click", function () {
+    document.getElementById("hme-form").style.display = 'none';
+    document.getElementById("cus-form").style.display = 'inline-block';
+    document.getElementById("itm-form").style.display = 'none';
+    document.getElementById("odr-form").style.display = 'none';
+
+  });
+  document.getElementById("ItemForm").addEventListener("click", function () {
+    document.getElementById("hme-form").style.display = 'none';
+    document.getElementById("cus-form").style.display = 'none';
+    document.getElementById("itm-form").style.display = 'inline-block';
+    document.getElementById("odr-form").style.display = 'none';
+
+  });
+  document.getElementById("OrderForm").addEventListener("click", function () {
+    document.getElementById("hme-form").style.display = 'none';
+    document.getElementById("cus-form").style.display = 'none';
+    document.getElementById("itm-form").style.display = 'none';
+    document.getElementById("odr-form").style.display = 'inline-block';
+
+  });
+</script>
+
+</body>
+
+</html>
