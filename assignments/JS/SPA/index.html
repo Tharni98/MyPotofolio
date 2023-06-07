@@ -568,19 +568,21 @@
 
   });
 
+   let CustomerList=[];
 
   $("#btnCustomerSave").click(function (){
-  let id = $("#CustInputID").val();
-  let name = $("#CustName").val();
-  let address = $("#CustAddress").val();
-  let number = $("#CustNum").val();
+  let CustId = $("#CustInputID").val();
+  let CustName = $("#CustName").val();
+  let CustAddress = $("#CustAddress").val();
+  let CustNumber = $("#CustNum").val();
 
   console.log($("CustInputID").val()+" ")
 
   let tBody=$("#tblCustomer");
 
-  let tr = $('<tr> <td>'+id+'</td>  <td>'+name+'</td>  <td>'+address+'</td> <td>'+number+'</td> </tr>');
+  let tr = $('<tr> <td>'+CustId+'</td>  <td>'+CustName+'</td>  <td>'+CustAddress+'</td> <td>'+CustNumber+'</td> </tr>');
 
+    CustomerList.push({id:CustId,name:CustName,address:CustAddress,contact:CustNumber})
   //set the row to the table body
   tBody.append(tr);
 
