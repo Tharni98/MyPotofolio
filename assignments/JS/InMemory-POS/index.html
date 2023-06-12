@@ -9,8 +9,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Rubik+Iso&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/Style.css">
-  <link rel="stylesheet" href="assets/JS.js">
   <link rel="stylesheet" href="assets/css/bootstrap.css">
+
 </head>
 
 <body>
@@ -110,159 +110,56 @@
 <!--/* ==================================== Customer ================================================*/-->
 
 <!--<main >-->
-<section id="cus-form" class="row p-4 w-100 bg" style="background-color:white" >
+<section id="cus-form" class="row w-100"  style="background-color:#D9D9D9" >
 
   <!--        <h5 class="text-warning text-lg-start" >Customer Management</h5>-->
-  <div class="col-7  m-3 border  ">
+  <div class="col-4 m-0 container-fluid">
     <h5 class="text-black text-center m-lg-3 pt-5">Add a New Customer</h5>
-    <form class="m-5 col-5">
+    <form class="mb-2">
       <div class="mb-2">
-        <label for="CustInputID" class="form-label text-black">Cust ID</label>
-        <input type="text" class="form-control bg-black border-white text-white focus-ring-warning"
+        <label for="CustInputID"  class="form-label text-black">Cust ID</label>
+        <input type="text" class="form-control  border-white text-black focus-ring-warning"
                id="CustInputID">
       </div>
       <div class="mb-3">
-        <label for="CustInputDesc" class="form-label text-black">Description</label>
-        <input type="text" class="form-control bg-black border-white text-white focus-ring-warning focus-ring"
-               id="CustInputDesc">
+        <label for="CustName"  class="form-label text-black">Name</label>
+        <input type="text"
+               class="form-control  border-white text-black focus-ring-warning focus-ring"
+               id="CustName">
       </div>
       <div class="mb-3">
-        <label for="CustinputUnitPrice" class="form-label text-black">Unit Price</label>
-        <input type="text" class="form-control bg-black border-white text-white focus-ring-warning focus-ring"
-               id="CustinputUnitPrice">
+        <label for="CustAddress"  class="form-label text-black">Address</label>
+        <input type="text"
+               class="form-control  border-white text-black focus-ring-warning focus-ring"
+               id="CustAddress">
       </div>
       <div class="mb-3">
-        <label for="CustinputQty" class="form-label text-black">Quantity</label>
-        <input type="text" class="form-control bg-black border-white text-white focus-ring-warning focus-ring "
-               id="CustinputQty">
+        <label for="CustNum"  class="form-label text-black">Number</label>
+        <input type="text"
+               class="form-control  border-white text-black focus-ring-warning focus-ring "
+               id="CustNum">
       </div>
       <div class="row m-0 gap-2 mt-5">
-        <button id="btnCustomerSave" type="submit" class="btn btn-outline-dark  col">Save</button>
+        <button id="btnCustomerSave" type="submit" class="btn btn-outline-dark bg-gradient col">Save</button>
         <button type="submit" class="btn btn-outline-dark col">Update</button>
+        <button type="button" class="btn btn-outline-success">Edit</button>
+        <button type="button" class="btn btn-outline-danger">Delete</button>
       </div>
       <!--                <button type="submit" class="btn btn-outline-warning  container-fluid">Save</button>-->
       <!--                <button type="submit" class="btn btn-outline-light disabled container-fluid">Update</button>-->
     </form>
   </div>
-  <div id=CustomerTbl class="col-7 border-white m-3  border-start">
-    <table class="table text-bg-secondary">
+  <div id=CustomerTbl class="col-7 m-0 border-black   ">
+    <table id="tblCustomer" class="table  text-bg-secondary">
       <thead class="text-black">
       <tr>
-        <th scope="col">ID</th>
-        <th scope="col">Description</th>
-        <th scope="col">Unit Price</th>
-        <th scope="col">Qty On Hnd</th>
-        <th scope="col">Action</th>
+        <th scope="col">Cust ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Address</th>
+        <th scope="col">Number</th>
       </tr>
       </thead>
       <tbody>
-      <tr>
-        <th scope="row">I-001</th>
-        <td></td>
-        <td>15000</td>
-        <td>15</td>
-        <td>
-          <button type="button" class="btn btn-outline-success">Edit</button>
-          <button type="button" class="btn btn-outline-danger">Delete</button>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">I-002</th>
-        <td></td>
-        <td>18000</td>
-        <td>12</td>
-        <td>
-          <button type="button" class="btn btn-outline-success">Edit</button>
-          <button type="button" class="btn btn-outline-danger">Delete</button>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">I-003</th>
-        <td></td>
-        <td>7000</td>
-        <td>20</td>
-        <td>
-          <button type="button" class="btn btn-outline-success">Edit</button>
-          <button type="button" class="btn btn-outline-danger">Delete</button>
-        </td>
-      </tr>
-
-      <tr>
-        <th scope="row">I-004</th>
-        <td></td>
-        <td>2000</td>
-        <td>10</td>
-        <td>
-          <button type="button" class="btn btn-outline-success">Edit</button>
-          <button type="button" class="btn btn-outline-danger">Delete</button>
-        </td>
-      </tr>
-
-      <tr>
-        <th scope="row">I-005</th>
-        <td></td>
-        <td>5000</td>
-        <td>30</td>
-        <td>
-          <button type="button" class="btn btn-outline-success">Edit</button>
-          <button type="button" class="btn btn-outline-danger">Delete</button>
-        </td>
-      </tr>
-
-      <tr>
-        <th scope="row">I-006</th>
-        <td></td>
-        <td>7600</td>
-        <td>8</td>
-        <td>
-          <button type="button" class="btn btn-outline-success">Edit</button>
-          <button type="button" class="btn btn-outline-danger">Delete</button>
-        </td>
-      </tr>
-
-      <tr>
-        <th scope="row">I-007</th>
-        <td></td>
-        <td>25000</td>
-        <td>07</td>
-        <td>
-          <button type="button" class="btn btn-outline-success">Edit</button>
-          <button type="button" class="btn btn-outline-danger">Delete</button>
-        </td>
-      </tr>
-
-      <tr>
-        <th scope="row">I-008</th>
-        <td></td>
-        <td>32000</td>
-        <td>15</td>
-        <td>
-          <button type="button" class="btn btn-outline-success">Edit</button>
-          <button type="button" class="btn btn-outline-danger">Delete</button>
-        </td>
-      </tr>
-
-      <tr>
-        <th scope="row">I-009</th>
-        <td></td>
-        <td>1200</td>
-        <td>20</td>
-        <td>
-          <button type="button" class="btn btn-outline-success">Edit</button>
-          <button type="button" class="btn btn-outline-danger">Delete</button>
-        </td>
-      </tr>
-
-      <tr>
-        <th scope="row">I-010</th>
-        <td></td>
-        <td>850</td>
-        <td>15</td>
-        <td>
-          <button type="button" class="btn btn-outline-success">Edit</button>
-          <button type="button" class="btn btn-outline-danger">Delete</button>
-        </td>
-      </tr>
 
       </tbody>
     </table>
@@ -310,54 +207,43 @@
       <!--                <button type="submit" class="btn btn-outline-light disabled container-fluid">Update</button>-->
     </form>
   </div>
-  <div id=ItemTbl class="col border-white m-3  border-start">
+  <div id=ItemTbl class="col border-white m-3  border-start border rounded">
     <table class="table text-bg-secondary">
       <thead class="text-black">
       <tr>
-        <th scope="col">ID</th>
-        <th scope="col">Description</th>
-        <th scope="col">Unit Price</th>
-        <th scope="col">Qty On Hnd</th>
-        <th scope="col">Action</th>
+        <th scope="col1">ID</th>
+        <th scope="col2">Description</th>
+        <th scope="col3">Unit Price</th>
+        <th scope="col4">Qty On Hnd</th>
+        <th scope="col5">Action</th>
       </tr>
       </thead>
       <tbody>
       <tr>
-        <th scope="row">I-001</th>
+        <th scope="row"></th>
         <td></td>
-        <td>15000</td>
-        <td>15</td>
+        <td></td>
+        <td></td>
         <td>
           <button type="button" class="btn btn-outline-success">Edit</button>
           <button type="button" class="btn btn-outline-danger">Delete</button>
         </td>
       </tr>
       <tr>
-        <th scope="row">I-002</th>
+        <th scope="row"></th>
         <td></td>
-        <td>18000</td>
-        <td>12</td>
+        <td></td>
+        <td></td>
         <td>
           <button type="button" class="btn btn-outline-success">Edit</button>
           <button type="button" class="btn btn-outline-danger">Delete</button>
         </td>
       </tr>
       <tr>
-        <th scope="row">I-003</th>
+        <th scope="row"></th>
         <td></td>
-        <td>7000</td>
-        <td>20</td>
-        <td>
-          <button type="button" class="btn btn-outline-success">Edit</button>
-          <button type="button" class="btn btn-outline-danger">Delete</button>
-        </td>
-      </tr>
-
-      <tr>
-        <th scope="row">I-004</th>
         <td></td>
-        <td>2000</td>
-        <td>10</td>
+        <td></td>
         <td>
           <button type="button" class="btn btn-outline-success">Edit</button>
           <button type="button" class="btn btn-outline-danger">Delete</button>
@@ -365,10 +251,10 @@
       </tr>
 
       <tr>
-        <th scope="row">I-005</th>
+        <th scope="row"></th>
         <td></td>
-        <td>5000</td>
-        <td>30</td>
+        <td></td>
+        <td></td>
         <td>
           <button type="button" class="btn btn-outline-success">Edit</button>
           <button type="button" class="btn btn-outline-danger">Delete</button>
@@ -376,10 +262,10 @@
       </tr>
 
       <tr>
-        <th scope="row">I-006</th>
+        <th scope="row"></th>
         <td></td>
-        <td>7600</td>
-        <td>8</td>
+        <td></td>
+        <td></td>
         <td>
           <button type="button" class="btn btn-outline-success">Edit</button>
           <button type="button" class="btn btn-outline-danger">Delete</button>
@@ -387,10 +273,10 @@
       </tr>
 
       <tr>
-        <th scope="row">I-007</th>
+        <th scope="row"></th>
         <td></td>
-        <td>25000</td>
-        <td>07</td>
+        <td></td>
+        <td></td>
         <td>
           <button type="button" class="btn btn-outline-success">Edit</button>
           <button type="button" class="btn btn-outline-danger">Delete</button>
@@ -398,10 +284,10 @@
       </tr>
 
       <tr>
-        <th scope="row">I-008</th>
+        <th scope="row"></th>
         <td></td>
-        <td>32000</td>
-        <td>15</td>
+        <td></td>
+        <td></td>
         <td>
           <button type="button" class="btn btn-outline-success">Edit</button>
           <button type="button" class="btn btn-outline-danger">Delete</button>
@@ -409,10 +295,10 @@
       </tr>
 
       <tr>
-        <th scope="row">I-009</th>
+        <th scope="row"></th>
         <td></td>
-        <td>1200</td>
-        <td>20</td>
+        <td></td>
+        <td></td>
         <td>
           <button type="button" class="btn btn-outline-success">Edit</button>
           <button type="button" class="btn btn-outline-danger">Delete</button>
@@ -420,10 +306,21 @@
       </tr>
 
       <tr>
-        <th scope="row">I-010</th>
+        <th scope="row"></th>
         <td></td>
-        <td>850</td>
-        <td>15</td>
+        <td></td>
+        <td></td>
+        <td>
+          <button type="button" class="btn btn-outline-success">Edit</button>
+          <button type="button" class="btn btn-outline-danger">Delete</button>
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row"></th>
+        <td></td>
+        <td></td>
+        <td></td>
         <td>
           <button type="button" class="btn btn-outline-success">Edit</button>
           <button type="button" class="btn btn-outline-danger">Delete</button>
@@ -629,6 +526,7 @@
   </div>
 </section>
 <!--</main>-->
+<script src="../InMemory-POS/assets/js/jquery-3.7.0.min.js"></script>
 <script src="assets/js/bootstrap.js"></script>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 
@@ -669,6 +567,30 @@
     document.getElementById("odr-form").style.display = 'inline-block';
 
   });
+
+  let CustomerList=[];
+
+  $("#btnCustomerSave").click(function (){
+    let CustId = $("#CustInputID").val();
+    let CustName = $("#CustName").val();
+    let CustAddress = $("#CustAddress").val();
+    let CustNumber = $("#CustNum").val();
+
+    console.log($("CustInputID").val()+" ")
+
+    let tBody=$("#tblCustomer");
+
+    let tr = $('<tr> <td>'+CustId+'</td>  <td>'+CustName+'</td>  <td>'+CustAddress+'</td> <td>'+CustNumber+'</td> </tr>');
+
+    CustomerList.push({id:CustId,name:CustName,address:CustAddress,contact:CustNumber})
+    // CustomerList.push()
+    //set the row to the table body
+    tBody.append(tr);
+
+
+  });
+
+
 </script>
 
 </body>

@@ -54,24 +54,24 @@ h5 {
 
 
 /* ==================== CUSTOMER ============================== */
-#cus-form{
-    top: 20px;
-    bottom: 20px;
-}
+/*#cus-form{*/
+/*    top: 20px;*/
+/*    bottom: 20px;*/
+/*}*/
 
-#item-form{
-    top: 20px;
-    bottom: 20px;
-}
-#CustomerTbl{
-    padding-left: 85px;
-    left: 500px;
-}
+/*#item-form{*/
+/*    top: 20px;*/
+/*    bottom: 20px;*/
+/*}*/
+/*#CustomerTbl{*/
+/*    padding-left: 85px;*/
+/*    left: 500px;*/
+/*}*/
 
-.col-7 {
-    flex: 0 0 auto;
-    width: 100vw;
-}
+/*.col-7 {*/
+/*    flex: 0 0 auto;*/
+/*    width: 100vw;*/
+/*}*/
 
 
 /* ==================== item ============================== */

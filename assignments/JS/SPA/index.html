@@ -110,37 +110,37 @@
 <!--/* ==================================== Customer ================================================*/-->
 
 <!--<main >-->
-  <section id="cus-form" class="row p-4 w-100 bg" style="background-color:#D9D9D9" >
+  <section id="cus-form" class="row" style="background-color:#D9D9D9" >
 
     <!--        <h5 class="text-warning text-lg-start" >Customer Management</h5>-->
-    <div class="col-7  m-3 border rounded ">
+    <div class="col-4 m-0 container-fluid">
       <h5 class="text-black text-center m-lg-3 pt-5">Add a New Customer</h5>
-      <form class="m-5 col-5">
+      <form class="mb-2">
         <div class="mb-2">
           <label for="CustInputID"  class="form-label text-black">Cust ID</label>
-          <input type="text" class="form-control bg-black border-white text-white focus-ring-warning"
+          <input type="text" class="form-control  border-white text-black focus-ring-warning"
                  id="CustInputID">
         </div>
         <div class="mb-3">
           <label for="CustName"  class="form-label text-black">Name</label>
           <input type="text"
-                 class="form-control bg-black border-white text-white focus-ring-warning focus-ring"
+                 class="form-control  border-white text-black focus-ring-warning focus-ring"
                  id="CustName">
         </div>
         <div class="mb-3">
           <label for="CustAddress"  class="form-label text-black">Address</label>
           <input type="text"
-                 class="form-control bg-black border-white text-white focus-ring-warning focus-ring"
+                 class="form-control  border-white text-black focus-ring-warning focus-ring"
                  id="CustAddress">
         </div>
         <div class="mb-3">
           <label for="CustNum"  class="form-label text-black">Number</label>
           <input type="text"
-                 class="form-control bg-black border-white text-white focus-ring-warning focus-ring "
+                 class="form-control  border-white text-black focus-ring-warning focus-ring "
                  id="CustNum">
         </div>
         <div class="row m-0 gap-2 mt-5">
-          <button id="btnCustomerSave" type="submit" class="btn btn-outline-dark  col">Save</button>
+          <button id="btnCustomerSave" type="submit" class="btn btn-outline-dark bg-gradient col">Save</button>
           <button type="submit" class="btn btn-outline-dark col">Update</button>
           <button type="button" class="btn btn-outline-success">Edit</button>
           <button type="button" class="btn btn-outline-danger">Delete</button>
@@ -149,7 +149,7 @@
         <!--                <button type="submit" class="btn btn-outline-light disabled container-fluid">Update</button>-->
       </form>
     </div>
-    <div id=CustomerTbl class="col-7 border-black m-3  border-start">
+    <div id=CustomerTbl class="col-7 m-0 border-black   ">
       <table id="tblCustomer" class="table  text-bg-secondary">
         <thead class="text-black">
         <tr>
@@ -565,27 +565,6 @@
     document.getElementById("cus-form").style.display = 'none';
     document.getElementById("itm-form").style.display = 'none';
     document.getElementById("odr-form").style.display = 'inline-block';
-
-  });
-
-   let CustomerList=[];
-
-  $("#btnCustomerSave").click(function (){
-  let CustId = $("#CustInputID").val();
-  let CustName = $("#CustName").val();
-  let CustAddress = $("#CustAddress").val();
-  let CustNumber = $("#CustNum").val();
-
-  console.log($("CustInputID").val()+" ")
-
-  let tBody=$("#tblCustomer");
-
-  let tr = $('<tr> <td>'+CustId+'</td>  <td>'+CustName+'</td>  <td>'+CustAddress+'</td> <td>'+CustNumber+'</td> </tr>');
-
-    CustomerList.push({id:CustId,name:CustName,address:CustAddress,contact:CustNumber})
-  //set the row to the table body
-  tBody.append(tr);
-
 
   });
 

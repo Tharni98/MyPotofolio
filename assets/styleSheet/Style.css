@@ -1007,6 +1007,184 @@ footer h3 {
 
 /*============= responsive ==================*/
 
+/*------------ lap size --------------*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .main_navbar {
+        padding: 10px 50px;
+    }
+
+    .main_navbar h3 a {
+        font-size: 24px;
+    }
+
+    nav.navbar a {
+        margin-left: 30px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+    .main_navbar {
+        padding: 10px 100px;
+    }
+
+    .main_navbar h3 a {
+        font-size: 28px;
+    }
+
+    nav.navbar a {
+        margin-left: 35px;
+        font-size: 20px;
+    }
+    /**/
+    section#home {
+        width: 100vw;
+        display: table-cell;
+    }
+
+    .contact_box {
+
+        display: block;
+
+    }
+    fieldset {
+        display: contents;
+
+    }
+    legend {
+        text-align: center;
+        margin-top: 60px;
+        font-weight: bold;
+        color: darkgoldenrod;
+    }
+    #col2{
+        display: none;
+    }
+    .assign_block {
+        width: 270px;
+
+    }
+    .assign_block img {
+        width: 250px;
+    }
+    /**/
+    #project .project_set {
+        margin: auto;
+    }
+    /**/
+    .main_set {
+        width: 65%;
+    }
+    .fileclip_img {
+        top: -13px;
+        left: -23px;
+    }
+    .aboutImg {
+        width: 50px;
+        left: 199px;
+    }
+    div.aboutPara {
+        display: inline-table;
+        opacity: 91%;
+    }
+    article.aboutArticle {
+        width: 90vw;
+    }
+}
+
+@media screen and (min-width: 1281px) {
+    .main_navbar {
+        padding: 10px 150px;
+    }
+}
+
+
+
+/* ------------- Tab Size ------------ */
+@media screen and (min-width: 425px) and (max-width:768px ) {
+    .main_navbar {
+        padding: 10px 100px;
+    }
+
+    .main_navbar h3 a {
+        font-size: 30px;
+    }
+
+    nav.navbar a {
+        margin-left: 40px;
+        font-size: 20px;
+        font-weight: 520;
+    }
+    section#home {
+        display: inline-block;
+        height: 100vh;
+        padding: 10% 8% 0 8%;
+        background-color: #4a4e69;
+        width: 700px;
+    }
+    section#home {
+        height: 181vh;
+        width: 700px;
+    }
+    .myImg {
+        width: 350px;
+        height: 350px;
+        top: 50px;
+        right: 341px;
+    }
+    .welcome {
+        padding: 60% 3% 0 30%;
+    }
+    .welcome h2 {
+        text-align: center;
+    }
+    .welcome h1 {
+        text-align: center;
+    }
+    .welcome h3 {
+        text-align: center;
+        font-size: 24px;
+    }
+    /**/
+
+    .fileclip_img {
+        top: -13px;
+        left: 19px;
+    }
+    .aboutImg {
+        width: 50px;
+        left: 0px;
+    }
+    div.aboutPara {
+        display: inline-table;
+        opacity: 91%;
+    }
+    article.aboutArticle {
+        width: 120vw;
+        margin-left: 59px;
+    }
+    /**/
+    .ensColumns .ensContentBox {
+        margin-left: 313px;
+    }
+    /**/
+    section.skill {
+        width: 784px;
+
+    }
+    /**/
+    #project {
+        width: 792px;
+    }
+    .project_set .block {
+        margin: auto;
+    }
+    /**/
+    #assignment {
+        width: 750px;
+    }
+}
+
 
 /*-------  Mobile size --------*/
 
@@ -1087,6 +1265,7 @@ footer h3 {
         width: 50vw;
         position: absolute;
         background-color: green;
+        text-align: center;
 
     }
 
@@ -1374,183 +1553,12 @@ footer h3 {
 }
 
 
-/* ------------- Tab Size ------------ */
-    @media screen and (min-width: 425px) and (max-width:768px ) {
-        .main_navbar {
-            padding: 10px 100px;
-        }
-
-        .main_navbar h3 a {
-            font-size: 30px;
-        }
-
-        nav.navbar a {
-            margin-left: 40px;
-            font-size: 20px;
-            font-weight: 520;
-        }
-        section#home {
-            display: inline-block;
-            height: 100vh;
-            padding: 10% 8% 0 8%;
-            background-color: #4a4e69;
-            width: 700px;
-        }
-        section#home {
-            height: 181vh;
-            width: 700px;
-        }
-        .myImg {
-            width: 350px;
-            height: 350px;
-            top: 50px;
-            right: 341px;
-        }
-        .welcome {
-            padding: 60% 3% 0 30%;
-        }
-        .welcome h2 {
-            text-align: center;
-        }
-        .welcome h1 {
-            text-align: center;
-        }
-        .welcome h3 {
-            text-align: center;
-            font-size: 24px;
-        }
-        /**/
-
-        .fileclip_img {
-            top: -13px;
-            left: 19px;
-        }
-        .aboutImg {
-            width: 50px;
-            left: 0px;
-        }
-        div.aboutPara {
-            display: inline-table;
-            opacity: 91%;
-        }
-        article.aboutArticle {
-            width: 120vw;
-            margin-left: 59px;
-        }
-        /**/
-        .ensColumns .ensContentBox {
-            margin-left: 313px;
-        }
-        /**/
-        section.skill {
-            width: 784px;
-
-        }
-        /**/
-        #project {
-            width: 792px;
-        }
-        .project_set .block {
-            margin: auto;
-        }
-        /**/
-        #assignment {
-            width: 750px;
-        }
-    }
 
 
-/*------------ lap size --------------*/
-    @media screen and (min-width: 768px) and (max-width: 1024px) {
-        .main_navbar {
-            padding: 10px 50px;
-        }
-
-        .main_navbar h3 a {
-            font-size: 24px;
-        }
-
-        nav.navbar a {
-            margin-left: 30px;
-            font-size: 18px;
-        }
-    }
 
 
-    @media screen and (min-width: 1024px) and (max-width: 1280px) {
-        .main_navbar {
-            padding: 10px 100px;
-        }
 
-        .main_navbar h3 a {
-            font-size: 28px;
-        }
 
-        nav.navbar a {
-            margin-left: 35px;
-            font-size: 20px;
-        }
-        /**/
-        section#home {
-            width: 100vw;
-            display: table-cell;
-        }
-
-        .contact_box {
-
-            display: block;
-
-        }
-        fieldset {
-            display: contents;
-
-        }
-        legend {
-            text-align: center;
-            margin-top: 60px;
-            font-weight: bold;
-            color: darkgoldenrod;
-        }
-        #col2{
-            display: none;
-        }
-        .assign_block {
-            width: 270px;
-
-        }
-        .assign_block img {
-            width: 250px;
-        }
-        /**/
-        #project .project_set {
-            margin: auto;
-        }
-        /**/
-        .main_set {
-            width: 65%;
-        }
-        .fileclip_img {
-            top: -13px;
-            left: -23px;
-        }
-        .aboutImg {
-            width: 50px;
-            left: 199px;
-        }
-        div.aboutPara {
-            display: inline-table;
-            opacity: 91%;
-        }
-        article.aboutArticle {
-            width: 90vw;
-        }
-    }
-
-    @media screen and (min-width: 1281px) {
-        .main_navbar {
-            padding: 10px 150px;
-        }
-    }
 
 
 
