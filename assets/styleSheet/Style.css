@@ -712,6 +712,7 @@ section.skill {
     color: #000000;
 }
 .wrapperProj .button{
+    position: relative;
     display: inline-block;
     height: 60px;
     width: 60px;
@@ -723,8 +724,10 @@ section.skill {
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease-out;
-    margin-left: 20px;
+    /*margin-left: 20px;*/
     margin-top: -7px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .wrapperProj .button:hover{
     width: 200px;
@@ -742,9 +745,7 @@ section.skill {
 }
 .wrapperProj .button:nth-child(1):hover .icon{
     background: #a48550;
-    margin-left: -29px;
 }
-
 .wrapperProj .button .icon i{
     font-size: 25px;
     line-height: 60px;

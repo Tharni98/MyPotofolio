@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Rubik+Iso&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/Style.css">
+  <link rel="stylesheet" href="assets/Style/Style.css">
   <link rel="stylesheet" href="assets/css/bootstrap.css">
 
 </head>
@@ -113,7 +113,7 @@
 <section id="cus-form" class="row w-100"  style="background-color:#D9D9D9" >
 
   <!--        <h5 class="text-warning text-lg-start" >Customer Management</h5>-->
-  <div class="col-4 m-0 container-fluid">
+  <div class="col-4 m-0 ">
     <h5 class="text-black text-center m-lg-3 pt-5">Add a New Customer</h5>
     <form class="mb-2">
       <div class="mb-2">
@@ -141,9 +141,9 @@
       </div>
       <div class="row m-0 gap-2 mt-5">
         <button id="btnCustomerSave" type="submit" class="btn btn-outline-dark bg-gradient col">Save</button>
-        <button type="submit" class="btn btn-outline-dark col">Update</button>
-        <button type="button" class="btn btn-outline-success">Edit</button>
-        <button type="button" class="btn btn-outline-danger">Delete</button>
+        <button id=btnUpdate type="submit" class="btn btn-outline-dark col">Update</button>
+        <button  type="button" class="btn btn-outline-success">Edit</button>
+        <button i type="button" class="btn btn-outline-danger">Delete</button>
       </div>
       <!--                <button type="submit" class="btn btn-outline-warning  container-fluid">Save</button>-->
       <!--                <button type="submit" class="btn btn-outline-light disabled container-fluid">Update</button>-->
@@ -169,169 +169,65 @@
 
 
 <!--/* ====================================== item ========================================*/-->
-<!--<main>-->
-<section id="itm-form" class="row p-4  bg w-100" style="background-color:#D9D9D9" >
+<!--<main >-->
+<section id="item-form" class="row w-100"  style="background-color:#D9D9D9" >
 
   <!--        <h5 class="text-warning text-lg-start" >Customer Management</h5>-->
-  <div class="col-7  m-3 border rounded">
-    <h5 class="text-black text-center m-lg-3 pt-5">Add a New Item</h5>
-    <form class="m-5 col-5">
-      <div class="mb-3">
-        <label for="ItemInputID" class="form-label text-black">Item ID</label>
-        <input type="text" class="form-control bg-black border-white text-warning focus-ring-warning"
-               id="ItemInputID" readonly>
+  <div class="col-4 m-0 ">
+    <h5 class="text-black text-center m-lg-3 pt-5">Add a New Customer</h5>
+    <form class="mb-2">
+      <div class="mb-2">
+        <label for="ItemInputID"  class="form-label text-black">Cust ID</label>
+        <input type="text" class="form-control  border-white text-black focus-ring-warning"
+               id="ItemInputID">
       </div>
       <div class="mb-3">
-        <label for="ItemInputDesc" class="form-label text-black">Description</label>
+        <label for="ItemInputDes"  class="form-label text-black">Name</label>
         <input type="text"
-               class="form-control bg-black border-white text-warning focus-ring-warning focus-ring"
-               id="ItemInputDesc">
+               class="form-control  border-white text-black focus-ring-warning focus-ring"
+               id="ItemInputDes">
       </div>
       <div class="mb-3">
-        <label for="IteminputUnitPrice" class="form-label text-black">Unit Price</label>
-        <input type="number"
-               class="form-control bg-black border-white text-warning focus-ring-warning focus-ring"
+        <label for="IteminputUnitPrice"  class="form-label text-black">Address</label>
+        <input type="text"
+               class="form-control  border-white text-black focus-ring-warning focus-ring"
                id="IteminputUnitPrice">
       </div>
       <div class="mb-3">
-        <label for="IteminputQty" class="form-label text-black">Quantity</label>
-        <input type="number"
-               class="form-control bg-black border-white text-warning focus-ring-warning focus-ring "
+        <label for="IteminputQty"  class="form-label text-black">Number</label>
+        <input type="text"
+               class="form-control  border-white text-black focus-ring-warning focus-ring "
                id="IteminputQty">
       </div>
       <div class="row m-0 gap-2 mt-5">
-        <button type="submit" class="btn btn-outline-dark  col">Save</button>
+        <button id="btnItemSave" type="submit" class="btn btn-outline-dark bg-gradient col">Save</button>
         <button type="submit" class="btn btn-outline-dark col">Update</button>
+        <button type="button" class="btn btn-outline-success">Edit</button>
+        <button type="button" class="btn btn-outline-danger">Delete</button>
       </div>
       <!--                <button type="submit" class="btn btn-outline-warning  container-fluid">Save</button>-->
       <!--                <button type="submit" class="btn btn-outline-light disabled container-fluid">Update</button>-->
     </form>
   </div>
-  <div id=ItemTbl class="col border-white m-3  border-start border rounded">
-    <table class="table text-bg-secondary">
+  <div id=ItemTbl class="col-7 m-0 border-black   ">
+    <table id="tblItem" class="table  text-bg-secondary">
       <thead class="text-black">
       <tr>
-        <th scope="col1">ID</th>
-        <th scope="col2">Description</th>
-        <th scope="col3">Unit Price</th>
-        <th scope="col4">Qty On Hnd</th>
-        <th scope="col5">Action</th>
+        <th scope="col">Cust ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Address</th>
+        <th scope="col">Number</th>
       </tr>
       </thead>
       <tbody>
-      <tr>
-        <th scope="row"></th>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>
-          <button type="button" class="btn btn-outline-success">Edit</button>
-          <button type="button" class="btn btn-outline-danger">Delete</button>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row"></th>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>
-          <button type="button" class="btn btn-outline-success">Edit</button>
-          <button type="button" class="btn btn-outline-danger">Delete</button>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row"></th>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>
-          <button type="button" class="btn btn-outline-success">Edit</button>
-          <button type="button" class="btn btn-outline-danger">Delete</button>
-        </td>
-      </tr>
-
-      <tr>
-        <th scope="row"></th>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>
-          <button type="button" class="btn btn-outline-success">Edit</button>
-          <button type="button" class="btn btn-outline-danger">Delete</button>
-        </td>
-      </tr>
-
-      <tr>
-        <th scope="row"></th>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>
-          <button type="button" class="btn btn-outline-success">Edit</button>
-          <button type="button" class="btn btn-outline-danger">Delete</button>
-        </td>
-      </tr>
-
-      <tr>
-        <th scope="row"></th>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>
-          <button type="button" class="btn btn-outline-success">Edit</button>
-          <button type="button" class="btn btn-outline-danger">Delete</button>
-        </td>
-      </tr>
-
-      <tr>
-        <th scope="row"></th>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>
-          <button type="button" class="btn btn-outline-success">Edit</button>
-          <button type="button" class="btn btn-outline-danger">Delete</button>
-        </td>
-      </tr>
-
-      <tr>
-        <th scope="row"></th>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>
-          <button type="button" class="btn btn-outline-success">Edit</button>
-          <button type="button" class="btn btn-outline-danger">Delete</button>
-        </td>
-      </tr>
-
-      <tr>
-        <th scope="row"></th>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>
-          <button type="button" class="btn btn-outline-success">Edit</button>
-          <button type="button" class="btn btn-outline-danger">Delete</button>
-        </td>
-      </tr>
-
-      <tr>
-        <th scope="row"></th>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>
-          <button type="button" class="btn btn-outline-success">Edit</button>
-          <button type="button" class="btn btn-outline-danger">Delete</button>
-        </td>
-      </tr>
 
       </tbody>
     </table>
   </div>
 </section>
 <!--</main>-->
+
+
 
 <!--/**================================================= Order ==================================================*/-->
 
@@ -587,9 +483,36 @@
     //set the row to the table body
     tBody.append(tr);
 
-
   });
 
+  btnUpdate.click(function (){
+
+    let cusID = $('#cid').val();
+    let cusName = $('#Name').val();
+    let cusAddress = $('#Address').val();
+    let cusContact = $('#contact').val();
+
+    selectedCustomerRow.cells[0].textContent=cusID;
+    selectedCustomerRow.cells[1].textContent=cusName;
+    selectedCustomerRow.cells[2].textContent=cusAddress;
+    selectedCustomerRow.cells[3].textContent=cusContact;
+
+    clearCustomerFields();
+
+
+
+    //updating the selected customer from the list
+    customerList[customerIndex].id=cusID;
+    customerList[customerIndex].name=cusName;
+    customerList[customerIndex].address=cusAddress;
+    customerList[customerIndex].contact=cusContact;
+
+    console.log(customerList);
+
+    btnUpdate.prop('disabled',true);
+    btnDelete.prop('disabled',true);
+    btnAdd.prop('disabled',false);
+  });
 
 </script>
 
