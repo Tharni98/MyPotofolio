@@ -54,32 +54,51 @@ h5 {
 
 
 /* ==================== CUSTOMER ============================== */
-/*#cus-form{*/
-/*    top: 20px;*/
-/*    bottom: 20px;*/
-/*}*/
+#cus-form{
+    top: 20px;
+    bottom: 20px;
+    margin-left: 50px;
+}
 
-/*#item-form{*/
-/*    top: 20px;*/
-/*    bottom: 20px;*/
-/*}*/
-/*#CustomerTbl{*/
-/*    padding-left: 85px;*/
-/*    left: 500px;*/
-/*}*/
+#item-form{
+    top: 20px;
+    bottom: 20px;
+}
+#CustomerTbl{
+    padding-left: 90px;
+    left: 800px;
+}
 
-/*.col-7 {*/
-/*    flex: 0 0 auto;*/
-/*    width: 100vw;*/
-/*}*/
+.col-7 {
+    flex: 0 0 auto;
+    width: 100vw;
+}
 
 
 /* ==================== item ============================== */
 
-/*#ItemTbl{*/
-/*    padding-left: 85px;*/
-/*}*/
+#ItemForm{
+    top: 20px;
+    bottom: 20px;
 
+}
+#item{
+    margin-left: 40px;
+}
+#itm-form{
+    top: 20px;
+    bottom: 20px;
+    margin-left: 50px;
+}
+#ItemTbl{
+    padding-left: 90px;
+    left: 800px;
+}
+
+.col-7 {
+    flex: 0 0 auto;
+    width: 100vw;
+}
 
 
 /* ==================== CUSTOMER ============================== */

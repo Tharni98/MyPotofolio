@@ -2,6 +2,10 @@
 
 /* ================= HOME =============================== */
 
+body{
+    color: #5c636a;
+}
+
 .carousel-item img {
     display: flex;
     justify-content: center;
@@ -50,4 +54,53 @@ h5 {
 
 
 /* ==================== CUSTOMER ============================== */
+#cus-form{
+    top: 20px;
+    bottom: 20px;
+    margin-left: 50px;
+}
+
+#item-form{
+    top: 20px;
+    bottom: 20px;
+}
+#CustomerTbl{
+    padding-left: 90px;
+    left: 800px;
+}
+
+.col-7 {
+    flex: 0 0 auto;
+    width: 100vw;
+}
+
+
+/* ==================== item ============================== */
+
+#ItemForm{
+    top: 20px;
+    bottom: 20px;
+
+}
+#item{
+    margin-left: 40px;
+}
+#itm-form{
+    top: 20px;
+    bottom: 20px;
+    margin-left: 50px;
+}
+#ItemTbl{
+    padding-left: 90px;
+    left: 800px;
+}
+
+.col-7 {
+    flex: 0 0 auto;
+    width: 100vw;
+}
+
+
+/* ==================== CUSTOMER ============================== */
+
 

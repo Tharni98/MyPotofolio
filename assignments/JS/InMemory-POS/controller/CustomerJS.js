@@ -43,6 +43,7 @@ $("#btnCustomerSave").click(function (){
 });
 
 let selectedCustomerRow;
+
 //load Customer
 $("#tblCustomer").click(function (event){
     selectedCustomerRow = event.target.closest('tr');

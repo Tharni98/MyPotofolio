@@ -57,6 +57,7 @@ h5 {
 #cus-form{
     top: 20px;
     bottom: 20px;
+    margin-left: 50px;
 }
 
 #item-form{
@@ -79,11 +80,15 @@ h5 {
 #ItemForm{
     top: 20px;
     bottom: 20px;
-}
 
-#item-form{
+}
+#item{
+    margin-left: 40px;
+}
+#itm-form{
     top: 20px;
     bottom: 20px;
+    margin-left: 50px;
 }
 #ItemTbl{
     padding-left: 90px;

@@ -2,218 +2,142 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Items</title>
-    <meta name="viewport" content="width=device-width initial-scale=1 user-scalable=no">
-    <link rel="stylesheet" href="assets/normalize.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Rubik+Iso&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/style.css">
-    <script src="assets/js/bootstrap.js"></script>
+    <title>POS System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POS System</title>
     <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/jquery-3.7.0.min.js"></script>
+
+
 </head>
-<body>
-<header>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow custom-navbar bg-body-tertiary">
-        <div class="container-fluid" style="background-color: #008b6f; height: 70px;">
-            <img src="assets/img/Cosmatic.jpg" alt="Flower Store" class="img-responsive custom-logo"
-                 style="height: 70px; width: 70px; border: 2px solid rgb(182, 182, 182); border-radius: 50%; margin: 10px;">
-            <a class="navbar-brand"
-               style="color: #000000; font-weight: 800; font-size: 35px; font-family: 'Playfair Display', serif;"
-               href="#">Beauty Cosmetics</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent"
-                 style="background-color: #008b6f; margin: 30px;">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin: 20px;">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="customer.html">Customer</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="item.html">Item</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="order.html">Order</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button type="button" class="btn btn-outline-light"
-                            style="background-color: #3c84ab;">Search</button>
-                </form>
-            </div>
-        </div>
-    </nav>
-</header>
 
-<main>
-    <section class="row p-4 mt-5 bg" style="background-color:#D9D9D9" >
+<style>
+    /*.banner-image {*/
+    /*    background-image: url('assets/img/B2.jpeg');*/
+    /*    background-size: cover;*/
+    /*    opacity: 100%;*/
+    /*}*/
+</style>
+<body style="background-color: #E3F6F5">
+<nav class="navbar navbar-expand-lg navbar d-flex flex-row " style="background-color: #0b093e">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand text-white" href="#">Shop System</a>
+            <ul class="navbar-nav me-auto ms-2 mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="index.html" id="HomeForm">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="./customer.html">Customer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="./item.html">Item</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="./order.html">Order</a>
+                </li>
+                <!--                <li class="nav-item">-->
+                <!--                    <a class="nav-link text-white" href="#" id="placeOrders">Place Orders</a>-->
+                <!--                </li>-->
 
-        <!--        <h5 class="text-warning text-lg-start" >Customer Management</h5>-->
-        <div class="col-4 border-black m-3 border rounded">
-            <h5 class="text-black text-center m-lg-3 pt-5">Add a New Item</h5>
-            <form class="m-5">
-                <div class="mb-3">
-                    <label for="InputID" class="form-label text-black">Item ID</label>
-                    <input type="text" class="form-control bg-black border-white text-warning focus-ring-warning"
-                           id="InputID" readonly>
-                </div>
-                <div class="mb-3">
-                    <label for="InputDesc" class="form-label text-black">Description</label>
-                    <input type="text"
-                           class="form-control bg-black border-white text-warning focus-ring-warning focus-ring"
-                           id="InputDesc">
-                </div>
-                <div class="mb-3">
-                    <label for="inputUnitPrice" class="form-label text-black">Unit Price</label>
-                    <input type="number"
-                           class="form-control bg-black border-white text-warning focus-ring-warning focus-ring"
-                           id="inputUnitPrice">
-                </div>
-                <div class="mb-3">
-                    <label for="inputQty" class="form-label text-black">Quantity</label>
-                    <input type="number"
-                           class="form-control bg-black border-white text-warning focus-ring-warning focus-ring "
-                           id="inputQty">
-                </div>
-                <div class="row m-0 gap-2 mt-5">
-                    <button type="submit" class="btn btn-outline-dark  col">Save</button>
-                    <button type="submit" class="btn btn-outline-dark col">Update</button>
-                </div>
-                <!--                <button type="submit" class="btn btn-outline-warning  container-fluid">Save</button>-->
-                <!--                <button type="submit" class="btn btn-outline-light disabled container-fluid">Update</button>-->
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
         </div>
-        <div class="col-7 border-white m-3  border-start">
-            <table class="table text-bg-secondary">
-                <thead class="text-black">
-                <tr>
-                    <th scope="col">ID</th>
-                    <th scope="col">Description</th>
-                    <th scope="col">Unit Price</th>
-                    <th scope="col">Qty On Hnd</th>
-                    <th scope="col">Action</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <th scope="row">I-001</th>
-                    <td></td>
-                    <td>15000</td>
-                    <td>15</td>
-                    <td>
-                        <button type="button" class="btn btn-outline-success">Edit</button>
-                        <button type="button" class="btn btn-outline-danger">Delete</button>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">I-002</th>
-                    <td></td>
-                    <td>18000</td>
-                    <td>12</td>
-                    <td>
-                        <button type="button" class="btn btn-outline-success">Edit</button>
-                        <button type="button" class="btn btn-outline-danger">Delete</button>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">I-003</th>
-                    <td></td>
-                    <td>7000</td>
-                    <td>20</td>
-                    <td>
-                        <button type="button" class="btn btn-outline-success">Edit</button>
-                        <button type="button" class="btn btn-outline-danger">Delete</button>
-                    </td>
-                </tr>
+    </div>
+</nav>
 
-                <tr>
-                    <th scope="row">I-004</th>
-                    <td></td>
-                    <td>2000</td>
-                    <td>10</td>
-                    <td>
-                        <button type="button" class="btn btn-outline-success">Edit</button>
-                        <button type="button" class="btn btn-outline-danger">Delete</button>
-                    </td>
-                </tr>
 
-                <tr>
-                    <th scope="row">I-005</th>
-                    <td></td>
-                    <td>5000</td>
-                    <td>30</td>
-                    <td>
-                        <button type="button" class="btn btn-outline-success">Edit</button>
-                        <button type="button" class="btn btn-outline-danger">Delete</button>
-                    </td>
-                </tr>
+<!--/* ====================================== item ========================================*/-->
 
-                <tr>
-                    <th scope="row">I-006</th>
-                    <td></td>
-                    <td>7600</td>
-                    <td>8</td>
-                    <td>
-                        <button type="button" class="btn btn-outline-success">Edit</button>
-                        <button type="button" class="btn btn-outline-danger">Delete</button>
-                    </td>
-                </tr>
+<div  id=item-form class="container text-center"  >
+    <div class="row align-items-start">
+        <div class="col">
 
-                <tr>
-                    <th scope="row">I-007</th>
-                    <td></td>
-                    <td>25000</td>
-                    <td>07</td>
-                    <td>
-                        <button type="button" class="btn btn-outline-success">Edit</button>
-                        <button type="button" class="btn btn-outline-danger">Delete</button>
-                    </td>
-                </tr>
+            <section class="container col border-dark m-4 border rounded object-fit-contain  me-auto ms-20 mb-10" style="background-color: #BFCCB5">
 
-                <tr>
-                    <th scope="row">I-008</th>
-                    <td></td>
-                    <td>32000</td>
-                    <td>15</td>
-                    <td>
-                        <button type="button" class="btn btn-outline-success">Edit</button>
-                        <button type="button" class="btn btn-outline-danger">Delete</button>
-                    </td>
-                </tr>
+                <div class="row">
+                    <div class="col">
+                        <h2 class="text-secondary-800 text-center m-lg-100 pt-5  text-primary" >Item Details</h2>
+                        <form class="row p-4 m-0 m-lg-2  justify-content-center">
+                            <div class="mb-3">
+                                <label for="Code" class="form-label text-black">Item ID</label>
+                                <input  type="text"
+                                        class="form-control  border-white text-black focus-ring-warning focus-ring"
+                                        id="Code">
+                            </div>
+                            <div class="mb-3">
+                                <label  for="ItemDec" class="form-label text-black">Description</label>
+                                <input type="text"
+                                       class="form-control  border-white text-black focus-ring-warning focus-ring"
+                                       id="ItemDec">
+                            </div>
+                            <div class="mb-3">
+                                <label  for="UnitPiz" class="form-label text-black">Unit Price</label>
+                                <input type="number"
+                                       class="form-control border-white text-black focus-ring-warning focus-ring"
+                                       id="UnitPiz">
+                            </div>
+                            <div class="mb-3">
+                                <label  for="itemQty" class="form-label text-black">Quantity</label>
+                                <input type="number"
+                                       class="form-control  border-white text-black focus-ring-warning focus-ring "
+                                       id="itemQty">
+                            </div>
 
-                <tr>
-                    <th scope="row">I-009</th>
-                    <td></td>
-                    <td>1200</td>
-                    <td>20</td>
-                    <td>
-                        <button type="button" class="btn btn-outline-success">Edit</button>
-                        <button type="button" class="btn btn-outline-danger">Delete</button>
-                    </td>
-                </tr>
 
-                <tr>
-                    <th scope="row">I-010</th>
-                    <td></td>
-                    <td>850</td>
-                    <td>15</td>
-                    <td>
-                        <button type="button" class="btn btn-outline-success">Edit</button>
-                        <button type="button" class="btn btn-outline-danger">Delete</button>
-                    </td>
-                </tr>
+                            <div class="row m-0 gap-2 mt-5">
+                                <button id="btnItemSave" type="submit" class="btn btn-outline-dark bg-gradient col">Save</button>
+                                <button id=btnItemUpdate type="submit" class="btn btn-outline-dark col">Update</button>
+                                <button id=btnItemClear type="submit" class="btn btn-outline-dark col">Clear</button>
+                                <button  type="button" class="btn btn-outline-success">Get All</button>
+                                <button id=btnItemDelete type="button" class="btn btn-outline-danger">Delete</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
 
-                </tbody>
-            </table>
+            </section>
+
         </div>
-    </section>
-</main>
+        <div class="col">
+
+            <div class="col">
+
+                <section class="container col  m-4  rounded object-fit-contain  me-auto ms-20 mb-10">
+
+                    <h2 class="text-primary text-center m-lg-100 pt-5 " >Item Details</h2>
+                    <table class="table table-light table-striped">
+                        <thead>
+                        <tr>
+                            <th class="text-white" style="background-color: #0b093e" scope="col">Id</th>
+                            <th  class="text-white" style="background-color: #0b093e" scope="col">Description</th>
+                            <th  class="text-white" style="background-color: #0b093e" scope="col">Unit price</th>
+                            <th  class="text-white" style="background-color: #0b093e" scope="col">Qty</th>
+                            <!--<th style="background-color: #0077b6" scope="col">Action</th>-->
+                        </tr>
+                        </thead>
+                        <tbody id="tblItem">
+
+
+
+                        </tbody>
+                    </table>
+
+
+                </section>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
 </body>
 </html>

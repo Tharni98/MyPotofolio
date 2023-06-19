@@ -1,61 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <title>Items</title>
-  <meta name="viewport" content="width=device-width initial-scale=1 user-scalable=no">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Rubik+Iso&display=swap" rel="stylesheet">
+  <title>POS System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>POS System</title>
   <link rel="stylesheet" href="assets/Style.css">
   <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <script src="assets/js/bootstrap.js"></script>
+  <script src="assets/js/jquery-3.7.0.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.js"></script>
+
 
 </head>
 
-<body>
-<!-- ====================  header ============================== -->
+<style>
 
+</style>
+<body style="background-color: #E3F6F5">
 
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow custom-navbar bg-body-tertiary">
-    <div class="container-fluid" style="background-color: #008b6f; height: 70px;">
-      <img src="assets/img/Cosmatic.jpg" alt="Flower Store" class="img-responsive custom-logo"
-           style="height: 70px; width: 70px; border: 2px solid rgb(182, 182, 182); border-radius: 50%; margin: 10px;">
-      <a class="navbar-brand"
-         style="color: #000000; font-weight: 800; font-size: 35px; font-family: 'Playfair Display', serif;"
-         href="#">Beauty Cosmetics</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-              aria-expanded="false" aria-label="Toggle navigation">
+<header>
+  <nav class="navbar navbar-expand-lg navbar d-flex flex-row " style="background-color: #0b093e">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent"
-           style="background-color: #008b6f; margin: 30px;">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin: 20px;">
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand text-white" href="#">Shop System</a>
+        <ul class="navbar-nav me-auto ms-2 mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#hme-form" id="HomeForm">Home</a>
+            <a class="nav-link active text-white" aria-current="page" href="#hme-form" id="HomeForm">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#cus-form" id="CustomerForm">Customer</a>
+            <a class="nav-link active text-white" aria-current="page" href="#cus-form" id="CustomerForm">Customer</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#itm-form" id="ItemForm">Item</a>
+            <a class="nav-link text-white" href="#itm-form" id="ItemForm">Item</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#odr-form" id="OrderForm">Order</a>
+            <a class="nav-link text-white" href="#odr-form" id="OrderForm">Order</a>
           </li>
+          <!--                <li class="nav-item">-->
+          <!--                    <a class="nav-link text-white" href="#" id="placeOrders">Place Orders</a>-->
+          <!--                </li>-->
+
         </ul>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button type="button" class="btn btn-outline-light"
-                  style="background-color: #3c84ab;">Search</button>
+          <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
       </div>
     </div>
   </nav>
+</header>
 
 <!-- ====================  HOME  ============================== -->
-<section class="Home" id="hme-form">
+<section class="Home w-100" id="hme-form" >
 
   <div id="carouselExampleDark" class="carousel carousel-dark slide">
     <div class="carousel-indicators">
@@ -103,432 +103,333 @@
 
 </section>
 
-<script src="assets/js/bootstrap.bundle.min.js"></script>
-
-
 
 <!--/* ==================================== Customer ================================================*/-->
 
-<!--<main >-->
-  <section id="cus-form" class="row" style="background-color:#D9D9D9" >
+<div id="cus-form" class="container text-center"  >
+  <div class="row align-items-start">
+    <div class="col">
+      <section   class="container col border-dark m-4 border rounded object-fit-contain  me-auto ms-20 mb-10" style="background-color: #BFCCB5">
 
-    <!--        <h5 class="text-warning text-lg-start" >Customer Management</h5>-->
-    <div class="col-4 m-0 container-fluid">
-      <h5 class="text-black text-center m-lg-3 pt-5">Add a New Customer</h5>
-      <form class="mb-2">
-        <div class="mb-2">
-          <label for="CustInputID"  class="form-label text-black">Cust ID</label>
-          <input type="text" class="form-control  border-white text-black focus-ring-warning"
-                 id="CustInputID">
+        <div class="row">
+          <div class="col">
+            <h2 class="text-secondary-800 text-center m-lg-100 pt-5  text-primary" style="color: #0b093e" >Add to Customer</h2>
+            <form class="row p-4 m-0 justify-content-center" >
+              <div class="mb-3">
+                <label for="CustInputID"  class="form-label text-black">Cust ID</label>
+                <input type="text" class="form-control  border-white text-black focus-ring-warning"
+                       id="CustInputID">
+              </div>
+              <div class="mb-3">
+                <label for="CustName"  class="form-label text-black">Name</label>
+                <input type="text"
+                       class="form-control  border-white text-black focus-ring-warning focus-ring"
+                       id="CustName">
+              </div>
+              <div class="mb-3">
+                <label for="CustAddress"  class="form-label text-black">Address</label>
+                <input type="text"
+                       class="form-control  border-white text-black focus-ring-warning focus-ring"
+                       id="CustAddress">
+              </div>
+              <div class="mb-3">
+                <label for="CustNum"  class="form-label text-black">Number</label>
+                <input type="text"
+                       class="form-control  border-white text-black focus-ring-warning focus-ring "
+                       id="CustNum">
+              </div>
+
+
+              <div class="row m-0 gap-2 mt-5">
+                <button id="btnCustomerSave" type="submit" class="btn btn-outline-dark bg-gradient col">Save</button>
+                <button id=btnUpdate type="submit" class="btn btn-outline-dark col">Update</button>
+                <button id=btnClear type="submit" class="btn btn-outline-dark col">Clear</button>
+                <button  type="button" class="btn btn-outline-success">Get All</button>
+                <button id=btnDelete type="button" class="btn btn-outline-danger">Delete</button>
+              </div>
+            </form>
+          </div>
         </div>
-        <div class="mb-3">
-          <label for="CustName"  class="form-label text-black">Name</label>
-          <input type="text"
-                 class="form-control  border-white text-black focus-ring-warning focus-ring"
-                 id="CustName">
-        </div>
-        <div class="mb-3">
-          <label for="CustAddress"  class="form-label text-black">Address</label>
-          <input type="text"
-                 class="form-control  border-white text-black focus-ring-warning focus-ring"
-                 id="CustAddress">
-        </div>
-        <div class="mb-3">
-          <label for="CustNum"  class="form-label text-black">Number</label>
-          <input type="text"
-                 class="form-control  border-white text-black focus-ring-warning focus-ring "
-                 id="CustNum">
-        </div>
-        <div class="row m-0 gap-2 mt-5">
-          <button id="btnCustomerSave" type="submit" class="btn btn-outline-dark bg-gradient col">Save</button>
-          <button type="submit" class="btn btn-outline-dark col">Update</button>
-          <button type="button" class="btn btn-outline-success">Edit</button>
-          <button type="button" class="btn btn-outline-danger">Delete</button>
-        </div>
-        <!--                <button type="submit" class="btn btn-outline-warning  container-fluid">Save</button>-->
-        <!--                <button type="submit" class="btn btn-outline-light disabled container-fluid">Update</button>-->
-      </form>
+
+      </section>
+
     </div>
-    <div id=CustomerTbl class="col-7 m-0 border-black   ">
-      <table id="tblCustomer" class="table  text-bg-secondary">
-        <thead class="text-black">
-        <tr>
-          <th scope="col">Cust ID</th>
-          <th scope="col">Name</th>
-          <th scope="col">Address</th>
-          <th scope="col">Number</th>
-        </tr>
-        </thead>
-        <tbody>
+    <div class="col">
 
-        </tbody>
-      </table>
+      <div class="col">
+
+        <section class="container col  m-4  rounded object-fit-contain  me-auto ms-20 mb-10">
+          <h2 class="text-primary text-center m-lg-100 pt-5 " >Customer Details</h2>
+
+          <table  class="table table-light table-striped" >
+            <thead>
+            <tr>
+              <th class="text-white" style="background-color: #0b093e" scope="col">Id</th>
+              <th class="text-white" style="background-color: #0b093e" scope="col">Name</th>
+              <th class="text-white" style="background-color: #0b093e" scope="col">Address</th>
+              <th class="text-white" style="background-color: #0b093e" scope="col">Contact</th>
+              <!--   <th style="background-color: #0077b6" scope="col">Action</th>-->
+            </tr>
+            </thead>
+            <tbody id="tblCustomer">
+
+            </tbody>
+          </table>
+
+        </section>
+
+
+      </div>
+
     </div>
-  </section>
-<!--</main>-->
+  </div>
 
+</div>
 
 <!--/* ====================================== item ========================================*/-->
-<!--<main>-->
-  <section id="itm-form" class="row p-4  bg w-100" style="background-color:#D9D9D9" >
 
-    <!--        <h5 class="text-warning text-lg-start" >Customer Management</h5>-->
-    <div class="col-7  m-3 border rounded">
-      <h5 class="text-black text-center m-lg-3 pt-5">Add a New Item</h5>
-      <form class="m-5 col-5">
-        <div class="mb-3">
-          <label for="ItemInputID" class="form-label text-black">Item ID</label>
-          <input type="text" class="form-control bg-black border-white text-warning focus-ring-warning"
-                 id="ItemInputID" readonly>
+<div  id=itm-form class="container text-center"  >
+  <div class="row align-items-start">
+    <div class="col">
+
+      <section id="item" class="container col border-dark m-4 border rounded object-fit-contain  me-auto ms-20 mb-10" style="background-color: #BFCCB5">
+
+        <div class="row">
+          <div class="col">
+            <h2 class="text-secondary-800 text-center m-lg-100 pt-5  text-primary" >Item Details</h2>
+            <form class="row p-4 m-0 m-lg-2  justify-content-center">
+              <div class="mb-3">
+                <label for="Code" class="form-label text-black">Item ID</label>
+                <input  type="text"
+                        class="form-control  border-white text-black focus-ring-warning focus-ring"
+                        id="Code">
+              </div>
+              <div class="mb-3">
+                <label  for="ItemDec" class="form-label text-black">Description</label>
+                <input type="text"
+                       class="form-control  border-white text-black focus-ring-warning focus-ring"
+                       id="ItemDec">
+              </div>
+              <div class="mb-3">
+                <label  for="UnitPiz" class="form-label text-black">Unit Price</label>
+                <input type="number"
+                       class="form-control border-white text-black focus-ring-warning focus-ring"
+                       id="UnitPiz">
+              </div>
+              <div class="mb-3">
+                <label  for="itemQty" class="form-label text-black">Quantity</label>
+                <input type="number"
+                       class="form-control  border-white text-black focus-ring-warning focus-ring "
+                       id="itemQty">
+              </div>
+
+
+              <div class="row m-0 gap-2 mt-5">
+                <button id="btnItemSave" type="submit" class="btn btn-outline-dark bg-gradient col">Save</button>
+                <button id=btnItemUpdate type="submit" class="btn btn-outline-dark col">Update</button>
+                <button id=btnItemClear type="submit" class="btn btn-outline-dark col">Clear</button>
+                <button  type="button" class="btn btn-outline-success">Get All</button>
+                <button id=btnItemDelete type="button" class="btn btn-outline-danger">Delete</button>
+              </div>
+            </form>
+          </div>
         </div>
-        <div class="mb-3">
-          <label for="ItemInputDesc" class="form-label text-black">Description</label>
-          <input type="text"
-                 class="form-control bg-black border-white text-warning focus-ring-warning focus-ring"
-                 id="ItemInputDesc">
-        </div>
-        <div class="mb-3">
-          <label for="IteminputUnitPrice" class="form-label text-black">Unit Price</label>
-          <input type="number"
-                 class="form-control bg-black border-white text-warning focus-ring-warning focus-ring"
-                 id="IteminputUnitPrice">
-        </div>
-        <div class="mb-3">
-          <label for="IteminputQty" class="form-label text-black">Quantity</label>
-          <input type="number"
-                 class="form-control bg-black border-white text-warning focus-ring-warning focus-ring "
-                 id="IteminputQty">
-        </div>
-        <div class="row m-0 gap-2 mt-5">
-          <button type="submit" class="btn btn-outline-dark  col">Save</button>
-          <button type="submit" class="btn btn-outline-dark col">Update</button>
-        </div>
-        <!--                <button type="submit" class="btn btn-outline-warning  container-fluid">Save</button>-->
-        <!--                <button type="submit" class="btn btn-outline-light disabled container-fluid">Update</button>-->
-      </form>
+
+      </section>
+
     </div>
-    <div id=ItemTbl class="col border-white m-3  border-start">
-      <table class="table text-bg-secondary">
-        <thead class="text-black">
-        <tr>
-          <th scope="col1">ID</th>
-          <th scope="col2">Description</th>
-          <th scope="col3">Unit Price</th>
-          <th scope="col4">Qty On Hnd</th>
-          <th scope="col5">Action</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-          <th scope="row"></th>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td>
-            <button type="button" class="btn btn-outline-success">Edit</button>
-            <button type="button" class="btn btn-outline-danger">Delete</button>
-          </td>
-        </tr>
-        <tr>
-          <th scope="row"></th>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td>
-            <button type="button" class="btn btn-outline-success">Edit</button>
-            <button type="button" class="btn btn-outline-danger">Delete</button>
-          </td>
-        </tr>
-        <tr>
-          <th scope="row"></th>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td>
-            <button type="button" class="btn btn-outline-success">Edit</button>
-            <button type="button" class="btn btn-outline-danger">Delete</button>
-          </td>
-        </tr>
+    <div class="col">
 
-        <tr>
-          <th scope="row"></th>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td>
-            <button type="button" class="btn btn-outline-success">Edit</button>
-            <button type="button" class="btn btn-outline-danger">Delete</button>
-          </td>
-        </tr>
+      <div class="col">
 
-        <tr>
-          <th scope="row"></th>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td>
-            <button type="button" class="btn btn-outline-success">Edit</button>
-            <button type="button" class="btn btn-outline-danger">Delete</button>
-          </td>
-        </tr>
+        <section class="container col  m-4  rounded object-fit-contain  me-auto ms-20 mb-10">
 
-        <tr>
-          <th scope="row"></th>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td>
-            <button type="button" class="btn btn-outline-success">Edit</button>
-            <button type="button" class="btn btn-outline-danger">Delete</button>
-          </td>
-        </tr>
+          <h2 class="text-primary text-center m-lg-100 pt-5 " >Item Details</h2>
+          <table class="table table-light table-striped">
+            <thead>
+            <tr>
+              <th class="text-white" style="background-color: #0b093e" scope="col">Id</th>
+              <th  class="text-white" style="background-color: #0b093e" scope="col">Description</th>
+              <th  class="text-white" style="background-color: #0b093e" scope="col">Unit price</th>
+              <th  class="text-white" style="background-color: #0b093e" scope="col">Qty</th>
+              <!--<th style="background-color: #0077b6" scope="col">Action</th>-->
+            </tr>
+            </thead>
+            <tbody id="ItemTbl">
 
-        <tr>
-          <th scope="row"></th>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td>
-            <button type="button" class="btn btn-outline-success">Edit</button>
-            <button type="button" class="btn btn-outline-danger">Delete</button>
-          </td>
-        </tr>
 
-        <tr>
-          <th scope="row"></th>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td>
-            <button type="button" class="btn btn-outline-success">Edit</button>
-            <button type="button" class="btn btn-outline-danger">Delete</button>
-          </td>
-        </tr>
 
-        <tr>
-          <th scope="row"></th>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td>
-            <button type="button" class="btn btn-outline-success">Edit</button>
-            <button type="button" class="btn btn-outline-danger">Delete</button>
-          </td>
-        </tr>
+            </tbody>
+          </table>
 
-        <tr>
-          <th scope="row"></th>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td>
-            <button type="button" class="btn btn-outline-success">Edit</button>
-            <button type="button" class="btn btn-outline-danger">Delete</button>
-          </td>
-        </tr>
 
-        </tbody>
-      </table>
+        </section>
+      </div>
+
     </div>
-  </section>
-<!--</main>-->
+  </div>
+
+</div>
+
 
 <!--/**================================================= Order ==================================================*/-->
 
-<!--<main class="container-fluid" >-->
-  <section id="odr-form" class="row p-4 w-100" style="background-color:#D9D9D9">
+<main id="odr-form" class="container-fluid">
+  <section class="row p-4 m-0">
 
     <!--        <h5 class="text-warning text-lg-start" >Customer Management</h5>-->
-    <div class="col-7  m-3 border rounded">
-      <h5 class="text-black text-center m-lg-3 pt-2">Place A New Order</h5>
+    <div class="col border-black p-4 m-3 border rounded" style="background-color: #BFCCB5">
+      <h5 class=" text-secondary-800 text-center m-lg-3 pt-2" >Place A New Order</h5>
 
       <div class="row ">
         <!--                <h6 class="text-white">Invoice Details</h6>-->
-        <form class=" me-3 col-5">
+        <form class=" me-3">
           <div class="row border-bottom border-black">
             <div class="mb-1 col">
               <label for="InputOID" class="form-label text-black">Order ID</label>
               <input type="text"
-                     class="form-control bg-black border-white text-white focus-ring-warning"
-                     id="InputOID" readonly>
+                     class="form-control text-black  focus-ring-warning"
+                     id="InputOID" >
             </div>
             <div class="mb-1 col mb-4">
               <label for="InputDate" class="form-label text-black">Date</label>
               <input type="date"
-                     class="form-control bg-black border-white text-white focus-ring-warning focus-ring"
+                     class="form-control  text-black focus-ring-warning focus-ring"
                      id="InputDate">
             </div>
           </div>
 
-          <!--                    <h6 class="text-warning mt-4">Customer Details</h6>-->
-
-          <div class="row border-bottom ">
+          <h6 class="text-bg-dark mt-4">Customer Details</h6>
+          <div class="row border-bottom border-black">
             <div class="mb-1 col">
-              <label for="selectCusId" class="form-label text-black">Cust ID</label>
-              <select class="form-select bg-black text-white focus-ring-warning focus-ring"
-                      aria-label="Default select example" id="selectCusId">
-                <option selected>Open this select menu</option>
-                <option value="1">C-001</option>
-                <option value="2">C-002</option>
-                <option value="3">C-003</option>
+              <label for="custListId" class="form-label text-black">Cust ID</label>
+              <select class="form-select  text-black focus-ring-warning focus-ring"
+                      aria-label="Default select example" id="custListId">
+                <!--              <option selected></option>-->
+
               </select>
             </div>
             <div class="mb-1 col mb-4">
-              <label for="Name" class="form-label text-black">Name</label>
-              <input type="text"
-                     class="form-control bg-black border-white text-white focus-ring-warning focus-ring "
-                     id="Name" readonly>
+              <label for="cusNamePO" class="form-label text-black">Name</label>
+              <input type="text" id="cusNamePO"
+                     class="form-control text-black focus-ring-warning focus-ring ">
             </div>
           </div>
 
-          <!--                    <h6 class="text-warning mt-4">Code</h6>-->
+          <h6 class="text-bg-dark mt-4">Item Details</h6>
 
           <div class="row">
             <div class="mb-1 col">
-              <label for="selectItemId" class="form-label text-black">Code</label>
-              <select class="form-select bg-black text-white focus-ring-warning focus-ring"
-                      aria-label="Default select example" id="selectItemId">
-                <option selected>Open this select menu</option>
-                <option value="1">I-001</option>
-                <option value="2">I-002</option>
-                <option value="3">I-003</option>
+              <label for="itemIdList" class="form-label text-black">Code</label>
+              <select class="form-select text-black focus-ring-warning focus-ring"
+                      aria-label="Default select example" id="itemIdList">
+                <!--              <option selected>Open this select menu</option>-->
+
               </select>
             </div>
             <div class="mb-1 col mb-4">
-              <label for="ItemName" class="form-label text-black">Description</label>
+              <label for="itemDesPO" class="form-label text-black">Description</label>
               <input type="text"
-                     class="form-control bg-black border-white text-white focus-ring-warning focus-ring "
-                     id="ItemName" readonly>
+                     class="form-control text-black focus-ring-warning focus-ring "
+                     id="itemDesPO" >
             </div>
           </div>
 
           <div class="row">
             <div class="mb-1 ">
-              <label for="UnitPrice" class="form-label text-black">Unit Price</label>
-              <select class="form-select bg-black text-white focus-ring-warning focus-ring"
-                      aria-label="Default select example" id="UnitPrice">
-                <option selected>Open this select menu</option>
-                <option value="1">I-001</option>
-                <option value="2">I-002</option>
-                <option value="3">I-003</option>
-              </select>
+              <label for="itemPricePO" class="form-label text-black">Unit Price</label>
+              <input type="text"
+                     class="form-control text-black focus-ring-warning focus-ring "
+                     id="itemPricePO" >
             </div>
             <div class="mb-1 col">
-              <label for="QtyOnHnd" class="form-label text-black">Qty On Hnd</label>
-              <input type="number"
-                     class="form-control bg-black border-white text-white focus-ring-warning focus-ring "
-                     id="QtyOnHnd" readonly>
+              <label for="itemQtyHandPO" class="form-label text-black">Qty On Hnd</label>
+              <input type="text"
+                     class="form-control text-black focus-ring-warning focus-ring "
+                     id="itemQtyHandPO" >
             </div>
 
             <div class="mb-1 col">
               <label for="Qty" class="form-label text-black">Qty</label>
-              <input type="number"
-                     class="form-control bg-black border-white text-white focus-ring-warning focus-ring "
+              <input type="text"
+                     class="form-control text-black focus-ring-warning focus-ring "
                      id="Qty">
             </div>
-            <button class="bg-dark-subtle
-                         container-fluid mt-5 mb-5" type="submit">Add To Cart</button>
+
           </div>
+
 
 
         </form>
       </div>
 
-
-
+      <div class="row m-0 gap-2 mt-5">
+        <button  id=addToCard type="button" class="btn btn-outline-success">Add to Card</button>
+        <button id=btnOrderClear type="button" class="btn btn-outline-danger">Clear</button>
+      </div>
     </div>
 
-    <div class="col m-3  b" style="background-color: #6c757d">
-      <div class="border rounded border-black">
-        <h5 class="text-bg-danger mt-4 mb-3 ms-2">Cart</h5>
-        <table class="table text-black ">
-          <thead class="text-white">
+    <div class="col m-3 ">
+      <div class=" rounded ">
+        <h5 class="text-black-200 mt-4 mb-3 ms-2">Cart</h5>
+        <table class="table table-light table-striped">
+          <thead>
           <tr>
-            <th scope="col">ID</th>
-            <th scope="col">Description</th>
-            <th scope="col">Unit Price</th>
-            <th scope="col">Qty</th>
-            <th scope="col">Total</th>
-            <th scope="col">Action</th>
+            <th  class="text-white" style="background-color: #0b093e" scope="col">Id</th>
+            <th class="text-white" style="background-color: #0b093e" scope="col">Description</th>
+            <th class="text-white" style="background-color: #0b093e" scope="col">Unit price</th>
+            <th class="text-white" style="background-color: #0b093e" scope="col">Qty</th>
+            <th class="text-white" style="background-color: #0b093e" scope="col">Total</th>
+            <!-- <th style="background-color: #da9aef" scope="col">Action</th>-->
           </tr>
           </thead>
-          <tbody>
-          <tr>
-            <th scope="row">I-001</th>
-            <td></td>
-            <td>15000</td>
-            <td>1</td>
-            <td>15000</td>
-            <td>
-              <button type="button" class="btn btn-outline-success">Edit</button>
-              <button type="button" class="btn btn-outline-danger">Delete</button>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">I-002</th>
-            <td></td>
-            <td>18000</td>
-            <td>02</td>
-            <td>36000</td>
-            <td>
-              <button type="button" class="btn btn-outline-success">Edit</button>
-              <button type="button" class="btn btn-outline-danger">Delete</button>
-            </td>
-          </tr>
-
+          <tbody id="OrderTbl">
 
           </tbody>
         </table>
+
       </div>
-      <div class="row mt-5 border border-warning rounded">
-        <h5 class="text-bg-danger  mt-3 mb-2">Purchase Order</h5>
+      <div class="row mt-5 p-4 border border-black rounded" style="background-color: #BFCCB5">
+        <h5 class="text-bg-dark  mt-3 mb-2">Purchase Order</h5>
         <div class="row">
           <!--                    <div class="mb-1 col">-->
           <!--                        <button class="btn btn-outline-warning mt-5 mb-5" type="submit">Cancel</button>-->
           <!--                    </div>-->
 
-          <div class="mb-5 col text-warning">
-            <label for="subTotal" class="form-label "> Total</label>
+          <div class="mb-5 col text-black">
+            <label for="totalPlaceOrder" class="form-label "> Total</label>
             <input type="number"
-                   class="form-control bg-black border-warning text-warning focus-ring-warning focus-ring mb-4 rounded"
-                   id="subTotal" readonly>
+                   class="form-control bg-white border-warning text-black focus-ring-warning focus-ring mb-4 rounded"
+                   id="totalPlaceOrder" readonly>
           </div>
         </div>
 
-        <div class="row">
-          <div class="mb-1 col">
-            <label for="cash" class="form-label text-white">Cash</label>
-            <input type="number"
-                   class="form-control bg-black border-white text-warning focus-ring-warning focus-ring "
-                   id="cash">
-          </div>
 
-          <div class="mb-1 col">
-            <label for="discount" class="form-label text-white">Discount</label>
-            <input type="number"
-                   class="form-control bg-black border-white text-warning focus-ring-warning focus-ring "
-                   id="discount">
-          </div>
-
-          <div class="mb-1 col">
-            <label for="balance" class="form-label text-white">Balance</label>
-            <input type="number"
-                   class="form-control bg-black border-white text-warning focus-ring-warning focus-ring "
-                   id="balance" readonly>
-          </div>
-
+        <div class="mb-1 col">
+          <label for="discount" class="form-label text-white">Discount</label>
+          <input type="number"
+                 class="form-control bg-white border-white text-black focus-ring-warning focus-ring "
+                 id="discount">
         </div>
-        <div class="row ms-1">
-          <button class="btn btn-outline-warning mt-5 mb-5" type="submit">Purchase</button>
+
+        <div class="mb-1 col">
+          <label for="balance" class="form-label text-white">Balance</label>
+          <input type="number"
+                 class="form-control bg-white border-white text-black focus-ring-warning focus-ring "
+                 id="balance" readonly>
         </div>
 
       </div>
+      <div class="row ms-1">
+        <button class="btn btn-outline-success mt-5 mb-5" type="submit">Purchase</button>
+      </div>
     </div>
   </section>
-<!--</main>-->
+</main>
 <script src="../InMemory-POS/assets/js/jquery-3.7.0.min.js"></script>
 <script src="assets/js/bootstrap.js"></script>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
+
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
@@ -571,6 +472,9 @@
 
 </script>
 
-</body>
+<script src="controller/CustomerJS.js"></script>
+<script src="controller/ItemJS.js"></script>
+<script src="controller/OrderJS.js"></script>
 
+</body>
 </html>
