@@ -24,6 +24,29 @@ header {
     width: 100%;
     z-index: 99;
 }
+#loader {
+    transition: opacity 5s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #f9f5f1;
+}
+
+#loader > div {
+    width: 290px;
+    height: 290px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background-image: url("loader.gif");
+    /*background-size: cover;*/
+    /*background-position: center;*/
+}
 
 .main_navbar {
     color: rgb(255, 255, 255);
@@ -812,9 +835,6 @@ section.skill {
     transition: 1s;
 }
 
-/* a .assign_img_1 {
-    background-image: url(picfolder/case_1.jpg);
-} */
 
 .assign_block:hover {
     scale: 0.5;
