@@ -24,29 +24,6 @@ header {
     width: 100%;
     z-index: 99;
 }
-#loader {
-    transition: opacity 1s;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
-}
-
-#loader > div {
-    width: 290px;
-    height: 290px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    background-image: url("loader.gif");
-    /*background-size: cover;*/
-    /*background-position: center;*/
-}
 
 .main_navbar {
     color: rgb(255, 255, 255);
@@ -197,20 +174,6 @@ section#home {
     color: rgb(0, 0, 0);
     font-family: 'Abril Fatface', cursive;
     /*font-family: 'Ubuntu', sans-serif;*/
-}
-
-
-.myImg {
-    position: relative;
-    width: 420px;
-    height: 420px;
-    border-radius: 80%;
-    border: 5px solid #e6e6e6;
-    box-shadow: 0 0 10px 5px rgba(2, 0, 0, 0.5);
-    background-image: url('profile_picture.jpg');
-    background-size: cover;
-    background-position: center;
-    justify-content: center;
 }
 
 .social-icon {
