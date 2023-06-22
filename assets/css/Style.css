@@ -1665,8 +1665,8 @@ footer h3 {
 
     .ensColumns .ensContentBox {
         padding: 0 20px;
-        margin-left: 45px;
-        margin-right: 10px;
+        margin-left: 25px;
+        margin-right: 30px;
         width: 60%;
         text-align: center;
     }
@@ -1675,6 +1675,21 @@ footer h3 {
         margin-right: 20px;
         margin-left: 0;
         display: block;
+    }
+    #btnAssignments {
+        width: 50vw;
+        margin-bottom: 50px;
+        margin-left: 25%;
+
+    }
+    .project_set .block {
+        margin-bottom: 20px;
+    }
+    .ensColumns .ensContentBox .endBox::before {
+       display: none;
+    }
+    .project_set .block:hover {
+        transform: scale(1.0);
     }
     /*---------*/
 .skill{
