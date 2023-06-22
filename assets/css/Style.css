@@ -206,8 +206,9 @@ section#home {
     height: 420px;
     border-radius: 80%;
     border: 5px solid #e6e6e6;
+    background-color: #8c7d7d;
     box-shadow: 0 0 10px 5px rgba(2, 0, 0, 0.5);
-    background-image: url('profile_picture.jpg');
+    background-image: url('photo_2023-06-22_20-47-18-removebg-preview (3).png');
     background-size: cover;
     background-position: center;
     justify-content: center;
