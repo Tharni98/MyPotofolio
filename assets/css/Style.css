@@ -1654,12 +1654,22 @@ footer h3 {
         margin-left: 5px;
     }
 
+    h2{
+        font-size: 50px;
+    }
+    /*--------*/
     .aboutImg {
         display: none;
     }
+    .fileclip_img{
+       display: none;
+    }
     div.aboutPara {
+        margin-top: 40px;
         margin-left: 6.5vh;
     }
+
+
 
     /*---------*/
 
@@ -1692,10 +1702,51 @@ footer h3 {
         transform: scale(1.0);
     }
     /*---------*/
-.skill{
-    display: none;
+    .skill {
+        display: none;
+    }
+
+    /*---------*/
+    .row {
+        padding: 0 0 0 0;
+    }
+    /*---------*/
+    img {
+        width: 250px;
+    }
+    fieldset {
+        margin-top: 60px;
+    }
+    element.style {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    /*.contact_box {*/
+    /*    margin-left: 20px;*/
+    /*    margin-right: 20px;*/
+    /*}*/
+    .contact_box legend, .contact_box input, #txtMsg, .contact_box button {
+        width: 200px;
+        margin-left: 5px;
+        margin-right: 15px;
+
+    }
+    legend {
+       margin-right: 15px;
+    }
+    .contact_box legend, .contact_box input, #txtMsg, .contact_box button {
+        margin-left: 30px;
+        /*text-align: center;*/
+    }
+
+    .contact_box button.form_submit {
+        width: 200px;
+    }
+    footer .wrapper {
+        margin-top: 0px;
+    }
 }
-}
+
 
 
 
