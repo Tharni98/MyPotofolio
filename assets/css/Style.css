@@ -1493,6 +1493,13 @@ footer h3 {
         font-size: 16px;
         margin-left: 10px;
     }
+    #heading1 {
+        display: none;
+    }
+
+    #heading2 {
+        display: none;
+    }
 
         section#home {
             padding: 5% 4% 0 4%;
