@@ -798,7 +798,9 @@ section.skill {
     transition-duration: 0.4s;
     cursor: pointer;
     left: 60px;
+    margin-bottom: 50px;
     margin-left: 43.3%;
+    border-radius: 12px;
 
 
     /*text-decoration: none;*/
