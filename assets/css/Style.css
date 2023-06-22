@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 * {
     margin: 0;
@@ -363,6 +363,7 @@ article.aboutArticle {
 }
 
 article.aboutArticle p a {
+    font-family: 'Sono', sans-serif;
     font-size: 23px;
     color: #fff;
 }
@@ -373,6 +374,7 @@ p.line_discription {
 }
 
 .aboutArticle a {
+    font-family: 'Sono', sans-serif;
     color: #000;
     font-size: 18px;
 }
@@ -673,6 +675,7 @@ section.skill {
 }
 
 .block h5 {
+    font-family: 'Sono', sans-serif;
     font-size: 20px;
     text-align: center;
     transition: 1.3s;
@@ -827,10 +830,12 @@ section.skill {
 }
 
 #btnAssignments:hover{
-    background: #a8a372;
+    scale: 1.09;
+    background: #5e5d5d;
     color: #333960;
-    color: #000000;
+    color: #ffffff;
     text-shadow: #fcfcfd;
+    box-shadow: 0 0 10px 5px #000000;
 }
 
 
