@@ -1561,7 +1561,7 @@ footer h3 {
 
 @media screen and (min-width: 320px) and (max-width: 375px) {
     .main_navbar {
-        padding: 5px;
+        /*padding: 5px;*/
     }
 
     .main_navbar h3 a {
@@ -1586,6 +1586,11 @@ footer h3 {
     section#home {
         padding: 5% 4% 0 4%;
     }
+    .welcome {
+        position: absolute;
+        margin-top: 90%;
+        text-align: center;
+    }
 
     .welcome h1 {
         font-size: 80px;
@@ -1604,6 +1609,8 @@ footer h3 {
     }
 
     .myImg {
+        margin-left: 2.5vh;
+        margin-top: 5vh;
         width: 250px;
         height: 250px;
         border-width: 4px;
@@ -1615,7 +1622,9 @@ footer h3 {
     }
 
     .wrapper {
-        padding: 56px 0%
+        padding: 56px 0;
+        margin-top: 45vh;
+
     }
 
     .wrapper .button {
@@ -1648,6 +1657,13 @@ footer h3 {
     .aboutImg {
         display: none;
     }
+    div.aboutPara {
+        margin-left: 6.5vh;
+    }
+    /*---------*/
+.skill{
+    display: none;
+}
 }
 
 
