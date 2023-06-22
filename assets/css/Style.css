@@ -1660,6 +1660,22 @@ footer h3 {
     div.aboutPara {
         margin-left: 6.5vh;
     }
+
+    /*---------*/
+
+    .ensColumns .ensContentBox {
+        padding: 0 20px;
+        margin-left: 45px;
+        margin-right: 10px;
+        width: 60%;
+        text-align: center;
+    }
+    /*--------*/
+    #project .project_set {
+        margin-right: 20px;
+        margin-left: 0;
+        display: block;
+    }
     /*---------*/
 .skill{
     display: none;
