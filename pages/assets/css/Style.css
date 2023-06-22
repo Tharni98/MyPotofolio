@@ -981,7 +981,7 @@ footer h3 {
 
 /*------------ lap size --------------*/
 
-@media screen and (min-width: 1024px) and (max-width: 1280px) {
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
     .main_navbar {
         padding: 10px 100px;
     }
@@ -1049,26 +1049,6 @@ footer h3 {
         width: 90vw;
     }
 
-    @-webkit-keyframes display-none-transition
-    {
-
-        0%   {
-            display: none;
-            opacity: 0;
-        }
-        25%  {
-            display: block;
-            opacity: 0;
-        }
-        75% {
-            display: block;
-            opacity: 0;
-        }
-        100%{
-            display: block;
-            opacity: 0;
-        }
-    }
 
 }
 
@@ -1097,7 +1077,7 @@ footer h3 {
 
 
 /* ------------- Tab Size ------------ */
-@media screen and (min-width: 425px) and (max-width:768px ) {
+@media screen and (min-width: 425px) and (max-width: 767px){
     .main_navbar {
         padding: 10px 100px;
     }
@@ -1381,13 +1361,85 @@ footer h3 {
     }
 }
 
+@media screen and (min-width: 375px) and (max-width: 424px) {
+    .main_navbar {
+        padding: 10px;
+    }
 
+    .main_navbar h3 a {
+        font-size: 20px;
+    }
 
+    nav.navbar a {
+        font-size: 16px;
+        margin-left: 10px;
+    }
 
+    section#home {
+        padding: 5% 4% 0 4%;
+    }
 
+    .welcome h1 {
+        font-size: 80px;
+    }
 
+    .welcome h2 {
+        font-size: 50px;
+    }
 
-@media screen and (min-width: 320px) and (max-width: 375px) {
+    .welcome h3 {
+        font-size: 35px;
+    }
+
+    .welcome h5 {
+        font-size: 20px;
+    }
+
+    .myImg {
+        width: 300px;
+        height: 300px;
+        border-width: 4px;
+        box-shadow: 0 0 8px 4px rgba(2, 0, 0, 0.5);
+    }
+
+    .social-icon {
+        width: 300px;
+    }
+
+    .wrapper {
+        padding: 60px 5%;
+    }
+
+    .wrapper .button {
+        height: 50px;
+        width: 50px;
+    }
+
+    .wrapper .button:hover {
+        width: 150px;
+    }
+
+    .wrapper .button .icon {
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+    }
+
+    .wrapper .button .icon i {
+        font-size: 20px;
+        line-height: 50px;
+    }
+
+    .wrapper .button span,
+    .wrapper .button a {
+        font-size: 16px;
+        line-height: 50px;
+        margin-left: 5px;
+    }
+
+}
+
+    @media screen and (min-width: 320px) and (max-width: 374px) {
     .main_navbar {
         padding: 5px;
     }
@@ -1469,84 +1521,9 @@ footer h3 {
 
 
 
-@media screen and (min-width: 375px) and (max-width: 425px) {
-    .main_navbar {
-        padding: 10px;
-    }
-
-    .main_navbar h3 a {
-        font-size: 20px;
-    }
-
-    nav.navbar a {
-        font-size: 16px;
-        margin-left: 10px;
-    }
-
-        section#home {
-            padding: 5% 4% 0 4%;
-        }
-
-        .welcome h1 {
-            font-size: 80px;
-        }
-
-        .welcome h2 {
-            font-size: 50px;
-        }
-
-        .welcome h3 {
-            font-size: 35px;
-        }
-
-        .welcome h5 {
-            font-size: 20px;
-        }
-
-        .myImg {
-            width: 300px;
-            height: 300px;
-            border-width: 4px;
-            box-shadow: 0 0 8px 4px rgba(2, 0, 0, 0.5);
-        }
-
-        .social-icon {
-            width: 300px;
-        }
-
-        .wrapper {
-            padding: 60px 5%;
-        }
-
-        .wrapper .button {
-            height: 50px;
-            width: 50px;
-        }
-
-        .wrapper .button:hover {
-            width: 150px;
-        }
-
-        .wrapper .button .icon {
-            height: 50px;
-            width: 50px;
-            line-height: 50px;
-        }
-
-        .wrapper .button .icon i {
-            font-size: 20px;
-            line-height: 50px;
-        }
-
-        .wrapper .button span,
-        .wrapper .button a {
-            font-size: 16px;
-            line-height: 50px;
-            margin-left: 5px;
-        }
 
 
-}
+
 
 
 

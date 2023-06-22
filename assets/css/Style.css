@@ -800,9 +800,8 @@ section.skill {
     text-decoration: none;
     display: inline-block;
     font-size: 12px;
-    /*font-family: 'Sono', sans-serif;*/
-    font-family: "Segoe UI Semibold";
-    font-weight: bolder;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
@@ -828,8 +827,10 @@ section.skill {
 }
 
 #btnAssignments:hover{
-    background: #FFD369;
+    background: #a8a372;
     color: #333960;
+    color: #000000;
+    text-shadow: #fcfcfd;
 }
 
 
@@ -1277,290 +1278,202 @@ footer h3 {
 
 /*-------  Mobile size --------*/
 
-@media All and (max-width: 520px) {
+/*@media All and (max-width: 520px) {*/
 
-    h3>span{
-        display: none;
-    }
+/*    h3>span{*/
+/*        display: none;*/
+/*    }*/
 
-    .main_navbar {
-        display: none;
-        padding: 5px;
+/*    .main_navbar {*/
+/*        display: none;*/
+/*        padding: 5px;*/
 
-        /*display: flex;*/
-        flex-direction: column-reverse;
-    }
-
-
-    /*.main_navbar h3 a {*/
-    /*    font-size: 16px;*/
-    /*}*/
-
-    /*nav.navbar a {*/
-    /*    list-style-type: none;*/
-    /*    margin: 0;*/
-    /*    padding: 0;*/
-    /*    !*margin-left: 10px;*!*/
-    /*    !*font-size: 10px;*!*/
-    /*}*/
-    /*.navbar .primary_navbar {*/
-    /*    font-size: 10px;*/
-    /*}*/
-
-    /*---- */
-    section#home {
-        height: 130vh;
-        padding: 5% 4% 0 4%;
-    }
-
-    .welcome{
-        padding-left: 50px;
-        padding-top: 92%;
-        text-align: center;
-    }
-
-    .welcome h1 {
-        font-size: 65px;
-        margin-top: 60px;
-    }
-
-    .welcome h2 {
-        font-size: 20px;
-    }
-
-    .welcome h3 {
-        font-size: 15px;
-    }
-
-    .welcome h5 {
-        font-size: 13px;
-    }
-
-    .myImg {
-        right: 92%;
-        top: 10%;
-        width: 250px;
-        height: 250px;
-        border-width: 3px;
-        box-shadow: 0 0 5px 2px rgba(2, 0, 0, 0.5);
-        display: block;
-        /*margin-left: auto;*/
-        /*margin-right: auto;*/
-        /*width: 50%;*/
-    }
-
-    .social-icon {
-        height: 50vh;
-        width: 50vw;
-        position: absolute;
-        background-color: green;
-        text-align: center;
-
-    }
-
-    .wrapper {
-        padding: 0px;
-        padding-top: 56px;
-    }
-
-    .wrapper .button {
-        height: 40px;
-        width: 40px;
-    }
-
-    .wrapper .button:hover {
-        width: 120px;
-    }
-
-    .wrapper .button .icon {
-        height: 40px;
-        width: 40px;
-        line-height: 40px;
-    }
-
-    .wrapper .button .icon i {
-        font-size: 18px;
-        line-height: 40px;
-    }
-
-    .wrapper .button span,
-    .wrapper .button a {
-        font-size: 14px;
-        line-height: 40px;
-        margin-left: 3px;
-    }
-
-    /* ---- */
-    .aboutImg{
-        display: none;
-    }
-    .aboutArticle{
-        width: 100vw;
-        margin-left: 19%;
-    }
-    .aboutPara{
-        text-align: justify;
-        font-size: 20px;
-        width: 100vw;
-        margin-left: 10px;
-    }
-    div.fileclip_img{
-        width: 100%;
-        height: 100%;
-        margin-left: 43px;
-
-    }
-
-    /* ------- */
-
-    .ensColumns .ensContentBox .endBox {
-        width: 50%;
-        left: 50px;
-    }
-
-    /* ------- */
-
-    .main_set {
-        width: 70%;
-    }
-    .one_set, .second_set {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-
-    }
-    .box_one_set{
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-    .box_second_set{
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-    .one_set, .second_set {
-        /*display: flex;*/
-        /*justify-content: space-between;*/
-        padding: 0 0 0 0;
-    }
+/*        !*display: flex;*!*/
+/*        flex-direction: column-reverse;*/
+/*    }*/
 
 
+/*    !*.main_navbar h3 a {*!*/
+/*    !*    font-size: 16px;*!*/
+/*    !*}*!*/
 
-    /* ---------- */
-    .project_set .block {
-        width: 150px;
-        height: 250px;
-        display: block;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    #project .project_set {
-         display: block;
-        margin: 0 48px;
-        /*padding: 3% 10% 5% 10%;*/
+/*    !*nav.navbar a {*!*/
+/*    !*    list-style-type: none;*!*/
+/*    !*    margin: 0;*!*/
+/*    !*    padding: 0;*!*/
+/*    !*    !*margin-left: 10px;*!*!*/
+/*    !*    !*font-size: 10px;*!*!*/
+/*    !*}*!*/
+/*    !*.navbar .primary_navbar {*!*/
+/*    !*    font-size: 10px;*!*/
+/*    !*}*!*/
 
+/*    !*---- *!*/
+/*    section#home {*/
+/*        height: 130vh;*/
+/*        padding: 5% 4% 0 4%;*/
+/*    }*/
 
-    }
-    /* --------- */
-    .assign_block {
-        width: 250px;
-    }
-    .assign_block img {
-        width: 200px;
-    }
-    .assign_block:hover img {
-        width: 260px;
+/*    .welcome{*/
+/*        padding-left: 50px;*/
+/*        padding-top: 92%;*/
+/*        text-align: center;*/
+/*    }*/
 
-    }
-}
+/*    .welcome h1 {*/
+/*        font-size: 65px;*/
+/*        margin-top: 60px;*/
+/*    }*/
+
+/*    .welcome h2 {*/
+/*        font-size: 20px;*/
+/*    }*/
+
+/*    .welcome h3 {*/
+/*        font-size: 15px;*/
+/*    }*/
+
+/*    .welcome h5 {*/
+/*        font-size: 13px;*/
+/*    }*/
+
+/*    .myImg {*/
+/*        right: 92%;*/
+/*        top: 10%;*/
+/*        width: 250px;*/
+/*        height: 250px;*/
+/*        border-width: 3px;*/
+/*        box-shadow: 0 0 5px 2px rgba(2, 0, 0, 0.5);*/
+/*        display: block;*/
+/*        !*margin-left: auto;*!*/
+/*        !*margin-right: auto;*!*/
+/*        !*width: 50%;*!*/
+/*    }*/
+
+/*    .social-icon {*/
+/*        height: 50vh;*/
+/*        width: 50vw;*/
+/*        position: absolute;*/
+/*        background-color: green;*/
+/*        text-align: center;*/
+
+/*    }*/
+
+/*    .wrapper {*/
+/*        padding: 0px;*/
+/*        padding-top: 56px;*/
+/*    }*/
+
+/*    .wrapper .button {*/
+/*        height: 40px;*/
+/*        width: 40px;*/
+/*    }*/
+
+/*    .wrapper .button:hover {*/
+/*        width: 120px;*/
+/*    }*/
+
+/*    .wrapper .button .icon {*/
+/*        height: 40px;*/
+/*        width: 40px;*/
+/*        line-height: 40px;*/
+/*    }*/
+
+/*    .wrapper .button .icon i {*/
+/*        font-size: 18px;*/
+/*        line-height: 40px;*/
+/*    }*/
+
+/*    .wrapper .button span,*/
+/*    .wrapper .button a {*/
+/*        font-size: 14px;*/
+/*        line-height: 40px;*/
+/*        margin-left: 3px;*/
+/*    }*/
+
+/*    !* ---- *!*/
+/*    .aboutImg{*/
+/*        display: none;*/
+/*    }*/
+/*    .aboutArticle{*/
+/*        width: 100vw;*/
+/*        margin-left: 19%;*/
+/*    }*/
+/*    .aboutPara{*/
+/*        text-align: justify;*/
+/*        font-size: 20px;*/
+/*        width: 100vw;*/
+/*        margin-left: 10px;*/
+/*    }*/
+/*    div.fileclip_img{*/
+/*        width: 100%;*/
+/*        height: 100%;*/
+/*        margin-left: 43px;*/
+
+/*    }*/
+
+/*    !* ------- *!*/
+
+/*    .ensColumns .ensContentBox .endBox {*/
+/*        width: 50%;*/
+/*        left: 50px;*/
+/*    }*/
+
+/*    !* ------- *!*/
+
+/*    .main_set {*/
+/*        width: 70%;*/
+/*    }*/
+/*    .one_set, .second_set {*/
+/*        display: block;*/
+/*        margin-left: auto;*/
+/*        margin-right: auto;*/
+/*        width: 50%;*/
+
+/*    }*/
+/*    .box_one_set{*/
+/*        margin-top: 5px;*/
+/*        margin-bottom: 5px;*/
+/*    }*/
+/*    .box_second_set{*/
+/*        margin-top: 5px;*/
+/*        margin-bottom: 5px;*/
+/*    }*/
+/*    .one_set, .second_set {*/
+/*        !*display: flex;*!*/
+/*        !*justify-content: space-between;*!*/
+/*        padding: 0 0 0 0;*/
+/*    }*/
 
 
 
+/*    !* ---------- *!*/
+/*    .project_set .block {*/
+/*        width: 150px;*/
+/*        height: 250px;*/
+/*        display: block;*/
+/*        margin-top: 20px;*/
+/*        margin-bottom: 20px;*/
+/*    }*/
+/*    #project .project_set {*/
+/*         display: block;*/
+/*        margin: 0 48px;*/
+/*        !*padding: 3% 10% 5% 10%;*!*/
 
 
+/*    }*/
+/*    !* --------- *!*/
+/*    .assign_block {*/
+/*        width: 250px;*/
+/*    }*/
+/*    .assign_block img {*/
+/*        width: 200px;*/
+/*    }*/
+/*    .assign_block:hover img {*/
+/*        width: 260px;*/
 
-
-@media screen and (min-width: 320px) and (max-width: 375px) {
-    .main_navbar {
-        padding: 5px;
-    }
-
-    .main_navbar h3 a {
-        font-size: 18px;
-    }
-
-    nav.navbar a {
-        margin-left: 15px;
-        font-size: 12px;
-    }
-
-    /*-------*/
-
-
-    section#home {
-        padding: 5% 4% 0 4%;
-    }
-
-    .welcome h1 {
-        font-size: 80px;
-    }
-
-    .welcome h2 {
-        font-size: 50px;
-    }
-
-    .welcome h3 {
-        font-size: 15px;
-    }
-
-    .welcome h5 {
-        font-size: 20px;
-    }
-
-    .myImg {
-        width: 250px;
-        height: 250px;
-        border-width: 4px;
-        box-shadow: 0 0 8px 4px rgba(2, 0, 0, 0.5);
-    }
-
-    .social-icon {
-        width: 300px;
-    }
-
-    .wrapper {
-        padding: 56px 0%
-    }
-
-    .wrapper .button {
-        height: 50px;
-        width: 50px;
-    }
-
-    .wrapper .button:hover {
-        width: 150px;
-    }
-
-    .wrapper .button .icon {
-        height: 50px;
-        width: 50px;
-        line-height: 50px;
-    }
-
-    .wrapper .button .icon i {
-        font-size: 20px;
-        line-height: 50px;
-    }
-
-    .wrapper .button span,
-    .wrapper .button a {
-        font-size: 16px;
-        line-height: 50px;
-        margin-left: 5px;
-    }
-}
-
-
+/*    }*/
+/*}*/
 
 @media screen and (min-width: 375px) and (max-width: 425px) {
     .main_navbar {
@@ -1639,6 +1552,97 @@ footer h3 {
         }
 
 
+}
+
+@media screen and (min-width: 320px) and (max-width: 375px) {
+    .main_navbar {
+        padding: 5px;
+    }
+
+    .main_navbar h3 a {
+        font-size: 18px;
+    }
+
+    nav.navbar a {
+        margin-left: 15px;
+        font-size: 12px;
+    }
+    #heading1 {
+       display: none;
+    }
+
+    #heading2 {
+        display: none;
+    }
+
+    /*-------*/
+
+
+    section#home {
+        padding: 5% 4% 0 4%;
+    }
+
+    .welcome h1 {
+        font-size: 80px;
+    }
+
+    .welcome h2 {
+        font-size: 50px;
+    }
+
+    .welcome h3 {
+        font-size: 15px;
+    }
+
+    .welcome h5 {
+        font-size: 20px;
+    }
+
+    .myImg {
+        width: 250px;
+        height: 250px;
+        border-width: 4px;
+        box-shadow: 0 0 8px 4px rgba(2, 0, 0, 0.5);
+    }
+
+    .social-icon {
+        width: 300px;
+    }
+
+    .wrapper {
+        padding: 56px 0%
+    }
+
+    .wrapper .button {
+        height: 50px;
+        width: 50px;
+    }
+
+    .wrapper .button:hover {
+        width: 150px;
+    }
+
+    .wrapper .button .icon {
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+    }
+
+    .wrapper .button .icon i {
+        font-size: 20px;
+        line-height: 50px;
+    }
+
+    .wrapper .button span,
+    .wrapper .button a {
+        font-size: 16px;
+        line-height: 50px;
+        margin-left: 5px;
+    }
+
+    .aboutImg {
+        display: none;
+    }
 }
 
 
