@@ -744,8 +744,9 @@ section.skill {
 /* --------- Assignment ---------- */
 
 #assignment {
-    background: linear-gradient(-90deg, #ffffff, #e4e4e4);
-    color: #000000;
+    background: linear-gradient(to right, #141e30, #243b55);
+    /*background: linear-gradient(-90deg, #ffffff, #e4e4e4);*/
+    color: #ffffff;
 
 
     text-align: center;

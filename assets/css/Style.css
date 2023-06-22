@@ -31,7 +31,7 @@ header {
     left: 0;
     bottom: 0;
     right: 0;
-    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    background: linear-gradient(to right, #bdc3c7, #2c3e50);
 }
 
 #loader > div {
@@ -308,6 +308,7 @@ section#home {
 /* -------- About Me --------- */
 
 .section_name {
+
     font-size: 40px;
     padding: 40px 0;
     text-align: center;
@@ -398,7 +399,9 @@ p.line_discription {
 
 #EnSSection {
     /*background: linear-gradient(-30deg, #e4e4e4, #ffffff)*/
-    background: linear-gradient(-90deg, #ffffff, #e4e4e4)
+    background: linear-gradient(-90deg, #ffffff, #e4e4e4);
+    background-image: url("ccd7ff5c48571a033027bd16682b3018-removebg-preview.png");
+
 }
 
 #EnSSection .section_name {
@@ -778,28 +781,32 @@ section.skill {
 
 #btnAssignments>div{
     position: relative;
-    width: 30px;
     height: 60px;
     padding-top: 30px;
+
 
 
 }
 
 #btnAssignments{
     background-color: #0b093e; /* Green */
+    width:20vw;
     border: none;
     color: white;
     padding: 16px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 12px;
+    /*font-family: 'Sono', sans-serif;*/
+    font-family: "Segoe UI Semibold";
+    font-weight: bolder;
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
-    left: 60px;
+    left: 30px;
     margin-bottom: 50px;
-    margin-left: 43.3%;
+    margin-left: 40%;
     border-radius: 12px;
 
 
@@ -828,7 +835,8 @@ section.skill {
 /* --------- Assignment ---------- */
 
 #assignment {
-    background: linear-gradient(-90deg, #ffffff, #e4e4e4);
+    background: linear-gradient(to right, #141e30, #243b55);
+    /*background: linear-gradient(-90deg, #ffffff, #e4e4e4);*/
     color: #000000;
 
 
