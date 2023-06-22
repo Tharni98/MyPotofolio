@@ -1592,6 +1592,7 @@ footer h3 {
 
     section#home {
         padding: 5% 4% 0 4%;
+        height: 100vh;
     }
     .welcome {
         position: absolute;
