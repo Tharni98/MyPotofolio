@@ -1147,6 +1147,13 @@ footer h3 {
     article.aboutArticle {
         width: 90vw;
     }
+    .project_set .block {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    /*.contact_box .contact_information {*/
+    /*    margin-left: 20vw;*/
+    /*}*/
 
     @-webkit-keyframes display-none-transition
     {
