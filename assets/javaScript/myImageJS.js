@@ -11,7 +11,7 @@ document.getElementById("profileImg").animate(
 
         // element.style.animationPlayState = 'paused';
         // timing options
-        duration: 900,
+        duration: 1200,
         iterations: Infinity,
     }
 );

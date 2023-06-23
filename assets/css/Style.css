@@ -403,7 +403,7 @@ p.line_discription {
 
 #EnSSection {
     /*background: linear-gradient(-30deg, #e4e4e4, #ffffff)*/
-    background: linear-gradient(-90deg, #ffffff, #e4e4e4);
+    /*background: linear-gradient(-90deg, #ffffff, #e4e4e4);*/
     background-image: url("ccd7ff5c48571a033027bd16682b3018-removebg-preview.png");
 
 }
@@ -620,7 +620,7 @@ section.skill {
 
 /* -------- Project -------- */
 #project {
-    background: linear-gradient(-90deg, #ffffff, #e4e4e4)
+    /*background: linear-gradient(-90deg, #ffffff, #e4e4e4)*/
 }
 
 #project .section_name{
