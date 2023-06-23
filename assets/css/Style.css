@@ -1210,6 +1210,14 @@ footer h3 {
         font-size: 20px;
         font-weight: 520;
     }
+
+    #heading1 {
+        display: none;
+    }
+
+    #heading2 {
+        display: none;
+    }
     section#home {
         display: inline-block;
         height: 100vh;
@@ -1511,7 +1519,9 @@ footer h3 {
         position: absolute;
         text-align: center;
     }
-
+    h2{
+        font-size: 50px;
+    }
         .welcome h1 {
             font-size: 80px;
         }
@@ -1603,6 +1613,69 @@ footer h3 {
     .skill {
         display: none;
     }
+
+    /*--------*/
+    #project .project_set {
+        margin-right: 20px;
+        margin-left: 0;
+        display: block;
+    }
+    #btnAssignments {
+        width: 50vw;
+        margin-bottom: 50px;
+        margin-left: 25%;
+
+    }
+    .project_set .block {
+        margin-bottom: 20px;
+    }
+    .ensColumns .ensContentBox .endBox::before {
+        display: none;
+    }
+    .project_set .block:hover {
+        transform: scale(1.0);
+    }
+
+    .row {
+        padding: 0 0 0 0;
+    }
+
+    /*---------*/
+    img {
+        width: 250px;
+    }
+    fieldset {
+        margin-top: 60px;
+    }
+    element.style {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    /*.contact_box {*/
+    /*    margin-left: 20px;*/
+    /*    margin-right: 20px;*/
+    /*}*/
+    .contact_box legend, .contact_box input, #txtMsg, .contact_box button {
+        width: 200px;
+        margin-left: 5px;
+        margin-right: 15px;
+
+    }
+    legend {
+        margin-right: 15px;
+    }
+    .contact_box legend, .contact_box input, #txtMsg, .contact_box button {
+        margin-left: 30px;
+        /*text-align: center;*/
+    }
+
+    .contact_box button.form_submit {
+        width: 200px;
+    }
+    footer .wrapper {
+        margin-top: 0px;
+    }
+
 
 }
 
