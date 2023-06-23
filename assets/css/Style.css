@@ -1483,6 +1483,7 @@ footer h3 {
 @media screen and (min-width: 375px) and (max-width: 425px) {
     .main_navbar {
         padding: 10px;
+        display: none;
     }
 
     .main_navbar h3 a {
@@ -1501,9 +1502,15 @@ footer h3 {
         display: none;
     }
 
-        section#home {
-            padding: 5% 4% 0 4%;
+    section#home {
+        padding: 5% 4% 0 4%;
+        height: 120vh;
         }
+    .welcome {
+        margin-top: 320px;
+        position: absolute;
+        text-align: center;
+    }
 
         .welcome h1 {
             font-size: 80px;
@@ -1522,6 +1529,8 @@ footer h3 {
         }
 
         .myImg {
+            margin-left: 2.5vh;
+            margin-top: 5vh;
             width: 300px;
             height: 300px;
             border-width: 4px;
@@ -1534,6 +1543,8 @@ footer h3 {
 
         .wrapper {
             padding: 60px 5%;
+            margin-top: 45vh;
+
         }
 
         .wrapper .button {
@@ -1562,12 +1573,45 @@ footer h3 {
             line-height: 50px;
             margin-left: 5px;
         }
+    /*--------*/
+    .aboutImg {
+        display: none;
+    }
+    .fileclip_img{
+        display: none;
+    }
+    div.aboutPara {
+        margin-top: 40px;
+        margin-left: 6.5vh;
+    }
 
+    /*---------*/
+
+    .ensColumns .ensContentBox {
+        padding: 0 20px;
+        margin-left: 25px;
+        margin-right: 30px;
+        width: 60%;
+        text-align: center;
+    }
+
+    .ensColumns .ensContentBox .endBox::before {
+        display: none;
+    }
+
+    /*---------*/
+    .skill {
+        display: none;
+    }
 
 }
 
 @media screen and (min-width: 320px) and (max-width: 375px) {
+    .navbar .primary_navbar {
+        margin-right: 1000px;
+    }
     .main_navbar {
+        display: none;
         /*padding: 5px;*/
     }
 
@@ -1576,6 +1620,7 @@ footer h3 {
     }
 
     nav.navbar a {
+
         margin-left: 15px;
         font-size: 12px;
     }
