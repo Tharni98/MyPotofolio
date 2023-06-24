@@ -38,8 +38,13 @@
             <a class="nav-link text-white" href="#itm-form" id="ItemForm">Item</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#odr-form" id="OrderForm">Order</a>
+            <a class="nav-link text-white" href="#orders" id="order">Order</a>
           </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#odr-form" id="OrderForm">Place Order</a>
+          </li>
+
           <!--                <li class="nav-item">-->
           <!--                    <a class="nav-link text-white" href="#" id="placeOrders">Place Orders</a>-->
           <!--                </li>-->
@@ -270,9 +275,31 @@
   </div>
 
 </div>
-
-
 <!--/**================================================= Order ==================================================*/-->
+<main class="container" id="orders">
+  <h2 class="text-dark pt-5 m-lg-2 pb-3">Manage Orders</h2>
+  <table class="table table-light table-striped">
+    <thead>
+    <tr>
+      <th  class="text-white" style="background-color: #0b093e" scope="col">Order ID</th>
+      <th class="text-white" style="background-color: #0b093e" scope="col">Date</th>
+      <th class="text-white" style="background-color: #0b093e" scope="col">Customer ID</th>
+      <th class="text-white" style="background-color: #0b093e" scope="col">Item ID</th>
+      <th class="text-white" style="background-color: #0b093e" scope="col">Quantity</th>
+      <th class="text-white" style="background-color: #0b093e" scope="col">Discount</th>
+      <th class="text-white" style="background-color: #0b093e" scope="col">Total</th>
+<!--      <th class="text-white" style="background-color: #0b093e" scope="col">Action</th>-->
+      <!-- <th style="background-color: #da9aef" scope="col">Action</th>-->
+    </tr>
+    </thead>
+    <tbody id="tblFinalOrder">
+
+    </tbody>
+  </table>
+  </section>
+</main>
+
+<!--/**================================================= PlaceOrder ==================================================*/-->
 
 <main id="odr-form" class="container-fluid">
   <section class="row p-4 m-0">
@@ -404,30 +431,30 @@
           </div>
         </div>
 
+<!--        <div class="mb-1 col">-->
+<!--          <label for="cash" class="form-label text-white">Cash</label>-->
+<!--          <input type="number"-->
+<!--                 class="form-control bg-white border-white text-black focus-ring-warning focus-ring "-->
+<!--                 id="cash">-->
+<!--        </div>-->
+
         <div class="mb-1 col">
-          <label for="cash" class="form-label text-white">Cash</label>
+          <label for="discountPlaceOrder" class="form-label text-white">Discount</label>
           <input type="number"
                  class="form-control bg-white border-white text-black focus-ring-warning focus-ring "
-                 id="cash">
+                 id="discountPlaceOrder">
         </div>
 
         <div class="mb-1 col">
-          <label for="discount" class="form-label text-white">Discount</label>
+          <label for="subTotalPlaceOrder" class="form-label text-white">Sub Total</label>
           <input type="number"
                  class="form-control bg-white border-white text-black focus-ring-warning focus-ring "
-                 id="discount">
-        </div>
-
-        <div class="mb-1 col">
-          <label for="balance" class="form-label text-white">Balance</label>
-          <input type="number"
-                 class="form-control bg-white border-white text-black focus-ring-warning focus-ring "
-                 id="balance" readonly>
+                 id="subTotalPlaceOrder" readonly>
         </div>
 
       </div>
       <div class="row ms-1">
-        <button class="btn btn-outline-success mt-5 mb-5" type="submit">Purchase</button>
+        <button class="btn btn-outline-success mt-5 mb-5" id="btnPurchaseFinalOrder" type="submit">Purchase</button>
       </div>
     </div>
   </section>
@@ -442,12 +469,14 @@
     document.getElementById("hme-form").style.display = 'inline-block';
     document.getElementById("cus-form").style.display = 'none';
     document.getElementById("itm-form").style.display = 'none';
+    document.getElementById("orders").style.display = 'none';
     document.getElementById("odr-form").style.display = 'none';
   });
   document.getElementById("HomeForm").addEventListener("click", function () {
     document.getElementById("hme-form").style.display = 'inline-block';
     document.getElementById("cus-form").style.display = 'none';
     document.getElementById("itm-form").style.display = 'none';
+    document.getElementById("orders").style.display = 'none';
     document.getElementById("odr-form").style.display = 'none';
 
   });
@@ -457,6 +486,7 @@
     document.getElementById("hme-form").style.display = 'none';
     document.getElementById("cus-form").style.display = 'inline-block';
     document.getElementById("itm-form").style.display = 'none';
+    document.getElementById("orders").style.display = 'none';
     document.getElementById("odr-form").style.display = 'none';
 
   });
@@ -464,6 +494,15 @@
     document.getElementById("hme-form").style.display = 'none';
     document.getElementById("cus-form").style.display = 'none';
     document.getElementById("itm-form").style.display = 'inline-block';
+    document.getElementById("orders").style.display = 'none';
+    document.getElementById("odr-form").style.display = 'none';
+
+  });
+  document.getElementById("order").addEventListener("click", function () {
+    document.getElementById("hme-form").style.display = 'none';
+    document.getElementById("cus-form").style.display = 'none';
+    document.getElementById("itm-form").style.display = 'none';
+    document.getElementById("orders").style.display = 'inline-block';
     document.getElementById("odr-form").style.display = 'none';
 
   });
@@ -471,6 +510,7 @@
     document.getElementById("hme-form").style.display = 'none';
     document.getElementById("cus-form").style.display = 'none';
     document.getElementById("itm-form").style.display = 'none';
+    document.getElementById("orders").style.display = 'none';
     document.getElementById("odr-form").style.display = 'inline-block';
 
   });

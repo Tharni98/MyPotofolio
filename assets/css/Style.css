@@ -784,6 +784,31 @@ section.skill {
     color: #0c1154;
 }
 
+.links{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-38%);
+    text-decoration: none;
+    opacity: 0;
+    font-size: 11px;
+    animation: linkin 0.7s ease-in;
+    color: black;
+    font-weight: bold;
+}
+/*@keyframes linkin {
+    0%{
+        transform: translateX(-50%);
+    }
+    50%{
+        transform: translateX(-40%);
+    }
+    100%{
+        transform: translateX(-38%);
+    }
+}*/
+.links:hover{
+    opacity: 1;
+}
 #btnAssignments>div{
     position: relative;
     height: 60px;
@@ -792,6 +817,7 @@ section.skill {
 
 
 }
+
 
 #btnAssignments{
     background-color: #0b093e; /* Green */
@@ -1794,6 +1820,9 @@ footer h3 {
     .aboutImg {
         display: none;
     }
+    .AboutMainSec{
+        overflow-x: hidden;
+    }
     .fileclip_img{
        display: none;
     }
@@ -1874,6 +1903,9 @@ footer h3 {
 
     .contact_box button.form_submit {
         width: 200px;
+    }
+    section#contact {
+        overflow-x: hidden;
     }
     footer .wrapper {
         margin-top: 0px;

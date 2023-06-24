@@ -33,15 +33,30 @@ let OrderList=[];
 let orderIndex;
 
 $("#addToCard").click(function (){
-   let itemId = $('#Code').val();
-   let itemDec = $('#ItemDec').val();
-   let unitPrice=$('#itemPricePO').val();
-   let qty=$('#Qty').val();
-   let total=unitPrice*qty
+
+   //  var Chek =false;
+   //
+   //
+   // let itemId = $('#Code').val();
+   // let itemDec = $('#ItemDec').val();
+   // let unitPrice=$('#itemPricePO').val();
+   // let qty=$('#Qty').val();
+   // let total=unitPrice*qty
+   //
+   //  for (let i = 0; i < OrderList.length; i++){
+   //      if (OrderList[i].id==itemId){
+   //
+   //      }
+   //  }
 
     //console.log($("CustInputID").val()+" ")
 
     let tBody=$("#OrderTbl");
+    let itemId = $('#Code').val();
+    let itemDec = $('#ItemDec').val();
+    let unitPrice=$('#itemPricePO').val();
+    let qty=$('#Qty').val();
+    let total=unitPrice*qty
 
     let tr = $('<tr> <td>'+itemId+'</td> <td>'+itemDec+'</td> <td>'+ unitPrice+'</td> <td>'+qty+'</td> <td>'+total+'</td></tr>');
 
@@ -73,8 +88,61 @@ $("#tblCustomer").click(function (event){
 
 });
 
+//clear btn
+function clearOrderFields() {
+    $('#InputOID').val("");
+    $('#InputDate').val("");
+    $('#custListId').val("");
+    $('#cusNamePO').val("");
+    $('#itemIdList').val("");
+    $('#itemDesPO').val("");
+    $('#itemPricePO').val("");
+    $('#itemQtyHandPO').val("");
+    $('#Qty').val("");
+    $('#totalPlaceOrder').val("");
+    $('#discountPlaceOrder').val("");
+    $('#subTotalPlaceOrder').val("");
+
+}
+
+$("#btnOrderClear").click(function(){
+    clearOrderFields();
+});
+
 //add Order Total
 
+// Discount
+//sub total calculation part
+$('#subTotalPlaceOrder').click(function (){
+    let discount = $('#discountPlaceOrder').val();
+    console.log("hate this");
+    let subTotal = amountOfTotal -discount;
+    $('#subTotalPlaceOrder').val(subTotal);
 
+});
+
+//btn purchase action
+let finalOrderList = [];
+$('#btnPurchaseFinalOrder').click(function (){
+
+    let finalOrderId =  $('#InputOID').val();
+    let finalOrderDate = $('#InputDate').val();
+    let finalCustomerId = $('#custListId').val();
+    let finalItemCode = $('#itemIdList').val();
+    let finalQuantity = $('#Qty').val();
+    let finalDiscount = $('#discountPlaceOrder').val();
+    let finalTotal =  $('#subTotalPlaceOrder').val();
+
+    let tBody=$("#tblFinalOrder");
+
+    let tr = $('<tr> <td>'+finalOrderId+'</td>  <td>'+finalOrderDate+'</td>  <td>'+finalCustomerId+'</td> <td>'+finalItemCode+'</td> <td>'+finalQuantity+'</td> <td>'+finalDiscount+'</td>  <td>'+finalTotal+'</td> </tr>');
+
+    tBody.append(tr);
+
+    finalOrderList.push({oid:finalOrderId , date:finalOrderDate, id:finalCustomerId , code :finalItemCode,  qty : finalQuantity , discount :finalDiscount , subtotal:finalTotal})
+
+    /* console.log(finalOrderList);*/
+
+});
 
 
