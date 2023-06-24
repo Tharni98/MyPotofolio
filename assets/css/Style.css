@@ -185,6 +185,20 @@ section#home {
     text-shadow: 50px 0 100px 50px rgba(255, 255, 255);
     font-family: 'Consolas', sans-serif;
 }
+.typed {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing;
+    animation-duration: 3.5s;
+    animation-timing-function: steps(30, end);
+    animation-fill-mode: forwards;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
 
 .welcome h3 {
     font-size: 40px;
