@@ -1766,11 +1766,11 @@ footer h3 {
     }
 
     .welcome h1 {
-        font-size: 80px;
+        font-size: 20px;
     }
 
     .welcome h2 {
-        font-size: 50px;
+        font-size: 25px;
     }
 
     .welcome h3 {
@@ -1781,6 +1781,21 @@ footer h3 {
         font-size: 20px;
     }
 
+    .typed {
+        overflow: hidden;
+        white-space: nowrap;
+        width: 0;
+        animation: typing;
+        animation-duration: 3.5s;
+        animation-timing-function: steps(30, end);
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+    }
+
     .myImg {
         margin-left: 2.5vh;
         margin-top: 5vh;
@@ -1789,6 +1804,7 @@ footer h3 {
         border-width: 4px;
         box-shadow: 0 0 8px 4px rgba(2, 0, 0, 0.5);
     }
+
 
     .social-icon {
         width: 300px;
