@@ -1319,10 +1319,11 @@ footer h3 {
     .welcome {
         position: absolute;
         text-align: center;
-        margin-left: 122px;
+        margin-left: 123px;
         margin-top: 363px;
 
     }
+    /*margin-left: 123px;*/
     h2{
         font-size: 50px;
     }
@@ -1753,7 +1754,7 @@ footer h3 {
 /*    }*/
 /*}*/
 
-@media screen and (min-width: 375px) and (max-width: 425px) {
+@media screen and (min-width: 375px) and (max-width: 424px) {
     .main_navbar {
         padding: 10px;
         display: none;
@@ -2129,8 +2130,9 @@ footer h3 {
         width: 250px;
     }
     fieldset {
-        margin-top: 60px;
+        margin-left: -21px;
     }
+
     element.style {
         padding-left: 0px;
         padding-right: 0px;
