@@ -51,7 +51,7 @@ header {
 
 
 .main_navbar {
-    width: 100vw;
+    width: 85vw;
     color: rgb(255, 255, 255);
     padding: 10px 100px;
     display: flex;
@@ -1114,6 +1114,9 @@ footer h3 {
         padding: 10px 100px;
     }
 
+    #heading1{
+        margin-left: 71px;
+    }
     .main_navbar h3 a {
         font-size: 28px;
     }
