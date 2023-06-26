@@ -1265,6 +1265,10 @@ footer h3 {
         margin-left: 149px;
         /* margin-right: 228px; */
     }
+    .contact_box {
+        overflow-x: hidden;
+
+    }
 
 
     /*article.aboutArticle {*/
@@ -1314,7 +1318,7 @@ footer h3 {
     .welcome {
         position: absolute;
         text-align: center;
-        margin-left: 120px;
+        margin-left: 122px;
         margin-top: 363px;
 
     }
@@ -1338,7 +1342,7 @@ footer h3 {
     }
 
     .myImg {
-        margin-left: 30.5vh;
+        margin-left: 5.5vh;
         margin-top: 5vh;
         width: 300px;
         height: 300px;
@@ -1358,7 +1362,7 @@ footer h3 {
     }
 
     .wrapper {
-        margin-top: 188px;
+        margin-top: 177px;
 
     }
 
