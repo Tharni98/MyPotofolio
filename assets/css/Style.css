@@ -10,6 +10,7 @@ body{
 }
 
 
+
 html {
     scroll-behavior: smooth;
     scroll-padding-top:  54px;
@@ -50,6 +51,7 @@ header {
 
 
 .main_navbar {
+    width: 100vw;
     color: rgb(255, 255, 255);
     padding: 10px 100px;
     display: flex;
@@ -596,7 +598,8 @@ section.skill {
    }
 
 
-.one_set, .second_set  {
+.main_sett  {
+
     position: relative;
     animation: newmove 2.5s infinite;
     left: 0;
@@ -605,30 +608,15 @@ section.skill {
     animation-direction: initial;
 }
 
-/*@keyframes newmove {*/
 
-/*        0%   {left: 0px;}*/
-/*        25%  {left: 400px;}*/
+@keyframes newmove {
+    0%   {left: 0;}
+    25%  {left: 400px;}
+    75% {left: 0;}
+    100%{left: 1550px}
+}
 
-/*        75% {left: 0px;}*/
-/*        100%{left: 1550px}*/
-/*}*/
-/*@keyframes newmove {*/
 
-/*    0%   {left: 0px;}*/
-/*    25%  {left: 400px;}*/
-/*    75% {left: 0px;}*/
-/*    100%{left: 1550px}*/
-/*}*/
-
-/*@keyframes mymove {*/
-/*    0%   {left: 0px;}*/
-/*    25%  {left: 200px;}*/
-/*    !*75%  {left: 50px}*!*/
-/*    !*50% {left: 100px;}*!*/
-/*    75% {left: 0px;}*/
-/*    100%{left: 1550px}*/
-/*}*/
 
 
 
@@ -1221,6 +1209,10 @@ footer h3 {
     /*    margin-left: 20vw;*/
     /*}*/
 
+.skill{
+    animation-name: newmove;
+    animation-play-state: paused;
+}
 
 
 }
@@ -1260,6 +1252,18 @@ footer h3 {
     .wrapper {
         margin-top: 184px;
     }
+    .skill{
+        animation-name: newmove;
+        animation-play-state: paused;
+    }
+    article.aboutArticle {
+        width: 63vw;
+        height: 122vh;
+        margin-left: 149px;
+        /* margin-right: 228px; */
+    }
+
+
     /*article.aboutArticle {*/
     /*    width: 50vw;*/
     /*    margin-left: 59px;*/
@@ -1474,7 +1478,10 @@ footer h3 {
         margin-top: 40px;
         margin-left: 6.5vh;
     }
-
+    div.aboutPara {
+        margin-top: 40px;
+        margin-left: -10.5vh;
+    }
     /*---------*/
 
     .ensColumns .ensContentBox {
