@@ -31,7 +31,7 @@ header {
     left: 0;
     bottom: 0;
     right: 0;
-    background: #000000;
+    background: #ffffff;
 }
 
 #loader > div {
@@ -43,10 +43,11 @@ header {
     bottom: 0;
     right: 0;
     margin: auto;
-    background-image: url("loader3.gif");
+    background-image: url("loader.gif");
     /*background-size: cover;*/
     background-position: center;
 }
+
 
 .main_navbar {
     color: rgb(255, 255, 255);
