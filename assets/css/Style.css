@@ -1220,7 +1220,7 @@ footer h3 {
 
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
     .main_navbar {
         padding: 10px 50px;
     }
@@ -1233,6 +1233,7 @@ footer h3 {
         margin-left: 30px;
         font-size: 18px;
     }
+
     .fileclip_img {
         top: -13px;
         left: 19px;
@@ -1342,7 +1343,7 @@ footer h3 {
     }
 
     .myImg {
-        margin-left: 5.5vh;
+        margin-left: 30.5vh;
         margin-top: 5vh;
         width: 300px;
         height: 300px;
