@@ -30,3 +30,9 @@ Desktop View
 
 ![](assets/img/PagesAssets/Home.png)
 ![](assets/img/PagesAssets/About.png)
+![](assets/img/PagesAssets/Edu.png)
+![](assets/img/PagesAssets/Skill.png)
+![](assets/img/PagesAssets/Project.png)
+![](assets/img/PagesAssets/Assigment.png)
+![](assets/img/PagesAssets/Gallery.png)
+![](assets/img/PagesAssets/Contact.png)
