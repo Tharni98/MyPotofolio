@@ -24,8 +24,10 @@ Site Map:https://app.diagrams.net/#G1nL_zpuOlOApc_y9q7TMdAgSz-SScANkO <br>
 Wireframe:https://app.diagrams.net/#G1nL_zpuOlOApc_y9q7TMdAgSz-SScANkO <br>
 Mockup:https://www.figma.com/file/7EM8Z7VcjOh0jepWAG27TO/Untitled?type=design&t=JJwb58i1jBS0Uv6p-0 <br>
 
-<h3>Developed By Tharani Harashika</h3>
+<h3>Developed By Tharani Harshika</h3>
 Desktop View
+
+
 ![](assets/img/PagesAssets/Home.png)
 ![](assets/img/PagesAssets/About.png)
 ![](assets/img/PagesAssets/Edu.png)
@@ -34,4 +36,4 @@ Desktop View
 ![](assets/img/PagesAssets/Assigment.png)
 ![](assets/img/PagesAssets/Gallery.png)
 ![](assets/img/PagesAssets/Contact.png)
-![](assets/img/PagesAssets/Footer.png)
+![](assets/img/PagesAssets/Footer.png )
