@@ -36,3 +36,4 @@ Desktop View
 ![](assets/img/PagesAssets/Assigment.png)
 ![](assets/img/PagesAssets/Gallery.png)
 ![](assets/img/PagesAssets/Contact.png)
+![](assets/img/PagesAssets/Footer.png)
