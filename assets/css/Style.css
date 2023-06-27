@@ -1166,7 +1166,7 @@ footer h3 {
     article.aboutArticle {
         width: 63vw;
         height: 122vh;
-        margin-left: 149px;
+        margin-left: 77px;
         /* margin-right: 228px; */
     }
     .contact_box {
@@ -1180,7 +1180,7 @@ footer h3 {
 
 
 /* ------------- Tab Size ------------ */
-@media all and (min-width: 427px) and (max-width:768px ) {
+@media all and (min-width: 450px) and (max-width:768px ) {
 
     .main_navbar {
         padding: 10px;
@@ -1246,7 +1246,7 @@ footer h3 {
     }
 
     .welcome {
-        margin-left: 4px;
+        margin-left: 148px;
         margin-top: 338px;
     }
 
@@ -1255,10 +1255,6 @@ footer h3 {
         width: 300px;
     }
 
-    .wrapper {
-        margin-top: 177px;
-
-    }
 
     .wrapper .button {
         height: 50px;
@@ -1381,14 +1377,17 @@ footer h3 {
         margin-right: 15px;
     }
     .wrapper {
-        margin-top: 30px;
+        position: relative;
+        top: 154px;
+        left: 33px;
+
     }
 
 
 
 }
 
-@media screen and (min-width: 375px) and (max-width: 424px) {
+@media screen and (min-width: 375px) and (max-width: 450px) {
     .main_navbar {
         padding: 10px;
         display: none;
@@ -1439,7 +1438,7 @@ footer h3 {
         }
 
         .myImg {
-            margin-left: 2.5vh;
+            margin-left: 7.5vh;
             margin-top: 5vh;
             width: 300px;
             height: 300px;
