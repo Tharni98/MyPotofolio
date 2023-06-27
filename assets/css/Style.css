@@ -87,10 +87,7 @@ header {
     font-size: 30px;
 }
 
-/* .logo .lio {
-    color: #ffffff;
-    font-size: 30px;
-} */
+
 
 nav.navbar a {
     color: #ffffff;
@@ -128,31 +125,6 @@ nav.navbar a {
     justify-content: center;
     margin-right: 20px;
 }
-
-/*!*---------*!*/
-/*nav span{*/
-/*    !*float: right;*!*/
-/*    !*margin-right: 20px;*!*/
-/*}*/
-/*nav a{*/
-/*    display: inline-block;*/
-/*    !*line-height: 70px;*!*/
-/*    !*margin: 0 5px;*!*/
-/*}*/
-/*nav span a{*/
-/*    text-transform: uppercase;*/
-/*}*/
-/*.checkbtn{*/
-/*    font-size: 30px;*/
-/*    color: #fcfcfd;*/
-/*    float: right;*/
-/*    line-height: 80px;*/
-/*    margin-right: 40px;*/
-/*    cursor: pointer;*/
-/*}*/
-/*#check{*/
-/*    display: none;*/
-/*}*/
 
 
 /* -------- Home -------- */
@@ -430,28 +402,6 @@ p.line_discription {
     font-family: 'Ubuntu', sans-serif;
 }
 
-/*#EnSMainSection > h1 {
-    user-select: none;
-    font-family: 'Palanquin Dark', sans-serif;
-    color: #393E46;
-    -webkit-text-stroke: 2px #393E46;
-    padding: 0;
-    display: flex;
-    position: absolute;
-    bottom: -9%;
-    left: -6%;
-    margin-top: 0;
-    text-transform: uppercase;
-    font-size: 22vw;
-    letter-spacing: 13px;
-    z-index: 0;
-}*/
-
-/*#EnSMainSection {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}*/
 
 .ensTitle {
     font-family: 'Source Sans Pro', sans-serif;
@@ -494,18 +444,6 @@ p.line_discription {
     background: linear-gradient(to right, #012a4a, #013a63, #01497c, #014f86, #2a6f97, #2c7da0, #468faf, #61a5c2, #75bbd7, #91cbe0);
 }
 
-/*.ensColumns .ensContentBox .endBox::after {
-    content: "";
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    right: calc(100% + 26px);
-    top: -1px;
-    background-color: #0b093e;
-    border: 2px solid #0b093e;
-
-}*/
 
 .ensColumns .ensContentBox .endBox:hover {
     background: #0b093e;
@@ -842,20 +780,6 @@ section.skill {
     margin-left: 40%;
     border-radius: 12px;
 
-
-    /*text-decoration: none;*/
-    /*background: #333960;*/
-    /*font-family: 'Source Sans Pro', sans-serif;*/
-    /*color: #FFD369;*/
-    /*transition: 0.5s;*/
-    /*padding: 5px 10px 10px 5px;*/
-    /*width: max-content;*/
-    /*position: absolute;*/
-    /*left: 0;*/
-    /*right: 0;*/
-    /*bottom: 0;*/
-    /*margin: auto;*/
-    /*z-index: 21;*/
 }
 
 #btnAssignments:hover{
@@ -1064,23 +988,6 @@ textarea#txtMsg {
 }
 
 
-/*!* Media queries *!*/
-/*@media only screen and (max-width: 768px) {*/
-/*    .contact_box {*/
-/*        padding: 50px 15%;*/
-/*    }*/
-
-/*    fieldset {*/
-/*        width: 100%;*/
-/*    }*/
-/*}*/
-
-/*@media only screen and (max-width: 1024px) {*/
-/*    .contact_box {*/
-/*        padding: 50px 10%;*/
-/*    }*/
-/*}*/
-
 
 /*Footer*/
 footer {
@@ -1159,12 +1066,7 @@ footer h3 {
         position: absolute;
         text-align: center;
     }
-    /*.welcome{*/
-    /*    margin-left: 51px;*/
-    /*    margin-top: 320px;*/
-    /*    position: absolute;*/
-    /*    text-align: center;*/
-    /*}*/
+
     .wrapper {
         margin-top: 202px;
 
@@ -1208,9 +1110,7 @@ footer h3 {
         margin-right: 20px;
         margin-left: 20px;
     }
-    /*.contact_box .contact_information {*/
-    /*    margin-left: 20vw;*/
-    /*}*/
+
 
 .skill{
     animation-name: newmove;
@@ -1220,7 +1120,7 @@ footer h3 {
 
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media all and (min-width: 769px) and (max-width: 1024px) {
     .main_navbar {
         padding: 10px 50px;
     }
@@ -1232,6 +1132,9 @@ footer h3 {
     nav.navbar a {
         margin-left: 30px;
         font-size: 18px;
+    }
+    .welcome {
+        margin-left: 133px;
     }
 
     .fileclip_img {
@@ -1271,25 +1174,13 @@ footer h3 {
 
     }
 
-
-    /*article.aboutArticle {*/
-    /*    width: 50vw;*/
-    /*    margin-left: 59px;*/
-    /*    height: 60vh;*/
-    /*}*/
 }
 
-
-/*@media screen and (min-width: 1281px) {*/
-/*    .main_navbar {*/
-/*        padding: 10px 150px;*/
-/*    }*/
-/*}*/
 
 
 
 /* ------------- Tab Size ------------ */
-@media screen and (min-width: 425px) and (max-width:768px ) {
+@media all and (min-width: 427px) and (max-width:768px ) {
 
     .main_navbar {
         padding: 10px;
@@ -1323,6 +1214,7 @@ footer h3 {
         margin-top: 363px;
 
     }
+
     /*margin-left: 123px;*/
     h2{
         font-size: 50px;
@@ -1344,7 +1236,7 @@ footer h3 {
     }
 
     .myImg {
-        margin-left: 30.5vh;
+        margin-left: 31.5vh;
         margin-top: 5vh;
         width: 300px;
         height: 300px;
@@ -1395,28 +1287,7 @@ footer h3 {
         margin-left: 5px;
     }
 
-    /*.fileclip_img {*/
-    /*    top: -13px;*/
-    /*    left: 19px;*/
-    /*}*/
-    /*.aboutImg {*/
-    /*    display: none;*/
-    /*    width: 10vw;*/
-    /*    left: 0px;*/
-    /*}*/
-    /*div.aboutPara {*/
-    /*    display: inline-table;*/
-    /*    opacity: 91%;*/
-    /*}*/
-    /*article.aboutArticle {*/
-    /*    width: 120vw;*/
-    /*    margin-left: 59px;*/
-    /*}*/
-    /*article.aboutArticle {*/
-    /*    width: 50vw;*/
-    /*    margin-left: 59px;*/
-    /*    height: 60vh;*/
-    /*}*/
+
     .aboutImg {
         display: none;
     }
@@ -1457,17 +1328,6 @@ footer h3 {
         display: none;
     }
 
-    /**/
-    /*#project {*/
-    /*    width: 792px;*/
-    /*}*/
-    /*.project_set .block {*/
-    /*    margin: auto;*/
-    /*}*/
-    /*!**!*/
-    /*#assignment {*/
-    /*    width: 750px;*/
-    /*}*/
     #project .project_set {
         margin-right: 20px;
         margin-left: 39px;
@@ -1524,235 +1384,9 @@ footer h3 {
         margin-top: 30px;
     }
 
-    /*.contact_box {*/
-    /*    margin-left: 20px;*/
-    /*    margin-right: 20px;*/
-    /*}*/
-    /*.contact_box legend, .contact_box input, #txtMsg, .contact_box button {*/
-    /*    width: 200px;*/
-    /*    margin-left: 5px;*/
-    /*    margin-right: 15px;*/
 
-    /*}*/
-    /*section#contact {*/
-    /*    overflow-x: hidden;*/
-    /*}*/
-    /*legend {*/
-    /*    margin-right: 15px;*/
-    /*}*/
-    /*.contact_box legend, .contact_box input, #txtMsg, .contact_box button {*/
-    /*    margin-left: 30px;*/
-    /*    !*text-align: center;*!*/
-    /*}*/
-
-    /*.contact_box button.form_submit {*/
-    /*    width: 200px;*/
-    /*}*/
-    /*footer .wrapper {*/
-    /*    margin-top: 0px;*/
-    /*}*/
 
 }
-
-
-/*-------  Mobile size --------*/
-
-/*@media All and (max-width: 520px) {*/
-
-/*    h3>span{*/
-/*        display: none;*/
-/*    }*/
-
-/*    .main_navbar {*/
-/*        display: none;*/
-/*        padding: 5px;*/
-
-/*        !*display: flex;*!*/
-/*        flex-direction: column-reverse;*/
-/*    }*/
-
-
-/*    !*.main_navbar h3 a {*!*/
-/*    !*    font-size: 16px;*!*/
-/*    !*}*!*/
-
-/*    !*nav.navbar a {*!*/
-/*    !*    list-style-type: none;*!*/
-/*    !*    margin: 0;*!*/
-/*    !*    padding: 0;*!*/
-/*    !*    !*margin-left: 10px;*!*!*/
-/*    !*    !*font-size: 10px;*!*!*/
-/*    !*}*!*/
-/*    !*.navbar .primary_navbar {*!*/
-/*    !*    font-size: 10px;*!*/
-/*    !*}*!*/
-
-/*    !*---- *!*/
-/*    section#home {*/
-/*        height: 130vh;*/
-/*        padding: 5% 4% 0 4%;*/
-/*    }*/
-
-/*    .welcome{*/
-/*        padding-left: 50px;*/
-/*        padding-top: 92%;*/
-/*        text-align: center;*/
-/*    }*/
-
-/*    .welcome h1 {*/
-/*        font-size: 65px;*/
-/*        margin-top: 60px;*/
-/*    }*/
-
-/*    .welcome h2 {*/
-/*        font-size: 20px;*/
-/*    }*/
-
-/*    .welcome h3 {*/
-/*        font-size: 15px;*/
-/*    }*/
-
-/*    .welcome h5 {*/
-/*        font-size: 13px;*/
-/*    }*/
-
-/*    .myImg {*/
-/*        right: 92%;*/
-/*        top: 10%;*/
-/*        width: 250px;*/
-/*        height: 250px;*/
-/*        border-width: 3px;*/
-/*        box-shadow: 0 0 5px 2px rgba(2, 0, 0, 0.5);*/
-/*        display: block;*/
-/*        !*margin-left: auto;*!*/
-/*        !*margin-right: auto;*!*/
-/*        !*width: 50%;*!*/
-/*    }*/
-
-/*    .social-icon {*/
-/*        height: 50vh;*/
-/*        width: 50vw;*/
-/*        position: absolute;*/
-/*        background-color: green;*/
-/*        text-align: center;*/
-
-/*    }*/
-
-/*    .wrapper {*/
-/*        padding: 0px;*/
-/*        padding-top: 56px;*/
-/*    }*/
-
-/*    .wrapper .button {*/
-/*        height: 40px;*/
-/*        width: 40px;*/
-/*    }*/
-
-/*    .wrapper .button:hover {*/
-/*        width: 120px;*/
-/*    }*/
-
-/*    .wrapper .button .icon {*/
-/*        height: 40px;*/
-/*        width: 40px;*/
-/*        line-height: 40px;*/
-/*    }*/
-
-/*    .wrapper .button .icon i {*/
-/*        font-size: 18px;*/
-/*        line-height: 40px;*/
-/*    }*/
-
-/*    .wrapper .button span,*/
-/*    .wrapper .button a {*/
-/*        font-size: 14px;*/
-/*        line-height: 40px;*/
-/*        margin-left: 3px;*/
-/*    }*/
-
-/*    !* ---- *!*/
-/*    .aboutImg{*/
-/*        display: none;*/
-/*    }*/
-/*    .aboutArticle{*/
-/*        width: 100vw;*/
-/*        margin-left: 19%;*/
-/*    }*/
-/*    .aboutPara{*/
-/*        text-align: justify;*/
-/*        font-size: 20px;*/
-/*        width: 100vw;*/
-/*        margin-left: 10px;*/
-/*    }*/
-/*    div.fileclip_img{*/
-/*        width: 100%;*/
-/*        height: 100%;*/
-/*        margin-left: 43px;*/
-
-/*    }*/
-
-/*    !* ------- *!*/
-
-/*    .ensColumns .ensContentBox .endBox {*/
-/*        width: 50%;*/
-/*        left: 50px;*/
-/*    }*/
-
-/*    !* ------- *!*/
-
-/*    .main_set {*/
-/*        width: 70%;*/
-/*    }*/
-/*    .one_set, .second_set {*/
-/*        display: block;*/
-/*        margin-left: auto;*/
-/*        margin-right: auto;*/
-/*        width: 50%;*/
-
-/*    }*/
-/*    .box_one_set{*/
-/*        margin-top: 5px;*/
-/*        margin-bottom: 5px;*/
-/*    }*/
-/*    .box_second_set{*/
-/*        margin-top: 5px;*/
-/*        margin-bottom: 5px;*/
-/*    }*/
-/*    .one_set, .second_set {*/
-/*        !*display: flex;*!*/
-/*        !*justify-content: space-between;*!*/
-/*        padding: 0 0 0 0;*/
-/*    }*/
-
-
-
-/*    !* ---------- *!*/
-/*    .project_set .block {*/
-/*        width: 150px;*/
-/*        height: 250px;*/
-/*        display: block;*/
-/*        margin-top: 20px;*/
-/*        margin-bottom: 20px;*/
-/*    }*/
-/*    #project .project_set {*/
-/*         display: block;*/
-/*        margin: 0 48px;*/
-/*        !*padding: 3% 10% 5% 10%;*!*/
-
-
-/*    }*/
-/*    !* --------- *!*/
-/*    .assign_block {*/
-/*        width: 250px;*/
-/*    }*/
-/*    .assign_block img {*/
-/*        width: 200px;*/
-/*    }*/
-/*    .assign_block:hover img {*/
-/*        width: 260px;*/
-
-/*    }*/
-/*}*/
 
 @media screen and (min-width: 375px) and (max-width: 424px) {
     .main_navbar {
@@ -2004,20 +1638,6 @@ footer h3 {
         font-size: 20px;
     }
 
-    /*.typed {*/
-    /*    overflow: hidden;*/
-    /*    white-space: nowrap;*/
-    /*    width: 0;*/
-    /*    animation: typing;*/
-    /*    animation-duration: 3.5s;*/
-    /*    animation-timing-function: steps(30, end);*/
-    /*    animation-fill-mode: forwards;*/
-    /*}*/
-
-    /*@keyframes typing {*/
-    /*    from { width: 0 }*/
-    /*    to { width: 100% }*/
-    /*}*/
 
     .myImg {
         margin-left: 2.5vh;
