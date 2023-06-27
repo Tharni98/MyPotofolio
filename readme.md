@@ -26,5 +26,7 @@ Mockup:https://www.figma.com/file/7EM8Z7VcjOh0jepWAG27TO/Untitled?type=design&t=
 
 <h3>Developed By Derick Andrew Ferdinands</h3>
 Desktop View
-![Desktop - 1](PagesAssets)<img align="center" alt="coding" src="https://github.com/Tharni98/myPotofolioNew/assets/img/PagesAssets/Home.png" height="500" width="830">
 
+
+![](assets/img/PagesAssets/Home.png)
+![](assets/img/PagesAssets/About.png)
